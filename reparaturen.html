@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/webp" href="img/favicon-3/favicon.webp">
+  <link rel="icon" type="image/webp" sizes="96x96" href="img/favicon-3/favicon-96x96.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-3/apple-touch-icon.webp">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <title>Autoreparatur Schlieren | Swiss Repairs</title>
+  <meta name="description" content="Autoreparaturen in Schlieren für Mechanik, Diagnose und saubere Instandsetzung. Jetzt Termin bei Swiss Repairs anfragen.">
+  <meta name="keywords" content="Autoreparatur Schlieren, Reparaturen Schlieren, Fahrzeugdiagnose Schlieren, Mechanik Schlieren, Garage Schlieren Reparatur, Swiss Repairs Reparaturen, Werkstatt Zürich Reparatur, Auto Diagnose Schweiz">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Swiss Repairs">
+  <meta name="geo.region" content="CH-ZH">
+  <meta name="geo.placename" content="Schlieren">
+  <link rel="canonical" href="https://www.swissrepairs.ch/reparaturen.html">
+  <meta property="og:title" content="Autoreparatur Schlieren | Swiss Repairs">
+  <meta property="og:description" content="Mechanische Reparaturen, Diagnose und ehrliche Beratung in Schlieren. Swiss Repairs kümmert sich sauber um Ihr Fahrzeug.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.swissrepairs.ch/reparaturen.html">
+  <meta property="og:image" content="https://www.swissrepairs.ch/img/heros/reparatur.webp">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="Swiss Repairs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Autoreparatur Schlieren | Swiss Repairs">
+  <meta name="twitter:description" content="Reparaturen und Fahrzeugdiagnose in Schlieren. Jetzt Termin bei Swiss Repairs buchen.">
+  <meta name="twitter:image" content="https://www.swissrepairs.ch/img/heros/reparatur.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="reparaturen.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Reparaturen | Swiss Repairs",
+      "url": "https://www.swissrepairs.ch/reparaturen.html",
+      "description": "Autoreparaturen und Diagnose für Fahrzeuge in Schlieren.",
+      "about": {
+        "@type": "Service",
+        "name": "Autoreparaturen"
+      }
+    }
+  </script>
+</head>
+<body>
+<!-- ================= NAVBAR SWISS REPAIRS ================= -->
+<header class="gbsrac-navbar" id="home">
+  <div class="gbsrac-navbar-container">
+    <a href="index.html" class="gbsrac-navbar-brand">
+      <img src="img/Swiss Repairs Logo.webp" alt="Swiss Repairs Logo">
+    </a>
+
+    <button class="gbsrac-navbar-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gbsrac-navbar-menu">
+      <a href="index.html" class="gbsrac-navbar-link">Home</a>
+
+      <div class="gbsrac-navbar-dropdown">
+        <a href="index.html#services" class="gbsrac-navbar-link">Services</a>
+        <div class="gbsrac-navbar-dropdown-menu">
+          <a href="wartung.html">Wartung &amp; Service</a>
+          <a href="saison.html">Saisonale Checks</a>
+          <a href="mfk.html">MFK</a>
+          <a href="reparaturen.html">Reparaturen</a>
+          <a href="karosserie.html">Karosserie &amp; Lack</a>
+          <a href="unfall.html">Unfallschäden</a>
+          <a href="reifen.html">Reifenservice</a>
+        </div>
+      </div>
+
+      <a href="ueberuns.html" class="gbsrac-navbar-link">Über Uns</a>
+      <a href="kontakt.html" class="gbsrac-navbar-link">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".gbsrac-navbar");
+  const navbarToggle = document.querySelector(".gbsrac-navbar-toggle");
+  const navbarLinks = document.querySelectorAll(".gbsrac-navbar-menu a");
+  const faqItems = document.querySelectorAll(".gbsrac-faq-item");
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    navbar.classList.toggle("is-scrolled", window.scrollY > 30);
+  }
+
+  if (navbar && navbarToggle) {
+    navbarToggle.addEventListener("click", function () {
+      const isOpen = navbar.classList.toggle("is-open");
+      navbarToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbar.classList.remove("is-open");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+
+  faqItems.forEach(function (item) {
+    const button = item.querySelector(".gbsrac-faq-question");
+
+    button.addEventListener("click", function () {
+      const isOpen = item.classList.contains("is-open");
+
+      faqItems.forEach(function (entry) {
+        entry.classList.remove("is-open");
+        entry.querySelector(".gbsrac-faq-question").setAttribute("aria-expanded", "false");
+      });
+
+      if (!isOpen) {
+        item.classList.add("is-open");
+        button.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+});
+</script>
+
+<!-- ================= HERO SECTION REPARATUREN ================= -->
+<section class="gbsrac-repair-hero">
+  <div class="gbsrac-repair-hero-bg"></div>
+  <div class="gbsrac-repair-hero-overlay"></div>
+
+  <div class="gbsrac-repair-hero-container">
+    <div class="gbsrac-repair-hero-panel" data-aos="fade-up" data-aos-duration="950">
+      <span class="gbsrac-repair-hero-subtitle">Dienstleistung</span>
+      <h1>Reparaturen</h1>
+      <div class="gbsrac-repair-hero-line"></div>
+      <p>
+        Ob Bremsen, Fahrwerk, Motor oder allgemeine Defekte: Wir reparieren Ihr
+        Fahrzeug fachgerecht, sauber und mit ehrlicher Rückmeldung zum Aufwand.
+        So wissen Sie klar, was gemacht werden muss und was nicht. Für
+        Autoreparaturen in Schlieren und im Raum Zürich bieten wir eine
+        saubere Diagnose und verständliche Einschätzung.
+      </p>
+
+      <div class="gbsrac-repair-hero-points">
+        <span>Bremsen &amp; Fahrwerk</span>
+        <span>Mechanische &amp; allgemeine Reparaturen</span>
+        <span>Ehrliche Einschätzung</span>
+      </div>
+
+      <div class="gbsrac-repair-hero-actions">
+        <a href="kontakt.html#booking" class="gbsrac-btn gbsrac-btn-primary">Termin anfragen</a>
+        <a href="index.html#services" class="gbsrac-btn gbsrac-btn-secondary">Alle Dienstleistungen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REPARATUREN SIGNS SECTION ================= -->
+<section class="gbsrac-repair-signs">
+  <div class="gbsrac-repair-signs-container">
+    <div class="gbsrac-repair-signs-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-repair-signs-subtitle">Wann eine Reparatur sinnvoll wird</span>
+      <h2>Oft zeigt das Fahrzeug früh, dass etwas nicht mehr stimmt.</h2>
+      <div class="gbsrac-repair-signs-line"></div>
+      <p>
+        Nicht jede Reparatur beginnt mit einem Totalausfall. Häufig kündigen
+        sich Probleme durch kleine Veränderungen an. Wer diese Zeichen ernst
+        nimmt, kann grössere Folgeschäden oft vermeiden.
+      </p>
+    </div>
+
+    <div class="gbsrac-repair-signs-layout">
+      <div class="gbsrac-repair-signs-stage" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-repair-signs-image">
+          <img src="img/reparaturbild.webp" alt="Frühe Anzeichen für Reparaturen am Fahrzeug">
+        </div>
+        <div class="gbsrac-repair-signs-quote">
+          <span class="gbsrac-repair-signs-quote-label">Früh reagieren</span>
+          <strong>Je früher wir das Problem prüfen, desto klarer und oft günstiger wird die Lösung.</strong>
+        </div>
+      </div>
+
+      <div class="gbsrac-repair-signs-stack" data-aos="fade-left" data-aos-duration="950" data-aos-delay="80">
+        <article class="gbsrac-repair-sign">
+          <span class="gbsrac-repair-sign-number">01</span>
+          <div>
+            <h3>Ungewöhnliche Geräusche</h3>
+            <p>Klappern, Schleifen oder andere auffällige Geräusche sind oft frühe Hinweise auf mechanische Probleme.</p>
+          </div>
+        </article>
+
+        <article class="gbsrac-repair-sign">
+          <span class="gbsrac-repair-sign-number">02</span>
+          <div>
+            <h3>Warnlampen im Cockpit</h3>
+            <p>Wenn Kontrolllampen erscheinen, sollte man nicht einfach weiterfahren, sondern die Ursache sauber abklären.</p>
+          </div>
+        </article>
+
+        <article class="gbsrac-repair-sign">
+          <span class="gbsrac-repair-sign-number">03</span>
+          <div>
+            <h3>Vibrationen oder verändertes Fahrgefühl</h3>
+            <p>Wenn sich Lenkung, Bremsverhalten oder Fahrgefühl verändern, lohnt sich eine schnelle Einschätzung.</p>
+          </div>
+        </article>
+
+        <article class="gbsrac-repair-sign">
+          <span class="gbsrac-repair-sign-number">04</span>
+          <div>
+            <h3>Leistungsverlust oder unruhiger Motorlauf</h3>
+            <p>Auch kleinere Veränderungen bei Leistung oder Motorverhalten können auf Reparaturbedarf hindeuten.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REPARATUREN PARTS SECTION ================= -->
+<section class="gbsrac-repair-parts">
+  <div class="gbsrac-repair-parts-container">
+    <div class="gbsrac-repair-parts-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-repair-parts-subtitle">Teilebeschaffung & Einbau</span>
+      <h2>Passende Ersatzteile, sauber abgestimmt auf Reparatur, Budget und Fahrzeug.</h2>
+      <div class="gbsrac-repair-parts-line"></div>
+      <p>
+        Nicht jede Reparatur läuft gleich. Manchmal organisieren wir die
+        passenden Teile für Sie, manchmal bringen Kundinnen und Kunden bereits
+        eigene Teile mit. Wichtig ist für uns, dass die Lösung technisch
+        sinnvoll, transparent abgesprochen und für Ihr Fahrzeug passend ist.
+      </p>
+    </div>
+
+    <div class="gbsrac-repair-parts-layout">
+      <div class="gbsrac-repair-parts-content" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-repair-parts-copy">
+          <span class="gbsrac-repair-parts-kicker">Flexible Werkstattlösung</span>
+          <h3>Teilebeschaffung, Eigenteile und klare Absprache vor dem Einbau.</h3>
+          <p>
+            Wir richten uns nicht nach einem starren Schema. Je nach Reparatur
+            organisieren wir passende Ersatzteile für Sie oder prüfen gemeinsam,
+            ob bereits vorhandene Teile sinnvoll verwendet werden können.
+          </p>
+        </div>
+
+        <div class="gbsrac-repair-parts-pills">
+          <span>wir bestellen passende Teile</span>
+          <span>Eigenteile nach Absprache möglich</span>
+          <span>faire Lösung je nach Budget</span>
+        </div>
+
+        <div class="gbsrac-repair-parts-columns">
+          <article class="gbsrac-repair-parts-panel">
+            <span class="gbsrac-repair-parts-number">01</span>
+            <h3>Wir organisieren Ersatzteile</h3>
+            <p>Auf Wunsch übernehmen wir die Beschaffung und suchen die Lösung, die zu Fahrzeug, Reparatur und Aufwand passt.</p>
+          </article>
+
+          <article class="gbsrac-repair-parts-panel">
+            <span class="gbsrac-repair-parts-number">02</span>
+            <h3>Eigene Teile prüfen wir mit Ihnen</h3>
+            <p>Wenn Sie bereits Teile haben, schauen wir gemeinsam auf Passgenauigkeit, Zustand und technische Sinnhaftigkeit.</p>
+          </article>
+        </div>
+
+        <div class="gbsrac-repair-parts-note">
+          <strong>AUTODOC kann eine Option sein</strong>
+          <p>Je nach Reparatur und Budget können auch Teile von Plattformen wie AUTODOC sinnvoll sein, wenn Qualität und Passgenauigkeit stimmen.</p>
+        </div>
+      </div>
+
+      <div class="gbsrac-repair-parts-stage" data-aos="fade-left" data-aos-duration="950" data-aos-delay="80">
+        <div class="gbsrac-repair-parts-image">
+          <img src="img/reparaturenbild2.webp" alt="Reparatur und Teilebeschaffung bei Swiss Repairs">
+        </div>
+        <div class="gbsrac-repair-parts-stage-card">
+          <span class="gbsrac-repair-parts-stage-label">Vor dem Einbau</span>
+          <strong>Wir sprechen transparent über Qualität, Aufwand und die beste Lösung für Ihr Fahrzeug.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-cta" id="contact">
+  <div class="gbsrac-cta-container" data-aos="fade-up" data-aos-duration="950">
+    <div class="gbsrac-cta-content">
+      <span class="gbsrac-cta-subtitle">Sie haben Fragen?</span>
+      <h2>Wir beraten Sie gerne.</h2>
+      <div class="gbsrac-cta-line"></div>
+      <p>
+        Sie möchten einen Termin vereinbaren oder eine ehrliche Einschätzung zu
+        Service, Reparatur oder MFK? Dann kontaktieren Sie uns und wir melden
+        uns schnell, klar und unkompliziert zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-cta-actions">
+      <a href="mailto:info@swissrepairs.ch" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">info@swissrepairs.ch</span>
+      </a>
+
+      <a href="tel:+41767672220" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">+41 76 767 22 20</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT FORM SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-contact-form" id="booking">
+  <div class="gbsrac-contact-form-container">
+    <div class="gbsrac-contact-form-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-contact-form-subtitle">Kontakt & Termin buchen</span>
+      <h2>Termin anfragen und schnell eine ehrliche Rückmeldung erhalten.</h2>
+      <div class="gbsrac-contact-form-line"></div>
+      <p>
+        Teilen Sie uns Ihr Anliegen mit und wir melden uns so schnell wie
+        möglich mit einer Einschätzung, einem Terminvorschlag oder den nächsten
+        Schritten zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-contact-form-layout">
+      <div class="gbsrac-contact-form-info" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-contact-form-info-card">
+          <span class="gbsrac-contact-form-info-label">Was Sie erwarten können</span>
+          <ul class="gbsrac-contact-form-info-list">
+            <li>klare Terminplanung statt unnötiger Standzeiten</li>
+            <li>ehrliche Rückmeldung zum Aufwand und zur Dauer</li>
+            <li>faire Preise und saubere Arbeit am Fahrzeug</li>
+          </ul>
+        </div>
+      </div>
+
+      <form
+        class="gbsrac-contact-form-box"
+        action="https://formsubmit.co/info@swissrepairs.ch"
+        method="POST"
+        data-aos="fade-left"
+        data-aos-duration="950"
+      >
+        <input type="hidden" name="_subject" value="Neue Terminanfrage - Swiss Repairs">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="gbsrac-contact-form-grid">
+          <div class="gbsrac-contact-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="+41 ..." required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" placeholder="ihre@email.ch" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="service">Dienstleistung</label>
+            <select id="service" name="service" required>
+              <option value="">Bitte auswählen</option>
+              <option value="Wartung & Service">Wartung & Service</option>
+              <option value="Saisonale Checks">Saisonale Checks</option>
+              <option value="MFK">MFK</option>
+              <option value="Reparaturen">Reparaturen</option>
+              <option value="Reifenservice">Reifenservice</option>
+              <option value="Karosserie & Lack">Karosserie & Lack</option>
+              <option value="Andere Anfrage">Andere Anfrage</option>
+            </select>
+          </div>
+
+          <div class="gbsrac-contact-field gbsrac-contact-field-full">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Beschreiben Sie kurz Ihr Anliegen, Fahrzeug oder Wunschdatum." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="gbsrac-contact-submit">Terminanfrage senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STANDORT SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-location" id="location">
+  <div class="gbsrac-location-container">
+    <div class="gbsrac-location-content" data-aos="fade-up" data-aos-duration="900">
+      <h2>Unser Standort</h2>
+      <div class="gbsrac-location-line"></div>
+
+      <div class="gbsrac-location-details">
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Adresse</span>
+          <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Telefon</span>
+          <p><a href="tel:+41767672220">+41 76 767 22 20</a></p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">E-Mail</span>
+          <p><a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a></p>
+        </div>
+      </div>
+
+      <div class="gbsrac-location-payments">
+        <span class="gbsrac-location-label">Akzeptierte Zahlungsmethoden</span>
+        <ul class="gbsrac-location-payment-list">
+          <li>Debitkarten (Maestro, Debit Master, Debit Visa, V-Pay)</li>
+          <li>Kreditkarten (Mastercard, VISA, American Express)</li>
+          <li>PostCard</li>
+          <li>Bargeld (CHF, EURO)</li>
+          <li>Twint</li>
+        </ul>
+
+        <div class="gbsrac-location-payment-icons">
+          <span class="gbsrac-location-payment-brand"><img src="img/visa.webp" alt="Visa"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/mastercard.webp" alt="Mastercard"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/apple-pay.webp" alt="Apple Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/google-pay.webp" alt="Google Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/twint.webp" alt="Twint"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gbsrac-location-map" data-aos="fade-up" data-aos-duration="950" data-aos-delay="120">
+      <iframe
+        src="https://www.google.com/maps?q=Gaswerkstrasse+8,+8952+Schlieren&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Maps Standort Swiss Repairs"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= FOOTER SWISS REPAIRS ================= -->
+<footer class="gbsrac-footer">
+  <div class="gbsrac-footer-container">
+    <div class="gbsrac-footer-brand">
+      <h2>Über uns</h2>
+      <p>
+        Swiss Repairs steht für saubere Arbeit, faire Preise und ehrliche
+        Rückmeldungen rund ums Fahrzeug. Ob Service, Reparaturen, MFK oder
+        Reifenwechsel - wir arbeiten zuverlässig, persönlich und mit klarer
+        Terminplanung.
+      </p>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Quicklinks</span>
+      <a href="#home">Home</a>
+      <a href="ueberuns.html">Über Uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="#location">Standort</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Unsere Services</span>
+      <a href="wartung.html">Wartung &amp; Service</a>
+      <a href="saison.html">Saisonale Checks</a>
+      <a href="karosserie.html">Karosserie &amp; Lack</a>
+      <a href="reparaturen.html">Reparaturen</a>
+      <a href="mfk.html">MFK</a>
+      <a href="reifen.html">Reifenservice</a>
+      <a href="unfall.html">Unfallschäden</a>
+    </div>
+
+    <div class="gbsrac-footer-column gbsrac-footer-partner">
+      <span class="gbsrac-footer-title">Unser Partner</span>
+      <p class="gbsrac-footer-partner-name">Swiss Rent a Car</p>
+      <p>
+        Swiss Rent a Car in Kloten steht für flexible Mobilität,
+        Fahrzeugvermietung, Transfers und Airport Services - zuverlässig,
+        professionell und schweizweit einsatzbereit.
+      </p>
+      <a href="https://swissrentacar.ch" class="gbsrac-footer-partner-btn" target="_blank" rel="noopener noreferrer">Erfahre mehr</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Kontakt</span>
+      <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+      <a href="tel:+41767672220">+41 76 767 22 20</a>
+      <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a>
+    </div>
+  </div>
+
+  <div class="gbsrac-footer-bottom">
+    <p>&copy; 2026 Swiss Repairs. Alle Rechte vorbehalten.</p>
+    <div class="gbsrac-footer-bottom-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="form-redirect.js"></script>
+
+
+<!-- ================= AOS INIT ================= -->
+<script>
+  window.addEventListener('load', function () {
+    if (!window.AOS) return;
+
+    AOS.init({
+      once: true,
+      offset: 120,
+      easing: 'ease-out-cubic'
+    });
+  });
+</script>
+
+</body>
+</html>

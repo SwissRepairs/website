@@ -1,0 +1,942 @@
+/* ================= SAISON HERO ================= */
+
+.gbsrac-saison-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-saison-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/heros/saison.webp");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.03);
+  filter: saturate(0.95);
+}
+
+.gbsrac-saison-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.18), transparent 26%),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.78) 0%, rgba(7, 7, 7, 0.48) 45%, rgba(7, 7, 7, 0.82) 100%);
+}
+
+.gbsrac-saison-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 7% 70px;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-saison-hero-panel {
+  max-width: 760px;
+  padding: 42px 40px;
+  background: rgba(12, 12, 12, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-saison-hero-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-saison-hero h1 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  color: #ffffff;
+}
+
+.gbsrac-saison-hero-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+  border-radius: 999px;
+}
+
+.gbsrac-saison-hero p {
+  max-width: 620px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-saison-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.gbsrac-saison-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gbsrac-saison-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* ================= SAISON CHECKS ================= */
+
+.gbsrac-saison-checks {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-saison-checks-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-saison-checks-intro {
+  max-width: 860px;
+  margin-bottom: 56px;
+}
+
+.gbsrac-saison-checks-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-saison-checks-intro h2 {
+  margin: 0;
+  max-width: 840px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-saison-checks-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-saison-checks-intro p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-saison-checks-layout {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.gbsrac-saison-checks-visual {
+  position: relative;
+  padding-right: 32px;
+}
+
+.gbsrac-saison-checks-image {
+  position: relative;
+  min-height: 650px;
+  overflow: hidden;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.12);
+}
+
+.gbsrac-saison-checks-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gbsrac-saison-checks-highlight {
+  position: absolute;
+  right: 0;
+  bottom: 38px;
+  max-width: 320px;
+  padding: 26px 24px;
+  background: rgba(16, 16, 16, 0.9);
+  border-top: 4px solid #e30613;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.2);
+}
+
+.gbsrac-saison-checks-highlight-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.gbsrac-saison-checks-highlight strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.gbsrac-saison-checks-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 18px;
+}
+
+.gbsrac-saison-check-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-saison-check-item {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 24px 22px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gbsrac-saison-check-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(227, 6, 19, 0.16);
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.08);
+}
+
+.gbsrac-saison-check-item-main {
+  grid-template-columns: 72px 1fr;
+  padding: 30px 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(246, 246, 246, 0.98) 100%);
+}
+
+.gbsrac-saison-check-item-wide {
+  grid-column: 1 / -1;
+}
+
+.gbsrac-saison-check-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(227, 6, 19, 0.16);
+  border-radius: 50%;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 15px;
+  font-weight: 700;
+  color: #c30410;
+}
+
+.gbsrac-saison-check-item-main .gbsrac-saison-check-number {
+  width: 72px;
+  height: 72px;
+  font-size: 17px;
+}
+
+.gbsrac-saison-check-item h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111111;
+}
+
+.gbsrac-saison-check-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.78;
+  color: #5b5b5b;
+}
+
+/* ================= SAISON SPLIT ================= */
+
+.gbsrac-saison-split {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(227, 6, 19, 0.05), transparent 22%),
+    linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.gbsrac-saison-split-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-saison-split-intro {
+  max-width: 860px;
+  margin-bottom: 56px;
+}
+
+.gbsrac-saison-split-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-saison-split-intro h2 {
+  margin: 0;
+  max-width: 880px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-saison-split-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-saison-split-intro p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-saison-split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.gbsrac-saison-panel {
+  position: relative;
+  min-height: 640px;
+  padding: 42px 40px 36px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.14);
+}
+
+.gbsrac-saison-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.gbsrac-saison-panel::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gbsrac-saison-panel-summer::before {
+  background:
+    radial-gradient(circle at top right, rgba(255, 171, 58, 0.34), transparent 24%),
+    linear-gradient(155deg, rgba(53, 18, 7, 0.92) 0%, rgba(112, 25, 9, 0.86) 46%, rgba(20, 10, 10, 0.96) 100%);
+}
+
+.gbsrac-saison-panel-winter::before {
+  background:
+    radial-gradient(circle at top left, rgba(146, 191, 255, 0.26), transparent 24%),
+    linear-gradient(155deg, rgba(10, 24, 40, 0.95) 0%, rgba(22, 47, 80, 0.84) 48%, rgba(10, 12, 18, 0.98) 100%);
+}
+
+.gbsrac-saison-panel-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  filter: blur(12px);
+  opacity: 0.55;
+  z-index: 0;
+}
+
+.gbsrac-saison-panel-summer .gbsrac-saison-panel-glow {
+  right: -40px;
+  top: -30px;
+  background: radial-gradient(circle, rgba(255, 174, 63, 0.9) 0%, rgba(255, 174, 63, 0.08) 70%);
+}
+
+.gbsrac-saison-panel-winter .gbsrac-saison-panel-glow {
+  left: -46px;
+  top: -36px;
+  background: radial-gradient(circle, rgba(164, 203, 255, 0.85) 0%, rgba(164, 203, 255, 0.08) 70%);
+}
+
+.gbsrac-saison-panel-tag,
+.gbsrac-saison-panel h3,
+.gbsrac-saison-panel p,
+.gbsrac-saison-panel-points {
+  position: relative;
+  z-index: 2;
+}
+
+.gbsrac-saison-panel-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  margin-bottom: 24px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.gbsrac-saison-panel h3 {
+  margin: 0 0 20px;
+  max-width: 480px;
+  font-size: 46px;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  color: #ffffff;
+}
+
+.gbsrac-saison-panel > p {
+  max-width: 500px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.82;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-saison-panel-points {
+  display: grid;
+  gap: 14px;
+}
+
+.gbsrac-saison-panel-point {
+  padding: 18px 18px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.gbsrac-saison-panel-point strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.gbsrac-saison-panel-point span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-saison-hero,
+  .gbsrac-saison-hero-container {
+    min-height: 680px;
+  }
+
+  .gbsrac-saison-hero-panel {
+    max-width: 700px;
+    padding: 36px 34px;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 62px;
+    letter-spacing: -2.1px;
+  }
+
+  .gbsrac-saison-hero p,
+  .gbsrac-saison-checks-intro p,
+  .gbsrac-saison-split-intro p,
+  .gbsrac-saison-panel > p {
+    font-size: 17px;
+    line-height: 1.78;
+  }
+
+  .gbsrac-saison-checks,
+  .gbsrac-saison-split {
+    padding: 108px 0;
+  }
+
+  .gbsrac-saison-checks-container,
+  .gbsrac-saison-split-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-saison-checks-image {
+    min-height: 580px;
+  }
+
+  .gbsrac-saison-panel {
+    min-height: 580px;
+  }
+
+  .gbsrac-saison-panel h3 {
+    font-size: 40px;
+    letter-spacing: -1.4px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-saison-hero,
+  .gbsrac-saison-hero-container {
+    min-height: 660px;
+  }
+
+  .gbsrac-saison-hero-container {
+    padding: 110px 24px 56px;
+  }
+
+  .gbsrac-saison-hero-panel {
+    max-width: 680px;
+    padding: 34px 30px;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .gbsrac-saison-checks,
+  .gbsrac-saison-split {
+    padding: 100px 0;
+  }
+
+  .gbsrac-saison-checks-container,
+  .gbsrac-saison-split-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-saison-checks-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .gbsrac-saison-checks-visual {
+    padding-right: 0;
+  }
+
+  .gbsrac-saison-checks-image {
+    min-height: 520px;
+  }
+
+  .gbsrac-saison-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-saison-panel {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gbsrac-saison-hero,
+  .gbsrac-saison-hero-container {
+    min-height: 620px;
+  }
+
+  .gbsrac-saison-hero-container {
+    padding: 104px 24px 46px;
+  }
+
+  .gbsrac-saison-hero-panel {
+    max-width: 100%;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-saison-checks,
+  .gbsrac-saison-split {
+    padding: 88px 0;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 36px;
+  }
+
+  .gbsrac-saison-checks-image {
+    min-height: 440px;
+  }
+
+  .gbsrac-saison-checks-highlight {
+    bottom: 20px;
+  }
+
+  .gbsrac-saison-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-saison-panel {
+    min-height: 480px;
+  }
+
+  .gbsrac-saison-panel h3 {
+    font-size: 38px;
+    letter-spacing: -1.2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gbsrac-saison-hero,
+  .gbsrac-saison-hero-container {
+    min-height: 580px;
+  }
+
+  .gbsrac-saison-hero-container {
+    padding: 100px 20px 40px;
+  }
+
+  .gbsrac-saison-hero-panel {
+    padding: 28px 22px;
+  }
+
+  .gbsrac-saison-hero-subtitle,
+  .gbsrac-saison-checks-subtitle,
+  .gbsrac-saison-split-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-saison-hero-line,
+  .gbsrac-saison-checks-line,
+  .gbsrac-saison-split-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-saison-hero p,
+  .gbsrac-saison-checks-intro p,
+  .gbsrac-saison-split-intro p,
+  .gbsrac-saison-panel > p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-saison-hero-points span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .gbsrac-saison-checks,
+  .gbsrac-saison-split {
+    padding: 76px 0;
+  }
+
+  .gbsrac-saison-checks-container,
+  .gbsrac-saison-split-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-saison-checks-intro,
+  .gbsrac-saison-split-intro {
+    margin-bottom: 40px;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-saison-checks-image {
+    min-height: 360px;
+  }
+
+  .gbsrac-saison-checks-highlight {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    max-width: none;
+    margin-top: 16px;
+  }
+
+  .gbsrac-saison-checks-stack {
+    gap: 14px;
+    padding-top: 0;
+  }
+
+  .gbsrac-saison-check-item {
+    padding: 20px 18px;
+    grid-template-columns: 48px 1fr;
+    gap: 14px;
+  }
+
+  .gbsrac-saison-check-item-main {
+    grid-template-columns: 58px 1fr;
+    padding: 24px 20px;
+  }
+
+  .gbsrac-saison-check-number {
+    width: 48px;
+    height: 48px;
+  }
+
+  .gbsrac-saison-check-item-main .gbsrac-saison-check-number {
+    width: 58px;
+    height: 58px;
+    font-size: 15px;
+  }
+
+  .gbsrac-saison-check-item h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-saison-panel {
+    min-height: 0;
+    padding: 30px 22px 24px;
+  }
+
+  .gbsrac-saison-panel::after {
+    inset: 12px;
+  }
+
+  .gbsrac-saison-panel-glow {
+    width: 160px;
+    height: 160px;
+  }
+
+  .gbsrac-saison-panel-tag {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .gbsrac-saison-panel h3 {
+    font-size: 32px;
+    line-height: 1.05;
+  }
+
+  .gbsrac-saison-panel-point {
+    padding: 16px 14px;
+  }
+
+  .gbsrac-saison-panel-point strong {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-saison-hero,
+  .gbsrac-saison-hero-container {
+    min-height: 540px;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 36px;
+  }
+
+  .gbsrac-saison-checks,
+  .gbsrac-saison-split {
+    padding: 66px 0;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 28px;
+  }
+
+  .gbsrac-saison-checks-image {
+    min-height: 300px;
+  }
+
+  .gbsrac-saison-check-item,
+  .gbsrac-saison-check-item-main {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-saison-check-number,
+  .gbsrac-saison-check-item-main .gbsrac-saison-check-number {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gbsrac-saison-panel h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-saison-hero-container,
+  .gbsrac-saison-checks-container,
+  .gbsrac-saison-split-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-saison-hero-container {
+    padding: 92px 16px 34px;
+  }
+
+  .gbsrac-saison-hero-panel {
+    padding: 24px 18px;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-saison-hero p,
+  .gbsrac-saison-checks-intro p,
+  .gbsrac-saison-split-intro p,
+  .gbsrac-saison-panel > p,
+  .gbsrac-saison-check-item p {
+    font-size: 15px;
+  }
+
+  .gbsrac-saison-hero-points span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 26px;
+  }
+
+  .gbsrac-saison-check-item,
+  .gbsrac-saison-check-item-main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-saison-panel {
+    padding: 24px 18px 20px;
+  }
+
+  .gbsrac-saison-panel h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-saison-hero,
+  .gbsrac-saison-hero-container {
+    min-height: 500px;
+  }
+
+  .gbsrac-saison-hero h1 {
+    font-size: 28px;
+  }
+
+  .gbsrac-saison-hero-subtitle,
+  .gbsrac-saison-checks-subtitle,
+  .gbsrac-saison-split-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-saison-checks-intro h2,
+  .gbsrac-saison-split-intro h2 {
+    font-size: 23px;
+  }
+
+  .gbsrac-saison-check-item h3 {
+    font-size: 20px;
+  }
+
+  .gbsrac-saison-panel h3 {
+    font-size: 23px;
+  }
+}

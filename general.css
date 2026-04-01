@@ -1,0 +1,73 @@
+/*font etc*/
+
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ===== ROOT COLORS ===== */
+:root {
+  --primary-dark: #4a4a4a;
+  --primary-green: #2fa37b;
+  --primary-green-dark: #24906c;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --section-bg: #f9fafb;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== GLOBAL CONTAINER ===== */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   GLOBAL BACKGROUND SYSTEM
+========================================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9; /* EIN einheitlicher Hintergrund */
+}
+
+main,
+header,
+section,
+footer {
+  max-width: 100%;
+}
+
+/* Alle Sections bekommen KEIN eigenes Background */
+section {
+  background: transparent;
+}
+
+/* Keep animated sections visible even if AOS does not load. */
+[data-aos] {
+  opacity: 1;
+  visibility: visible;
+}

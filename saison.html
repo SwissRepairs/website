@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/webp" href="img/favicon-3/favicon.webp">
+  <link rel="icon" type="image/webp" sizes="96x96" href="img/favicon-3/favicon-96x96.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-3/apple-touch-icon.webp">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <title>Saisoncheck Schlieren | Swiss Repairs</title>
+  <meta name="description" content="Saisonale Fahrzeugchecks in Schlieren für Sommer und Winter. Reifen, Batterie und Flüssigkeiten rechtzeitig bei Swiss Repairs prüfen lassen.">
+  <meta name="keywords" content="Saisoncheck Schlieren, Wintercheck Auto Schlieren, Sommercheck Schlieren, Fahrzeugcheck Schlieren, Batteriecheck Schlieren, Flüssigkeiten prüfen Auto, Swiss Repairs Saisoncheck, Garage Zürich Check">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Swiss Repairs">
+  <meta name="geo.region" content="CH-ZH">
+  <meta name="geo.placename" content="Schlieren">
+  <link rel="canonical" href="https://www.swissrepairs.ch/saison.html">
+  <meta property="og:title" content="Saisoncheck Schlieren | Swiss Repairs">
+  <meta property="og:description" content="Sommer- und Winterchecks in Schlieren für mehr Sicherheit und weniger Ausfälle. Jetzt Termin anfragen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.swissrepairs.ch/saison.html">
+  <meta property="og:image" content="https://www.swissrepairs.ch/img/heros/saison.webp">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="Swiss Repairs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saisoncheck Schlieren | Swiss Repairs">
+  <meta name="twitter:description" content="Fahrzeugcheck für Sommer und Winter in Schlieren. Jetzt bei Swiss Repairs anfragen.">
+  <meta name="twitter:image" content="https://www.swissrepairs.ch/img/heros/saison.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="saison.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Saisonale Checks | Swiss Repairs",
+      "url": "https://www.swissrepairs.ch/saison.html",
+      "description": "Saisonale Fahrzeugchecks für Sommer und Winter in Schlieren.",
+      "about": {
+        "@type": "Service",
+        "name": "Saisonale Checks"
+      }
+    }
+  </script>
+</head>
+<body>
+
+<!-- ================= NAVBAR SWISS REPAIRS ================= -->
+<header class="gbsrac-navbar" id="home">
+  <div class="gbsrac-navbar-container">
+    <a href="index.html" class="gbsrac-navbar-brand">
+      <img src="img/Swiss Repairs Logo.webp" alt="Swiss Repairs Logo">
+    </a>
+
+    <button class="gbsrac-navbar-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gbsrac-navbar-menu">
+      <a href="index.html" class="gbsrac-navbar-link">Home</a>
+
+      <div class="gbsrac-navbar-dropdown">
+        <a href="index.html#services" class="gbsrac-navbar-link">Services</a>
+        <div class="gbsrac-navbar-dropdown-menu">
+          <a href="wartung.html">Wartung &amp; Service</a>
+          <a href="saison.html">Saisonale Checks</a>
+          <a href="mfk.html">MFK</a>
+          <a href="reparaturen.html">Reparaturen</a>
+          <a href="karosserie.html">Karosserie &amp; Lack</a>
+          <a href="unfall.html">Unfallschäden</a>
+          <a href="reifen.html">Reifenservice</a>
+        </div>
+      </div>
+
+      <a href="ueberuns.html" class="gbsrac-navbar-link">Über Uns</a>
+      <a href="kontakt.html" class="gbsrac-navbar-link">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".gbsrac-navbar");
+  const navbarToggle = document.querySelector(".gbsrac-navbar-toggle");
+  const navbarLinks = document.querySelectorAll(".gbsrac-navbar-menu a");
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    navbar.classList.toggle("is-scrolled", window.scrollY > 30);
+  }
+
+  if (navbar && navbarToggle) {
+    navbarToggle.addEventListener("click", function () {
+      const isOpen = navbar.classList.toggle("is-open");
+      navbarToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbar.classList.remove("is-open");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+});
+</script>
+
+<!-- ================= HERO SECTION SAISONALE CHECKS ================= -->
+<section class="gbsrac-saison-hero">
+  <div class="gbsrac-saison-hero-bg"></div>
+  <div class="gbsrac-saison-hero-overlay"></div>
+
+  <div class="gbsrac-saison-hero-container">
+    <div class="gbsrac-saison-hero-panel" data-aos="fade-up" data-aos-duration="950">
+      <span class="gbsrac-saison-hero-subtitle">Dienstleistung</span>
+      <h1>Saisonale Checks</h1>
+      <div class="gbsrac-saison-hero-line"></div>
+      <p>
+        Ob Sommer oder Winter: Mit einem sauberen saisonalen Check bleibt Ihr
+        Fahrzeug sicher, zuverlässig und bereit für wechselnde Bedingungen.
+        Wir prüfen die wichtigsten Punkte rechtzeitig und geben klare
+        Rückmeldung, was wirklich nötig ist. Für Saisonchecks in Schlieren und
+        im Raum Zürich prüfen wir Ihr Fahrzeug rechtzeitig vor Sommer- oder
+        Wintereinsätzen.
+      </p>
+
+      <div class="gbsrac-saison-hero-points">
+        <span>Wintercheck &amp; Sommercheck</span>
+        <span>Reifen, Batterie &amp; Flüssigkeiten</span>
+        <span>Ehrliche Kontrolle ohne unnötige Arbeiten</span>
+      </div>
+
+      <div class="gbsrac-saison-hero-actions">
+        <a href="kontakt.html#booking" class="gbsrac-btn gbsrac-btn-primary">Termin anfragen</a>
+        <a href="index.html#services" class="gbsrac-btn gbsrac-btn-secondary">Alle Dienstleistungen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAISON CHECKS SECTION ================= -->
+<section class="gbsrac-saison-checks">
+  <div class="gbsrac-saison-checks-container">
+    <div class="gbsrac-saison-checks-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-saison-checks-subtitle">Was wird geprüft</span>
+      <h2>Die wichtigsten Punkte für eine sichere und entspannte Saison.</h2>
+      <div class="gbsrac-saison-checks-line"></div>
+      <p>
+        Beim saisonalen Check schauen wir nicht einfach nur oberflächlich hin.
+        Wir prüfen genau die Bereiche, die bei Wetterwechsel, Temperatur-
+        schwankungen und saisonaler Belastung besonders wichtig sind.
+      </p>
+    </div>
+
+    <div class="gbsrac-saison-checks-layout">
+      <div class="gbsrac-saison-checks-visual" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-saison-checks-image">
+          <img src="img/saisonbild.webp" alt="Saisonaler Fahrzeugcheck bei Swiss Repairs">
+        </div>
+        <div class="gbsrac-saison-checks-highlight">
+          <span class="gbsrac-saison-checks-highlight-label">Saison-Check</span>
+          <strong>Prüfung mit ehrlicher Rückmeldung statt unnötigen Zusatzarbeiten.</strong>
+        </div>
+      </div>
+
+      <div class="gbsrac-saison-checks-stack" data-aos="fade-left" data-aos-duration="950" data-aos-delay="80">
+        <article class="gbsrac-saison-check-item gbsrac-saison-check-item-main">
+          <span class="gbsrac-saison-check-number">01</span>
+          <div>
+            <h3>Reifen &amp; Reifendruck</h3>
+            <p>Profil, Zustand, Luftdruck und allgemeine Eignung für die kommende Saison werden kontrolliert.</p>
+          </div>
+        </article>
+
+        <div class="gbsrac-saison-check-grid">
+          <article class="gbsrac-saison-check-item">
+            <span class="gbsrac-saison-check-number">02</span>
+            <div>
+              <h3>Batterie</h3>
+              <p>Gerade bei kälteren Temperaturen oder längeren Standzeiten prüfen wir Leistung und Zustand.</p>
+            </div>
+          </article>
+
+          <article class="gbsrac-saison-check-item">
+            <span class="gbsrac-saison-check-number">03</span>
+            <div>
+              <h3>Flüssigkeiten</h3>
+              <p>Kühlmittel, Scheibenwaschanlage und weitere wichtige Flüssigkeiten werden gecheckt und bei Bedarf ergänzt.</p>
+            </div>
+          </article>
+
+          <article class="gbsrac-saison-check-item">
+            <span class="gbsrac-saison-check-number">04</span>
+            <div>
+              <h3>Beleuchtung</h3>
+              <p>Abblendlicht, Bremslicht, Blinker und weitere Leuchten werden für gute Sicht und Sicherheit kontrolliert.</p>
+            </div>
+          </article>
+
+          <article class="gbsrac-saison-check-item">
+            <span class="gbsrac-saison-check-number">05</span>
+            <div>
+              <h3>Wischer &amp; Sicht</h3>
+              <p>Wischerblätter, Sichtfeld und saubere Funktion werden besonders für Regen, Kälte und Schmutz geprüft.</p>
+            </div>
+          </article>
+
+          <article class="gbsrac-saison-check-item gbsrac-saison-check-item-wide">
+            <span class="gbsrac-saison-check-number">06</span>
+            <div>
+              <h3>Bremsen &amp; allgemeiner Sicherheitscheck</h3>
+              <p>Wir werfen auch einen Blick auf sicherheitsrelevante Komponenten, damit Ihr Fahrzeug nicht nur saisonal, sondern insgesamt fit bleibt.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOMMER WINTER SECTION ================= -->
+<section class="gbsrac-saison-split">
+  <div class="gbsrac-saison-split-container">
+    <div class="gbsrac-saison-split-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-saison-split-subtitle">Sommercheck / Wintercheck</span>
+      <h2>Zwei Jahreszeiten, zwei Anforderungen, ein sauber geplanter Check.</h2>
+      <div class="gbsrac-saison-split-line"></div>
+      <p>
+        Je nach Saison ändern sich Belastung, Temperaturen und Risiken. Darum
+        prüfen wir nicht einfach immer dasselbe, sondern achten gezielt auf die
+        Punkte, die für Sommer oder Winter wirklich entscheidend sind.
+      </p>
+    </div>
+
+    <div class="gbsrac-saison-split-grid">
+      <article class="gbsrac-saison-panel gbsrac-saison-panel-summer" data-aos="fade-up" data-aos-duration="950">
+        <div class="gbsrac-saison-panel-glow"></div>
+        <span class="gbsrac-saison-panel-tag">Sommercheck</span>
+        <h3>Fit für Hitze, lange Fahrten und volle Performance.</h3>
+        <p>
+          Im Sommer stehen hohe Temperaturen, längere Strecken und eine starke
+          Belastung von Reifen, Kühlung und Klimasystem im Fokus.
+        </p>
+
+        <div class="gbsrac-saison-panel-points">
+          <div class="gbsrac-saison-panel-point">
+            <strong>Reifen & Druck</strong>
+            <span>passend für warme Strassen und stabile Fahreigenschaften</span>
+          </div>
+          <div class="gbsrac-saison-panel-point">
+            <strong>Kühlmittel & Temperatur</strong>
+            <span>wichtig bei Hitze, Stau und längeren Fahrten</span>
+          </div>
+          <div class="gbsrac-saison-panel-point">
+            <strong>Klimaanlage & Sicht</strong>
+            <span>für Komfort, klare Scheiben und entspanntes Fahren</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="gbsrac-saison-panel gbsrac-saison-panel-winter" data-aos="fade-up" data-aos-duration="950" data-aos-delay="120">
+        <div class="gbsrac-saison-panel-glow"></div>
+        <span class="gbsrac-saison-panel-tag">Wintercheck</span>
+        <h3>Bereit für Kälte, Nässe und sichere Kontrolle im Alltag.</h3>
+        <p>
+          Im Winter prüfen wir besonders die Komponenten, die bei tiefen
+          Temperaturen, Dunkelheit und schwierigen Strassenverhältnissen
+          entscheidend sind.
+        </p>
+
+        <div class="gbsrac-saison-panel-points">
+          <div class="gbsrac-saison-panel-point">
+            <strong>Batterie & Startverhalten</strong>
+            <span>entscheidend bei kalten Morgen und kurzen Fahrten</span>
+          </div>
+          <div class="gbsrac-saison-panel-point">
+            <strong>Licht & Wischer</strong>
+            <span>für gute Sicht bei Regen, Schnee und Dunkelheit</span>
+          </div>
+          <div class="gbsrac-saison-panel-point">
+            <strong>Wintertauglichkeit</strong>
+            <span>Reifen, Flüssigkeiten und Funktion für sichere Fahrten</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-cta" id="contact">
+  <div class="gbsrac-cta-container" data-aos="fade-up" data-aos-duration="950">
+    <div class="gbsrac-cta-content">
+      <span class="gbsrac-cta-subtitle">Sie haben Fragen?</span>
+      <h2>Wir beraten Sie gerne.</h2>
+      <div class="gbsrac-cta-line"></div>
+      <p>
+        Sie möchten einen Termin vereinbaren oder eine ehrliche Einschätzung zu
+        Service, Reparatur oder MFK? Dann kontaktieren Sie uns und wir melden
+        uns schnell, klar und unkompliziert zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-cta-actions">
+      <a href="mailto:info@swissrepairs.ch" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">info@swissrepairs.ch</span>
+      </a>
+
+      <a href="tel:+41767672220" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">+41 76 767 22 20</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT FORM SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-contact-form" id="booking">
+  <div class="gbsrac-contact-form-container">
+    <div class="gbsrac-contact-form-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-contact-form-subtitle">Kontakt & Termin buchen</span>
+      <h2>Termin anfragen und schnell eine ehrliche Rückmeldung erhalten.</h2>
+      <div class="gbsrac-contact-form-line"></div>
+      <p>
+        Teilen Sie uns Ihr Anliegen mit und wir melden uns so schnell wie
+        möglich mit einer Einschätzung, einem Terminvorschlag oder den nächsten
+        Schritten zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-contact-form-layout">
+      <div class="gbsrac-contact-form-info" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-contact-form-info-card">
+          <span class="gbsrac-contact-form-info-label">Was Sie erwarten können</span>
+          <ul class="gbsrac-contact-form-info-list">
+            <li>klare Terminplanung statt unnötiger Standzeiten</li>
+            <li>ehrliche Rückmeldung zum Aufwand und zur Dauer</li>
+            <li>faire Preise und saubere Arbeit am Fahrzeug</li>
+          </ul>
+        </div>
+      </div>
+
+      <form
+        class="gbsrac-contact-form-box"
+        action="https://formsubmit.co/info@swissrepairs.ch"
+        method="POST"
+        data-aos="fade-left"
+        data-aos-duration="950"
+      >
+        <input type="hidden" name="_subject" value="Neue Terminanfrage - Swiss Repairs">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="gbsrac-contact-form-grid">
+          <div class="gbsrac-contact-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="+41 ..." required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" placeholder="ihre@email.ch" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="service">Dienstleistung</label>
+            <select id="service" name="service" required>
+              <option value="">Bitte auswählen</option>
+              <option value="Wartung & Service">Wartung & Service</option>
+              <option value="Saisonale Checks">Saisonale Checks</option>
+              <option value="MFK">MFK</option>
+              <option value="Reparaturen">Reparaturen</option>
+              <option value="Reifenservice">Reifenservice</option>
+              <option value="Karosserie & Lack">Karosserie & Lack</option>
+              <option value="Andere Anfrage">Andere Anfrage</option>
+            </select>
+          </div>
+
+          <div class="gbsrac-contact-field gbsrac-contact-field-full">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Beschreiben Sie kurz Ihr Anliegen, Fahrzeug oder Wunschdatum." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="gbsrac-contact-submit">Terminanfrage senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STANDORT SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-location" id="location">
+  <div class="gbsrac-location-container">
+    <div class="gbsrac-location-content" data-aos="fade-up" data-aos-duration="900">
+      <h2>Unser Standort</h2>
+      <div class="gbsrac-location-line"></div>
+
+      <div class="gbsrac-location-details">
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Adresse</span>
+          <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Telefon</span>
+          <p><a href="tel:+41767672220">+41 76 767 22 20</a></p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">E-Mail</span>
+          <p><a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a></p>
+        </div>
+      </div>
+
+      <div class="gbsrac-location-payments">
+        <span class="gbsrac-location-label">Akzeptierte Zahlungsmethoden</span>
+        <ul class="gbsrac-location-payment-list">
+          <li>Debitkarten (Maestro, Debit Master, Debit Visa, V-Pay)</li>
+          <li>Kreditkarten (Mastercard, VISA, American Express)</li>
+          <li>PostCard</li>
+          <li>Bargeld (CHF, EURO)</li>
+          <li>Twint</li>
+        </ul>
+
+        <div class="gbsrac-location-payment-icons">
+          <span class="gbsrac-location-payment-brand"><img src="img/visa.webp" alt="Visa"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/mastercard.webp" alt="Mastercard"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/apple-pay.webp" alt="Apple Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/google-pay.webp" alt="Google Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/twint.webp" alt="Twint"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gbsrac-location-map" data-aos="fade-up" data-aos-duration="950" data-aos-delay="120">
+      <iframe
+        src="https://www.google.com/maps?q=Gaswerkstrasse+8,+8952+Schlieren&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Maps Standort Swiss Repairs"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-faq" id="faq">
+  <div class="gbsrac-faq-container">
+    <div class="gbsrac-faq-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-faq-subtitle">FAQ</span>
+      <h2>Häufige Fragen</h2>
+      <div class="gbsrac-faq-line"></div>
+    </div>
+
+    <div class="gbsrac-faq-list" data-aos="fade-up" data-aos-duration="950" data-aos-delay="100">
+      <article class="gbsrac-faq-item is-open">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="true">
+          <span>Wie schnell bekomme ich einen Termin?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Je nach Aufwand und Auslastung oft kurzfristig. Wir geben Ihnen so schnell wie möglich eine ehrliche Rückmeldung zum nächsten freien Termin.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Machen Sie auch MFK-Vorbereitungen?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir bereiten Ihr Fahrzeug für die MFK vor und prüfen im Voraus, welche Arbeiten sinnvoll oder notwendig sind.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Wird mein Auto einfach abgestellt oder direkt eingeplant?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Wir arbeiten mit Terminplanung, damit Fahrzeuge nicht unnötig bei uns stehen. Unser Ziel sind klare Abläufe und möglichst kurze Standzeiten.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Was passiert, wenn eine Arbeit länger dauert als geplant?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Dann informieren wir Sie offen und frühzeitig. Sie erhalten von uns eine ehrliche Einschätzung zur Verzögerung und zum neuen Fertigstellungstermin.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Bieten Sie auch Reifenwechsel und saisonale Checks an?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir übernehmen Reifenwechsel, saisonale Kontrollen und prüfen auf Wunsch auch Bremsen, Batterie, Flüssigkeiten und allgemeine Sicherheitspunkte.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Erhalte ich vor der Reparatur eine Rückmeldung zu den Kosten?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir legen Wert auf faire Preise und Transparenz. Bevor grössere Arbeiten ausgeführt werden, informieren wir Sie über den Aufwand und die voraussichtlichen Kosten.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Arbeiten Sie markenunabhängig?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir betreuen Fahrzeuge verschiedener Marken und richten uns nach dem tatsächlichen Bedarf Ihres Fahrzeugs, nicht nach unnötigen Zusatzarbeiten.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Kann ich mein Fahrzeug auch für kleinere Probleme vorbeibringen?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Auch bei kleineren Anliegen wie Warnlampen, Geräuschen, Batterieproblemen oder kurzen Kontrollen können Sie sich bei uns melden und einen Termin vereinbaren.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Welche Zahlungsmethoden akzeptieren Sie?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Wir akzeptieren Debitkarten, Kreditkarten, PostCard, Bargeld in CHF oder Euro sowie Twint. Die genauen Zahlungsarten finden Sie auch im Standortbereich.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Kann ich einen Termin auch per Telefon oder E-Mail anfragen?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Sie können uns telefonisch, per E-Mail oder über das Formular auf der Website kontaktieren. Wir melden uns so schnell wie möglich zurück.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER SWISS REPAIRS ================= -->
+<footer class="gbsrac-footer">
+  <div class="gbsrac-footer-container">
+    <div class="gbsrac-footer-brand">
+      <h2>Über uns</h2>
+      <p>
+        Swiss Repairs steht für saubere Arbeit, faire Preise und ehrliche
+        Rückmeldungen rund ums Fahrzeug. Ob Service, Reparaturen, MFK oder
+        Reifenwechsel - wir arbeiten zuverlässig, persönlich und mit klarer
+        Terminplanung.
+      </p>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Quicklinks</span>
+      <a href="index.html">Home</a>
+      <a href="ueberuns.html">Über Uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="index.html#location">Standort</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Unsere Services</span>
+      <a href="wartung.html">Wartung &amp; Service</a>
+      <a href="saison.html">Saisonale Checks</a>
+      <a href="karosserie.html">Karosserie &amp; Lack</a>
+      <a href="reparaturen.html">Reparaturen</a>
+      <a href="mfk.html">MFK</a>
+      <a href="reifen.html">Reifenservice</a>
+      <a href="unfall.html">Unfallschäden</a>
+    </div>
+
+    <div class="gbsrac-footer-column gbsrac-footer-partner">
+      <span class="gbsrac-footer-title">Unser Partner</span>
+      <p class="gbsrac-footer-partner-name">Swiss Rent a Car</p>
+      <p>
+        Swiss Rent a Car in Kloten steht für flexible Mobilität,
+        Fahrzeugvermietung, Transfers und Airport Services - zuverlässig,
+        professionell und schweizweit einsatzbereit.
+      </p>
+      <a href="https://swissrentacar.ch" class="gbsrac-footer-partner-btn" target="_blank" rel="noopener noreferrer">Erfahre mehr</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Kontakt</span>
+      <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+      <a href="tel:+41767672220">+41 76 767 22 20</a>
+      <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a>
+    </div>
+  </div>
+
+  <div class="gbsrac-footer-bottom">
+    <p>&copy; 2026 Swiss Repairs. Alle Rechte vorbehalten.</p>
+    <div class="gbsrac-footer-bottom-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="form-redirect.js"></script>
+
+<script>
+  window.addEventListener('load', function () {
+    if (!window.AOS) return;
+
+    AOS.init({
+      once: true,
+      offset: 120,
+      easing: "ease-out-cubic"
+    });
+  });
+</script>
+
+</body>
+</html>

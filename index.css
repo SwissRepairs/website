@@ -1,0 +1,3123 @@
+/* ================= NAVBAR ================= */
+
+.gbsrac-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 22px 0;
+  font-family: 'Inter', sans-serif;
+  transition: padding 0.28s ease, background 0.28s ease, box-shadow 0.28s ease, backdrop-filter 0.28s ease;
+}
+
+.gbsrac-navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.gbsrac-navbar.is-scrolled {
+  padding: 14px 0;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 0 22px rgba(227, 6, 19, 0.16);
+  transition: opacity 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease;
+}
+
+.gbsrac-navbar-brand img {
+  display: block;
+  height: 112px;
+  width: auto;
+  transition: height 0.28s ease;
+}
+
+.gbsrac-navbar.is-scrolled .gbsrac-navbar-brand img {
+  height: 84px;
+}
+
+.gbsrac-navbar-brand:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  text-shadow: 0 0 28px rgba(227, 6, 19, 0.24);
+}
+
+.gbsrac-navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.gbsrac-navbar-toggle {
+  display: none;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.gbsrac-navbar-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 5px auto;
+  background: #ffffff;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.gbsrac-navbar-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  transition: color 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.gbsrac-navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #e30613 0%, #ffffff 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.gbsrac-navbar-link:hover {
+  color: #ffffff;
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.gbsrac-navbar-link:hover::after {
+  transform: scaleX(1);
+}
+
+.gbsrac-navbar-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-navbar-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 280px;
+  padding: 14px;
+  display: grid;
+  gap: 6px;
+  background: rgba(18, 18, 18, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid rgba(227, 6, 19, 0.68);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.gbsrac-navbar-dropdown:hover .gbsrac-navbar-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.gbsrac-navbar-dropdown-menu a {
+  position: relative;
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.84);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.gbsrac-navbar-dropdown-menu a:hover {
+  background: rgba(227, 6, 19, 0.12);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* ================= OFFERTE SECTION ================= */
+
+.gbsrac-contactpage-offer {
+  padding: 110px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-contactpage-offer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-contactpage-offer-intro {
+  max-width: 820px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.gbsrac-contactpage-offer-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  background: rgba(227, 6, 19, 0.05);
+  color: #c30410;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gbsrac-contactpage-offer-intro h2 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px auto 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-contactpage-offer-intro p,
+.gbsrac-contactpage-offer-panel-head p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.82;
+  color: #595959;
+}
+
+.gbsrac-contactpage-offer-form {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.08);
+  padding: 34px 32px;
+}
+
+.gbsrac-contactpage-offer-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.gbsrac-contactpage-offer-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: #f4f4f4;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  color: #5a5a5a;
+  transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.gbsrac-contactpage-offer-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(227, 6, 19, 0.08);
+  color: #c30410;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.gbsrac-contactpage-offer-step strong {
+  font-size: 16px;
+  color: inherit;
+}
+
+.gbsrac-contactpage-offer-step.is-active,
+.gbsrac-contactpage-offer-step.is-complete {
+  background: rgba(227, 6, 19, 0.04);
+  border-color: rgba(227, 6, 19, 0.18);
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-panel {
+  display: none;
+}
+
+.gbsrac-contactpage-offer-panel.is-active {
+  display: block;
+}
+
+.gbsrac-contactpage-offer-panel-head {
+  margin-bottom: 24px;
+}
+
+.gbsrac-contactpage-offer-kicker {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-contactpage-offer-panel-head h3 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.08;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-categories,
+.gbsrac-contactpage-offer-options,
+.gbsrac-contactpage-offer-summary {
+  display: grid;
+  gap: 14px;
+}
+
+.gbsrac-contactpage-offer-categories {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gbsrac-contactpage-offer-category,
+.gbsrac-contactpage-offer-option,
+.gbsrac-contactpage-offer-summary-card {
+  padding: 18px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #fbfbfb;
+}
+
+.gbsrac-contactpage-offer-category {
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-contactpage-offer-category strong,
+.gbsrac-contactpage-offer-summary-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-category span,
+.gbsrac-contactpage-offer-summary-card span,
+.gbsrac-contactpage-offer-empty {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5d5d5d;
+}
+
+.gbsrac-contactpage-offer-category:hover,
+.gbsrac-contactpage-offer-category.is-selected {
+  transform: translateY(-2px);
+  border-color: rgba(227, 6, 19, 0.22);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.gbsrac-contactpage-offer-category.is-selected {
+  background: rgba(227, 6, 19, 0.04);
+}
+
+.gbsrac-contactpage-offer-options {
+  margin-bottom: 22px;
+}
+
+.gbsrac-contactpage-offer-option-group {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #ffffff;
+}
+
+.gbsrac-contactpage-offer-option-group-title {
+  padding: 14px 18px;
+  background: rgba(17, 17, 17, 0.04);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-option-group-list {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+}
+
+.gbsrac-contactpage-offer-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.gbsrac-contactpage-offer-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: #e30613;
+}
+
+.gbsrac-contactpage-offer-option span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-option small {
+  display: block;
+  margin-left: auto;
+  padding-left: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #c30410;
+  text-align: right;
+}
+
+.gbsrac-contactpage-offer-pricebox {
+  margin-bottom: 22px;
+  padding: 24px 22px;
+  background: linear-gradient(135deg, rgba(227, 6, 19, 0.08) 0%, rgba(127, 13, 20, 0.04) 100%);
+  border: 1px solid rgba(227, 6, 19, 0.14);
+}
+
+.gbsrac-contactpage-offer-price-label {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-contactpage-offer-pricebox strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-pricebox span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #575757;
+}
+
+.gbsrac-contactpage-offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-contactpage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gbsrac-contactpage-field-full {
+  grid-column: 1 / -1;
+}
+
+.gbsrac-contactpage-field label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.gbsrac-contactpage-field-help {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6a6a6a;
+}
+
+.gbsrac-contactpage-field input,
+.gbsrac-contactpage-field textarea {
+  width: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: #ffffff;
+  padding: 15px 16px;
+  font: inherit;
+  font-size: 15px;
+  color: #1f1f1f;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-contactpage-field input:focus,
+.gbsrac-contactpage-field textarea:focus {
+  border-color: rgba(227, 6, 19, 0.36);
+  box-shadow: 0 0 0 4px rgba(227, 6, 19, 0.08);
+}
+
+.gbsrac-contactpage-field input[type="file"] {
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.gbsrac-contactpage-offer-summary {
+  margin-bottom: 22px;
+}
+
+.gbsrac-contactpage-offer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.gbsrac-contactpage-offer-back,
+.gbsrac-contactpage-offer-next,
+.gbsrac-contactpage-offer-submit {
+  min-height: 56px;
+  padding: 14px 28px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.gbsrac-contactpage-offer-back {
+  background: #f1f1f1;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-next,
+.gbsrac-contactpage-offer-submit {
+  background: #e30613;
+  color: #ffffff;
+}
+
+.gbsrac-contactpage-offer-back:hover,
+.gbsrac-contactpage-offer-next:hover,
+.gbsrac-contactpage-offer-submit:hover {
+  transform: translateY(-2px);
+}
+
+.gbsrac-contactpage-offer-next:hover,
+.gbsrac-contactpage-offer-submit:hover {
+  background: #bf0712;
+}
+
+.gbsrac-contactpage-offer-back:hover {
+  background: #e5e5e5;
+}
+
+/* ================= HERO SECTION ================= */
+
+.gbsrac-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(227, 6, 19, 0.2), transparent 30%),
+    linear-gradient(90deg, rgba(8, 8, 8, 0.78) 0%, rgba(8, 8, 8, 0.38) 42%, rgba(8, 8, 8, 0.7) 100%);
+  z-index: 1;
+}
+
+/* ===== BACKGROUND IMAGE ===== */
+
+.gbsrac-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/heros/hero.webp");
+  background-size: cover;
+  background-position: center center;
+  filter: blur(1px);
+  transform: scale(1.04);
+}
+
+/* ===== DARK OVERLAY ===== */
+
+.gbsrac-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+
+/* ===== CONTENT CONTAINER ===== */
+
+.gbsrac-hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 100px 7% 70px;
+}
+
+/* ===== ANGLED SHAPE ===== */
+
+.gbsrac-hero-shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 58%;
+  background:
+    linear-gradient(180deg, rgba(28, 28, 28, 0.74) 0%, rgba(14, 14, 14, 0.92) 100%);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  clip-path: polygon(20% 0,100% 0,100% 100%,0% 100%);
+  backdrop-filter: blur(8px);
+}
+
+.gbsrac-hero-shape::after {
+  content: "";
+  position: absolute;
+  inset: 26px 26px 26px 90px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  clip-path: polygon(16% 0,100% 0,100% 100%,0% 100%);
+  pointer-events: none;
+}
+
+/* ===== TEXT ===== */
+
+.gbsrac-hero-text {
+  position: relative;
+  max-width: 620px;
+  color: white;
+  z-index: 2;
+}
+
+.gbsrac-hero-subtitle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-hero-text h1 {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -3px;
+  margin: 0 0 14px;
+}
+
+.gbsrac-hero-line {
+  width: 128px;
+  height: 4px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+  border-radius: 999px;
+  margin: 28px 0;
+}
+
+.gbsrac-hero-text p {
+  max-width: 560px;
+  font-size: 19px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 40px;
+}
+
+/* ===== BUTTONS ===== */
+
+.gbsrac-hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.gbsrac-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 16px 34px;
+  clip-path: polygon(8% 0,100% 0,92% 100%,0% 100%);
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+}
+
+/* primary red */
+
+.gbsrac-btn-primary {
+  background: linear-gradient(135deg, #e30613 0%, #920b14 100%);
+  color: white;
+  box-shadow: 0 18px 36px rgba(146, 11, 20, 0.34);
+}
+
+/* secondary */
+
+.gbsrac-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+}
+
+/* hover */
+
+.gbsrac-btn:hover {
+  transform: translateY(-2px);
+}
+
+.gbsrac-btn-primary:hover {
+  box-shadow: 0 22px 42px rgba(146, 11, 20, 0.42);
+}
+
+.gbsrac-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+
+
+
+/* ================= UEBER UNS SECTION SWISS REPAIRS ================= */
+
+.gbsrac-about {
+  position: relative;
+  padding: 140px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.06), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.gbsrac-about-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.gbsrac-about-image {
+  position: relative;
+  min-height: 680px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.16);
+  background: #111111;
+}
+
+.gbsrac-about-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.32) 100%
+  );
+  z-index: 1;
+}
+
+.gbsrac-about-image::after {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 22px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gbsrac-about-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+}
+
+.gbsrac-about-content {
+  position: relative;
+  color: #161616;
+}
+
+.gbsrac-about-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-about-content h2 {
+  margin: 0;
+  max-width: 680px;
+  font-size: 54px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  color: #111111;
+}
+
+.gbsrac-about-line {
+  width: 120px;
+  height: 4px;
+  margin: 28px 0 30px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-about-content p {
+  max-width: 640px;
+  margin: 0 0 22px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #555555;
+}
+
+.gbsrac-about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 46px;
+}
+
+.gbsrac-about-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  padding: 18px 12px;
+}
+
+.gbsrac-about-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  color: #c30410;
+}
+
+.gbsrac-about-feature-icon svg {
+  width: 58px;
+  height: 58px;
+  display: block;
+}
+
+.gbsrac-about-feature-icon i {
+  font-size: 58px;
+  line-height: 1;
+}
+
+.gbsrac-about-feature p {
+  margin: 0;
+  max-width: 230px;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #111111;
+}
+
+
+
+
+
+
+
+
+
+/* ================= SERVICES SLIDER SECTION SWISS REPAIRS ================= */
+
+.gbsrac-services-slider {
+  position: relative;
+  padding: 140px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.06), transparent 24%),
+    linear-gradient(180deg, #f4f4f4 0%, #ffffff 52%, #f1f1f1 100%);
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-services-slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.56), transparent 24%, transparent 76%, rgba(255, 255, 255, 0.56));
+  pointer-events: none;
+}
+
+.gbsrac-services-slider-header {
+  position: relative;
+  z-index: 2;
+  max-width: 920px;
+  margin: 0 auto 78px;
+  text-align: center;
+  padding: 0 32px;
+}
+
+.gbsrac-services-slider-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.14);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-services-slider-header h2 {
+  margin: 0 0 18px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+  color: #111111;
+}
+
+.gbsrac-services-slider-header p {
+  margin: 0 auto;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #5e5e5e;
+}
+
+.gbsrac-services-slider-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 1780px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+.gbsrac-services-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.gbsrac-services-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.7s ease;
+  will-change: transform;
+}
+
+.gbsrac-service-slide {
+  position: relative;
+  flex: 0 0 calc((100% - 60px) / 3);
+  height: 840px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #111111;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.gbsrac-service-slide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 36px 90px rgba(0, 0, 0, 0.2);
+  border-color: rgba(227, 6, 19, 0.16);
+}
+
+.gbsrac-service-slide-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.gbsrac-service-slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.gbsrac-service-slide:nth-child(1) .gbsrac-service-slide-image img {
+  object-position: 52% center;
+}
+
+.gbsrac-service-slide:nth-child(2) .gbsrac-service-slide-image img {
+  object-position: 58% center;
+}
+
+.gbsrac-service-slide:nth-child(3) .gbsrac-service-slide-image img {
+  object-position: 56% center;
+}
+
+.gbsrac-service-slide:nth-child(4) .gbsrac-service-slide-image img {
+  object-position: 60% center;
+}
+
+.gbsrac-service-slide:nth-child(5) .gbsrac-service-slide-image img {
+  object-position: 32% center;
+}
+
+.gbsrac-service-slide:nth-child(6) .gbsrac-service-slide-image img {
+  object-position: 68% center;
+}
+
+.gbsrac-service-slide:nth-child(7) .gbsrac-service-slide-image img {
+  object-position: 55% center;
+}
+
+.gbsrac-service-slide:hover .gbsrac-service-slide-image img {
+  transform: scale(1.06);
+  filter: saturate(1.04);
+}
+
+.gbsrac-service-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(8, 8, 8, 0.9) 0%,
+    rgba(10, 10, 10, 0.62) 38%,
+    rgba(10, 10, 10, 0.22) 72%,
+    rgba(10, 10, 10, 0.06) 100%
+  );
+  transition: background 0.35s ease;
+}
+
+.gbsrac-service-slide-hover {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(227, 6, 19, 0.04) 0%, rgba(227, 6, 19, 0.12) 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 2;
+}
+
+.gbsrac-service-slide:hover .gbsrac-service-slide-hover {
+  opacity: 1;
+}
+
+.gbsrac-service-slide::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 22px;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.gbsrac-service-slide-content {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 3;
+  padding: 0 34px 34px;
+  color: #ffffff;
+}
+
+.gbsrac-service-slide-content h3 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.9px;
+  color: #ffffff;
+}
+
+.gbsrac-service-slide-content p {
+  margin: 0 0 26px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.gbsrac-service-slide-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gbsrac-service-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 calc(50% - 6px);
+  min-height: 54px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #111111;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-service-btn:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+}
+
+.gbsrac-service-btn-primary {
+  background: linear-gradient(135deg, #e30613 0%, #920b14 100%);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.gbsrac-service-btn-primary:hover {
+  background: linear-gradient(135deg, #f10a18 0%, #a30c17 100%);
+  color: #ffffff;
+}
+
+.gbsrac-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(12px);
+  color: #1a1a1a;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  z-index: 6;
+  transition: all 0.3s ease;
+}
+
+.gbsrac-slider-arrow:hover {
+  background: linear-gradient(135deg, #e30613 0%, #920b14 100%);
+  color: #ffffff;
+  box-shadow: 0 20px 44px rgba(146, 11, 20, 0.26);
+}
+
+.gbsrac-slider-arrow span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.gbsrac-slider-arrow-left {
+  left: 18px;
+}
+
+.gbsrac-slider-arrow-right {
+  right: 18px;
+}
+
+
+
+/* ================= WARUM WIR SECTION SWISS REPAIRS ================= */
+
+.gbsrac-why {
+  position: relative;
+  padding: 140px 0;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.06), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.gbsrac-why-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-why-intro {
+  max-width: 860px;
+  margin-bottom: 54px;
+}
+
+.gbsrac-why-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-why-intro h2 {
+  margin: 0;
+  max-width: 780px;
+  font-size: 54px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  color: #111111;
+}
+
+.gbsrac-why-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-why-intro p {
+  max-width: 720px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #585858;
+}
+
+.gbsrac-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 0;
+}
+
+.gbsrac-why-card {
+  position: relative;
+  padding: 34px 30px 30px;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.gbsrac-why-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 58px;
+  height: 4px;
+  border-radius: 999px;
+  background: #e30613;
+}
+
+.gbsrac-why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.1);
+  border-color: rgba(227, 6, 19, 0.18);
+}
+
+.gbsrac-why-card-number {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(17, 17, 17, 0.4);
+}
+
+.gbsrac-why-card h3 {
+  margin: 0 0 14px;
+  font-size: 24px;
+  line-height: 1.24;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: #111111;
+}
+
+.gbsrac-why-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5f5f5f;
+}
+
+
+/* ================= CTA SECTION SWISS REPAIRS ================= */
+
+.gbsrac-cta {
+  padding: 0 0 120px;
+  background: linear-gradient(180deg, #f4f4f4 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-cta-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 64px 56px;
+  border-radius: 0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.1), transparent 24%),
+    linear-gradient(135deg, #5b171c 0%, #7e141b 28%, #a7121a 62%, #d3121f 100%);
+  box-shadow: 0 28px 60px rgba(90, 10, 16, 0.22);
+  overflow: hidden;
+  position: relative;
+}
+
+.gbsrac-cta-container::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.gbsrac-cta-content {
+  position: relative;
+  z-index: 1;
+  flex: 0 1 46%;
+  max-width: 620px;
+}
+
+.gbsrac-cta-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.gbsrac-cta-content h2 {
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -2.4px;
+  color: #ffffff;
+}
+
+.gbsrac-cta-line {
+  width: 72px;
+  height: 4px;
+  margin: 28px 0 30px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-cta-content p {
+  margin: 0;
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-cta-actions {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 54%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gbsrac-cta-contact {
+  min-height: 100%;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+.gbsrac-cta-contact:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.gbsrac-cta-contact:hover {
+  transform: translateY(-3px);
+  opacity: 0.96;
+}
+
+.gbsrac-cta-contact-icon {
+  width: 110px;
+  height: 110px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.gbsrac-cta-contact-icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.gbsrac-cta-contact-value {
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: #ffffff;
+}
+
+
+/* ================= FOOTER SWISS REPAIRS ================= */
+
+.gbsrac-footer {
+  position: relative;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.08), transparent 24%),
+    linear-gradient(180deg, #151515 0%, #111111 100%);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.gbsrac-footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 54px 48px 30px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.9fr 1fr 1fr;
+  gap: 34px;
+}
+
+.gbsrac-footer-brand h2,
+.gbsrac-footer-column .gbsrac-footer-title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.gbsrac-footer-brand h2::after,
+.gbsrac-footer-column .gbsrac-footer-title::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-footer-brand p {
+  margin: 0;
+  max-width: 360px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.gbsrac-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.gbsrac-footer-title {
+  margin-bottom: 8px;
+}
+
+.gbsrac-footer-column a,
+.gbsrac-footer-column p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.76);
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.gbsrac-footer-column a:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.gbsrac-footer-partner p {
+  max-width: 300px;
+}
+
+.gbsrac-footer-partner-name {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.gbsrac-footer-partner-btn {
+  margin-top: 16px;
+  width: fit-content;
+  min-height: 46px;
+  padding: 12px 24px;
+  clip-path: polygon(8% 0,100% 0,92% 100%,0% 100%);
+  background: linear-gradient(135deg, #e30613 0%, #a10c16 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 12px 24px rgba(146, 11, 20, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-footer-partner-btn:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 20px 38px rgba(146, 11, 20, 0.3);
+}
+
+.gbsrac-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 48px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gbsrac-footer-bottom p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.gbsrac-footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.gbsrac-footer-bottom-links a {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.gbsrac-footer-bottom-links a:hover {
+  color: #ffffff;
+}
+
+
+
+
+/* ================= KONTAKT FORM SECTION SWISS REPAIRS ================= */
+
+.gbsrac-contact-form {
+  padding: 0 0 140px;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-contact-form-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-contact-form-intro {
+  max-width: 860px;
+  margin-bottom: 54px;
+}
+
+.gbsrac-contact-form-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-contact-form-intro h2 {
+  margin: 0;
+  max-width: 820px;
+  font-size: 54px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  color: #111111;
+}
+
+.gbsrac-contact-form-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-contact-form-intro p {
+  max-width: 720px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-contact-form-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.gbsrac-contact-form-info-card,
+.gbsrac-contact-form-box {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.06);
+}
+
+.gbsrac-contact-form-info-card {
+  padding: 34px 30px;
+}
+
+.gbsrac-contact-form-info-label {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.gbsrac-contact-form-info-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gbsrac-contact-form-info-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4f4f4f;
+}
+
+.gbsrac-contact-form-info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.gbsrac-contact-form-info-list li::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #e30613;
+}
+
+.gbsrac-contact-form-box {
+  padding: 34px 30px;
+}
+
+.gbsrac-contact-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gbsrac-contact-field-full {
+  grid-column: 1 / -1;
+}
+
+.gbsrac-contact-field label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #111111;
+}
+
+.gbsrac-contact-field input,
+.gbsrac-contact-field select,
+.gbsrac-contact-field textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: #ffffff;
+  font: inherit;
+  font-size: 15px;
+  color: #111111;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  appearance: none;
+}
+
+.gbsrac-contact-field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.gbsrac-contact-field input:focus,
+.gbsrac-contact-field select:focus,
+.gbsrac-contact-field textarea:focus {
+  border-color: rgba(227, 6, 19, 0.5);
+  box-shadow: 0 0 0 4px rgba(227, 6, 19, 0.08);
+}
+
+.gbsrac-contact-submit {
+  margin-top: 24px;
+  min-height: 58px;
+  padding: 16px 32px;
+  border: none;
+  background: linear-gradient(135deg, #e30613 0%, #920b14 100%);
+  color: #ffffff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-contact-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(146, 11, 20, 0.22);
+}
+
+
+/* ================= STANDORT SECTION SWISS REPAIRS ================= */
+
+.gbsrac-location {
+  padding: 0 0 70px;
+  background: linear-gradient(180deg, #f3f3f3 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-location-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.gbsrac-location-content,
+.gbsrac-location-map {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.06);
+}
+
+.gbsrac-location-content {
+  padding: 22px 22px;
+}
+
+.gbsrac-location-content h2 {
+  margin: 0;
+  max-width: 620px;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-location-line {
+  width: 88px;
+  height: 4px;
+  margin: 14px 0 18px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-location-details {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.gbsrac-location-detail {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.gbsrac-location-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.gbsrac-location-detail p,
+.gbsrac-location-detail a {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: #111111;
+  text-decoration: none;
+}
+
+.gbsrac-location-payments {
+  margin-top: 6px;
+}
+
+.gbsrac-location-payment-list {
+  margin: 10px 0 14px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.gbsrac-location-payment-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #525252;
+}
+
+.gbsrac-location-payment-list li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #e30613;
+}
+
+.gbsrac-location-payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gbsrac-location-payment-brand {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #ffffff;
+}
+
+.gbsrac-location-payment-brand img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.gbsrac-location-map {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.gbsrac-location-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border: 0;
+}
+
+
+/* ================= FAQ SECTION SWISS REPAIRS ================= */
+
+.gbsrac-faq {
+  padding: 0 0 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-faq-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-faq-intro {
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.gbsrac-faq-subtitle {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-faq-intro h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-faq-line {
+  width: 88px;
+  height: 4px;
+  margin: 16px 0 0;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.gbsrac-faq-item {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.04);
+}
+
+.gbsrac-faq-question {
+  width: 100%;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+}
+
+.gbsrac-faq-icon {
+  flex: 0 0 auto;
+  font-size: 24px;
+  line-height: 1;
+  color: #c30410;
+  transition: transform 0.25s ease;
+}
+
+.gbsrac-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.28s ease;
+}
+
+.gbsrac-faq-answer p {
+  margin: 0;
+  padding: 0 24px 22px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #5a5a5a;
+}
+
+.gbsrac-faq-item.is-open .gbsrac-faq-answer {
+  max-height: 220px;
+}
+
+.gbsrac-faq-item.is-open .gbsrac-faq-icon {
+  transform: rotate(45deg);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-navbar-container,
+  .gbsrac-about-container,
+  .gbsrac-why-container,
+  .gbsrac-contact-form-container,
+  .gbsrac-contactpage-offer-container,
+  .gbsrac-location-container,
+  .gbsrac-footer-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-navbar-brand img {
+    height: 98px;
+  }
+
+  .gbsrac-navbar.is-scrolled .gbsrac-navbar-brand img {
+    height: 76px;
+  }
+
+  .gbsrac-navbar-menu {
+    gap: 22px;
+  }
+
+  .gbsrac-hero,
+  .gbsrac-hero-content {
+    min-height: 680px;
+  }
+
+  .gbsrac-hero-text {
+    max-width: 540px;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 64px;
+    letter-spacing: -2.2px;
+  }
+
+  .gbsrac-hero-text p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .gbsrac-btn {
+    min-height: 52px;
+    padding: 15px 30px;
+  }
+
+  .gbsrac-about,
+  .gbsrac-services-slider,
+  .gbsrac-why {
+    padding: 120px 0;
+  }
+
+  .gbsrac-about-container {
+    gap: 64px;
+  }
+
+  .gbsrac-about-image {
+    min-height: 600px;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2 {
+    font-size: 46px;
+    letter-spacing: -1.4px;
+  }
+
+  .gbsrac-services-slider-wrapper {
+    padding: 0 88px;
+  }
+
+  .gbsrac-service-slide {
+    height: 760px;
+  }
+
+  .gbsrac-service-slide-content h3 {
+    font-size: 28px;
+  }
+
+  .gbsrac-cta {
+    padding-bottom: 100px;
+  }
+
+  .gbsrac-cta-container {
+    gap: 42px;
+    padding: 54px 42px;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 52px;
+    letter-spacing: -1.8px;
+  }
+
+  .gbsrac-cta-contact-icon {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-cta-contact-value {
+    font-size: 24px;
+  }
+
+  .gbsrac-footer-container {
+    grid-template-columns: 1.15fr 0.8fr 0.9fr 1fr 0.95fr;
+    gap: 26px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-contactpage-offer {
+    padding: 100px 0;
+  }
+
+  .gbsrac-navbar {
+    padding: 10px 0;
+    background: rgba(10, 10, 10, 0.72);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+  }
+
+  .gbsrac-navbar.is-scrolled {
+    padding: 10px 0;
+  }
+
+  .gbsrac-navbar-container {
+    padding: 0 24px;
+  }
+
+  .gbsrac-contactpage-offer-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-contactpage-offer-categories,
+  .gbsrac-contactpage-offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-navbar-brand img {
+    height: 68px;
+  }
+
+  .gbsrac-navbar.is-scrolled .gbsrac-navbar-brand img {
+    height: 68px;
+  }
+
+  .gbsrac-navbar-toggle {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+
+  .gbsrac-navbar-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 24px;
+    right: 24px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 18px;
+    background: rgba(14, 14, 14, 0.92);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+  }
+
+  .gbsrac-navbar.is-open .gbsrac-navbar-menu {
+    display: flex;
+  }
+
+  .gbsrac-navbar-link {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .gbsrac-navbar-link::after {
+    bottom: 4px;
+  }
+
+  .gbsrac-navbar-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .gbsrac-navbar-dropdown-menu {
+    position: static;
+    min-width: 0;
+    margin-top: 8px;
+    padding: 10px 12px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+  }
+
+  .gbsrac-navbar-dropdown:hover .gbsrac-navbar-dropdown-menu {
+    transform: none;
+  }
+
+  .gbsrac-navbar-toggle span {
+    transform-origin: center;
+  }
+
+  .gbsrac-navbar.is-open .gbsrac-navbar-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .gbsrac-navbar.is-open .gbsrac-navbar-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .gbsrac-navbar.is-open .gbsrac-navbar-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .gbsrac-hero,
+  .gbsrac-hero-content {
+    min-height: 660px;
+  }
+
+  .gbsrac-hero-content {
+    padding: 110px 24px 56px;
+    justify-content: center;
+  }
+
+  .gbsrac-hero-shape {
+    width: 72%;
+  }
+
+  .gbsrac-hero-shape::after {
+    inset: 20px 20px 20px 70px;
+  }
+
+  .gbsrac-hero-text {
+    max-width: 560px;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 62px;
+    line-height: 1;
+    letter-spacing: -2.2px;
+  }
+
+  .gbsrac-hero-text p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .gbsrac-about,
+  .gbsrac-services-slider,
+  .gbsrac-why {
+    padding: 110px 0;
+  }
+
+  .gbsrac-about-container,
+  .gbsrac-why-container,
+  .gbsrac-contact-form-container,
+  .gbsrac-location-container,
+  .gbsrac-faq-container,
+  .gbsrac-footer-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-about-container {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+
+  .gbsrac-about-image {
+    min-height: 520px;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2 {
+    font-size: 42px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-about-features {
+    gap: 18px;
+  }
+
+  .gbsrac-services-slider-header {
+    margin-bottom: 60px;
+    padding: 0 24px;
+  }
+
+  .gbsrac-services-slider-wrapper {
+    padding: 0 72px;
+  }
+
+  .gbsrac-service-slide {
+    flex: 0 0 calc((100% - 30px) / 2);
+    height: 720px;
+  }
+
+  .gbsrac-service-slide-content {
+    padding: 0 28px 28px;
+  }
+
+  .gbsrac-service-slide-content h3 {
+    font-size: 28px;
+  }
+
+  .gbsrac-slider-arrow {
+    width: 56px;
+    height: 56px;
+  }
+
+  .gbsrac-slider-arrow-left {
+    left: 8px;
+  }
+
+  .gbsrac-slider-arrow-right {
+    right: 8px;
+  }
+
+  .gbsrac-why-grid {
+    gap: 18px;
+  }
+
+  .gbsrac-cta {
+    padding-bottom: 90px;
+  }
+
+  .gbsrac-cta-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 34px;
+    padding: 48px 32px;
+    margin: 0 24px;
+  }
+
+  .gbsrac-cta-content,
+  .gbsrac-cta-actions {
+    flex: none;
+    max-width: none;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 46px;
+    letter-spacing: -1.5px;
+  }
+
+  .gbsrac-contact-form {
+    padding-bottom: 110px;
+  }
+
+  .gbsrac-contact-form-layout,
+  .gbsrac-location-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-location-map iframe {
+    min-height: 420px;
+  }
+
+  .gbsrac-footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 22px;
+  }
+
+  .gbsrac-footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 900px) {
+  .gbsrac-hero,
+  .gbsrac-hero-content {
+    min-height: 620px;
+  }
+
+  .gbsrac-hero::before {
+    background:
+      radial-gradient(circle at 18% 22%, rgba(227, 6, 19, 0.2), transparent 30%),
+      linear-gradient(180deg, rgba(8, 8, 8, 0.44) 0%, rgba(8, 8, 8, 0.74) 100%);
+  }
+
+  .gbsrac-hero-content {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .gbsrac-hero-shape {
+    width: 100%;
+    clip-path: none;
+    border-left: none;
+  }
+
+  .gbsrac-hero-shape::after {
+    inset: 18px;
+    clip-path: none;
+    border-radius: 24px;
+  }
+
+  .gbsrac-hero-text {
+    max-width: 100%;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 54px;
+  }
+
+  .gbsrac-about,
+  .gbsrac-services-slider,
+  .gbsrac-why {
+    padding: 96px 0;
+  }
+
+  .gbsrac-about-image {
+    min-height: 460px;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2 {
+    font-size: 38px;
+  }
+
+  .gbsrac-about-features,
+  .gbsrac-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-services-slider-wrapper {
+    padding: 0 64px;
+  }
+
+  .gbsrac-service-slide {
+    height: 660px;
+  }
+
+  .gbsrac-service-slide-content h3 {
+    font-size: 26px;
+  }
+
+  .gbsrac-service-btn {
+    flex-basis: 100%;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 40px;
+  }
+
+  .gbsrac-cta-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-cta-contact:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .gbsrac-contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-location-map iframe {
+    min-height: 360px;
+  }
+
+  .gbsrac-faq-question {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gbsrac-navbar-container,
+  .gbsrac-about-container,
+  .gbsrac-why-container,
+  .gbsrac-contact-form-container,
+  .gbsrac-contactpage-offer-container,
+  .gbsrac-location-container,
+  .gbsrac-faq-container,
+  .gbsrac-footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-navbar-menu {
+    left: 20px;
+    right: 20px;
+  }
+
+  .gbsrac-navbar-brand img {
+    height: 62px;
+  }
+
+  .gbsrac-navbar.is-scrolled .gbsrac-navbar-brand img {
+    height: 62px;
+  }
+
+  .gbsrac-hero,
+  .gbsrac-hero-content {
+    min-height: 580px;
+  }
+
+  .gbsrac-hero-content {
+    padding: 104px 20px 42px;
+  }
+
+  .gbsrac-hero-subtitle,
+  .gbsrac-about-subtitle,
+  .gbsrac-services-slider-subtitle,
+  .gbsrac-contactpage-offer-subtitle,
+  .gbsrac-why-subtitle,
+  .gbsrac-contact-form-subtitle,
+  .gbsrac-faq-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 44px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-hero-line,
+  .gbsrac-about-line,
+  .gbsrac-contactpage-offer-line,
+  .gbsrac-why-line,
+  .gbsrac-contact-form-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-hero-text p,
+  .gbsrac-about-content p,
+  .gbsrac-services-slider-header p,
+  .gbsrac-contactpage-offer-intro p,
+  .gbsrac-contactpage-offer-panel-head p,
+  .gbsrac-why-intro p,
+  .gbsrac-contact-form-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .gbsrac-contactpage-offer {
+    padding: 76px 0;
+  }
+
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-contactpage-offer-form {
+    padding: 24px 20px;
+  }
+
+  .gbsrac-contactpage-offer-steps,
+  .gbsrac-contactpage-offer-categories,
+  .gbsrac-contactpage-offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-contactpage-offer-panel-head h3,
+  .gbsrac-contactpage-offer-pricebox strong {
+    font-size: 28px;
+  }
+
+  .gbsrac-btn {
+    width: 100%;
+    min-height: 54px;
+    padding: 15px 22px;
+  }
+
+  .gbsrac-about,
+  .gbsrac-services-slider,
+  .gbsrac-why {
+    padding: 82px 0;
+  }
+
+  .gbsrac-about-image {
+    min-height: 380px;
+    border-radius: 22px;
+  }
+
+  .gbsrac-about-image::after {
+    inset: 14px;
+    border-radius: 16px;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2 {
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-services-slider-header {
+    margin-bottom: 42px;
+    padding: 0 20px;
+  }
+
+  .gbsrac-services-slider-wrapper {
+    padding: 0 56px;
+  }
+
+  .gbsrac-service-slide {
+    flex: 0 0 100%;
+    height: 620px;
+    border-radius: 24px;
+  }
+
+  .gbsrac-service-slide::after {
+    inset: 14px;
+    border-radius: 18px;
+  }
+
+  .gbsrac-service-slide-content {
+    padding: 0 24px 24px;
+  }
+
+  .gbsrac-service-slide-content h3 {
+    font-size: 24px;
+  }
+
+  .gbsrac-service-slide-content p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .gbsrac-slider-arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .gbsrac-slider-arrow span {
+    font-size: 22px;
+  }
+
+  .gbsrac-why-card {
+    padding: 28px 22px 24px;
+    border-radius: 18px;
+  }
+
+  .gbsrac-why-card::before {
+    left: 22px;
+  }
+
+  .gbsrac-why-card h3 {
+    font-size: 21px;
+  }
+
+  .gbsrac-cta {
+    padding-bottom: 74px;
+  }
+
+  .gbsrac-cta-container {
+    margin: 0 20px;
+    padding: 36px 22px;
+  }
+
+  .gbsrac-cta-container::after {
+    inset: 12px;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-cta-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .gbsrac-cta-contact {
+    padding: 18px 12px;
+  }
+
+  .gbsrac-cta-contact-icon {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 18px;
+  }
+
+  .gbsrac-cta-contact-icon i {
+    font-size: 28px;
+  }
+
+  .gbsrac-cta-contact-value {
+    font-size: 20px;
+  }
+
+  .gbsrac-contact-form {
+    padding-bottom: 86px;
+  }
+
+  .gbsrac-contact-form-intro {
+    margin-bottom: 34px;
+  }
+
+  .gbsrac-contact-form-info-card,
+  .gbsrac-contact-form-box {
+    padding: 24px 20px;
+  }
+
+  .gbsrac-contact-field input,
+  .gbsrac-contact-field select,
+  .gbsrac-contact-field textarea {
+    padding: 14px 16px;
+  }
+
+  .gbsrac-location {
+    padding-bottom: 54px;
+  }
+
+  .gbsrac-location-content {
+    padding: 20px 18px;
+  }
+
+  .gbsrac-location-content h2 {
+    font-size: 28px;
+  }
+
+  .gbsrac-location-map iframe {
+    min-height: 320px;
+  }
+
+  .gbsrac-faq {
+    padding-bottom: 62px;
+  }
+
+  .gbsrac-faq-question {
+    padding: 18px 18px;
+    font-size: 16px;
+  }
+
+  .gbsrac-faq-answer p {
+    padding: 0 18px 18px;
+    font-size: 15px;
+  }
+
+  .gbsrac-footer-container {
+    grid-template-columns: 1fr;
+    padding-top: 42px;
+    padding-bottom: 22px;
+  }
+
+  .gbsrac-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 20px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-navbar-brand img {
+    height: 58px;
+  }
+
+  .gbsrac-navbar.is-scrolled .gbsrac-navbar-brand img {
+    height: 58px;
+  }
+
+  .gbsrac-navbar-toggle {
+    width: 46px;
+    height: 46px;
+  }
+
+  .gbsrac-hero,
+  .gbsrac-hero-content {
+    min-height: 540px;
+  }
+
+  .gbsrac-hero-content {
+    padding-top: 96px;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 38px;
+    line-height: 1.04;
+  }
+
+  .gbsrac-hero-buttons {
+    gap: 10px;
+  }
+
+  .gbsrac-about,
+  .gbsrac-services-slider,
+  .gbsrac-contactpage-offer,
+  .gbsrac-why {
+    padding: 72px 0;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-contactpage-offer-intro h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2,
+  .gbsrac-faq-intro h2 {
+    font-size: 30px;
+  }
+
+  .gbsrac-contactpage-offer-step {
+    padding: 14px;
+  }
+
+  .gbsrac-contactpage-offer-category strong,
+  .gbsrac-contactpage-offer-summary-card strong {
+    font-size: 18px;
+  }
+
+  .gbsrac-contactpage-offer-option {
+    flex-direction: column;
+  }
+
+  .gbsrac-contactpage-offer-option small {
+    margin-left: 30px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .gbsrac-contactpage-offer-pricebox {
+    padding: 20px 18px;
+  }
+
+  .gbsrac-contactpage-offer-pricebox strong {
+    font-size: 24px;
+  }
+
+  .gbsrac-about-feature-icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .gbsrac-about-feature-icon i,
+  .gbsrac-about-feature-icon svg {
+    width: 46px;
+    height: 46px;
+    font-size: 46px;
+  }
+
+  .gbsrac-services-slider-wrapper {
+    padding: 0 50px;
+  }
+
+  .gbsrac-service-slide {
+    height: 560px;
+  }
+
+  .gbsrac-service-slide-content h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-service-btn {
+    min-height: 50px;
+    font-size: 14px;
+  }
+
+  .gbsrac-slider-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 30px;
+  }
+
+  .gbsrac-cta-contact-value {
+    font-size: 18px;
+  }
+
+  .gbsrac-location-payment-brand {
+    width: 46px;
+    height: 46px;
+  }
+
+  .gbsrac-location-payment-brand img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-navbar-container,
+  .gbsrac-about-container,
+  .gbsrac-why-container,
+  .gbsrac-contact-form-container,
+  .gbsrac-contactpage-offer-container,
+  .gbsrac-location-container,
+  .gbsrac-faq-container,
+  .gbsrac-footer-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-navbar-menu {
+    left: 16px;
+    right: 16px;
+    padding: 14px;
+  }
+
+  .gbsrac-hero-content {
+    padding: 92px 16px 36px;
+  }
+
+  .gbsrac-hero-shape::after {
+    inset: 12px;
+  }
+
+  .gbsrac-hero-subtitle {
+    margin-bottom: 16px;
+    padding: 7px 12px;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 34px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-hero-text p,
+  .gbsrac-about-content p,
+  .gbsrac-services-slider-header p,
+  .gbsrac-contactpage-offer-intro p,
+  .gbsrac-contactpage-offer-panel-head p,
+  .gbsrac-why-intro p,
+  .gbsrac-contact-form-intro p {
+    font-size: 15px;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-contactpage-offer-intro h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2,
+  .gbsrac-faq-intro h2 {
+    font-size: 27px;
+  }
+
+  .gbsrac-contactpage-offer-navigation > * {
+    width: 100%;
+  }
+
+  .gbsrac-services-slider-header {
+    padding: 0 16px;
+  }
+
+  .gbsrac-services-slider-wrapper {
+    padding: 0 44px;
+  }
+
+  .gbsrac-service-slide {
+    height: 520px;
+  }
+
+  .gbsrac-service-slide-content {
+    padding: 0 18px 18px;
+  }
+
+  .gbsrac-service-slide-content h3 {
+    font-size: 20px;
+  }
+
+  .gbsrac-service-slide-content p {
+    font-size: 14px;
+  }
+
+  .gbsrac-slider-arrow-left {
+    left: 2px;
+  }
+
+  .gbsrac-slider-arrow-right {
+    right: 2px;
+  }
+
+  .gbsrac-why-card {
+    padding: 24px 18px 20px;
+  }
+
+  .gbsrac-why-card h3 {
+    font-size: 19px;
+  }
+
+  .gbsrac-cta-container {
+    margin: 0 16px;
+    padding: 30px 18px;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 27px;
+  }
+
+  .gbsrac-contact-form-info-card,
+  .gbsrac-contact-form-box,
+  .gbsrac-location-content {
+    padding: 18px 16px;
+  }
+
+  .gbsrac-location-content h2 {
+    font-size: 24px;
+  }
+
+  .gbsrac-location-map iframe {
+    min-height: 280px;
+  }
+
+  .gbsrac-footer-bottom {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-contactpage-offer-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-navbar-brand img {
+    height: 52px;
+  }
+
+  .gbsrac-navbar.is-scrolled .gbsrac-navbar-brand img {
+    height: 52px;
+  }
+
+  .gbsrac-hero,
+  .gbsrac-hero-content {
+    min-height: 500px;
+  }
+
+  .gbsrac-hero-text h1 {
+    font-size: 30px;
+  }
+
+  .gbsrac-btn {
+    min-height: 50px;
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  .gbsrac-about-content h2,
+  .gbsrac-services-slider-header h2,
+  .gbsrac-contactpage-offer-intro h2,
+  .gbsrac-why-intro h2,
+  .gbsrac-contact-form-intro h2,
+  .gbsrac-faq-intro h2 {
+    font-size: 24px;
+  }
+
+  .gbsrac-service-slide {
+    height: 480px;
+  }
+
+  .gbsrac-service-btn {
+    min-height: 46px;
+    padding: 12px 14px;
+  }
+
+  .gbsrac-cta-content h2 {
+    font-size: 24px;
+  }
+
+  .gbsrac-cta-contact-value {
+    font-size: 16px;
+  }
+
+  .gbsrac-faq-question {
+    font-size: 15px;
+    padding: 16px 14px;
+  }
+
+  .gbsrac-faq-answer p {
+    padding: 0 14px 16px;
+    font-size: 14px;
+  }
+}

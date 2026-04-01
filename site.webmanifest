@@ -1,0 +1,22 @@
+{
+  "name": "Swiss Repairs",
+  "short_name": "Swiss Repairs",
+  "description": "Swiss Repairs in Schlieren: Service, Reparaturen, MFK und Reifenservice.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/img/favicon-3/web-app-manifest-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/img/favicon-3/web-app-manifest-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

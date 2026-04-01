@@ -1,0 +1,781 @@
+/* ================= WARTUNG HERO ================= */
+
+.gbsrac-wartung-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-wartung-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/heros/wartung.webp");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.03);
+  filter: saturate(0.95);
+}
+
+.gbsrac-wartung-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.18), transparent 26%),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.78) 0%, rgba(7, 7, 7, 0.48) 45%, rgba(7, 7, 7, 0.82) 100%);
+}
+
+.gbsrac-wartung-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 7% 70px;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-wartung-hero-panel {
+  max-width: 760px;
+  padding: 42px 40px;
+  background: rgba(12, 12, 12, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-wartung-hero-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-wartung-hero h1 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  color: #ffffff;
+}
+
+.gbsrac-wartung-hero-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+  border-radius: 999px;
+}
+
+.gbsrac-wartung-hero p {
+  max-width: 620px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-wartung-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.gbsrac-wartung-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gbsrac-wartung-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+
+/* ================= WARTUNG SERVICES ================= */
+
+.gbsrac-wartung-services {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-wartung-services-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-wartung-services-intro {
+  max-width: 860px;
+  margin-bottom: 52px;
+}
+
+.gbsrac-wartung-services-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-wartung-services-intro h2 {
+  margin: 0;
+  max-width: 820px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-wartung-services-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-wartung-services-intro p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-wartung-services-slider {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 84px;
+}
+
+.gbsrac-wartung-services-viewport {
+  overflow: hidden;
+}
+
+.gbsrac-wartung-services-grid {
+  display: flex;
+  gap: 22px;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+.gbsrac-wartung-service-card {
+  flex: 0 0 calc((100% - 44px) / 3);
+  padding: 30px 28px 26px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.gbsrac-wartung-service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(227, 6, 19, 0.18);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.08);
+}
+
+.gbsrac-wartung-service-card h3 {
+  margin: 0 0 14px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  color: #111111;
+}
+
+.gbsrac-wartung-service-card p {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5a5a5a;
+}
+
+.gbsrac-wartung-service-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.gbsrac-wartung-service-meta span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 74px;
+  padding: 14px 16px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(245, 245, 245, 0.96) 100%);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  color: #111111;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.gbsrac-wartung-service-meta span::before {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.45);
+}
+
+.gbsrac-wartung-service-meta span:first-child::before {
+  content: "Richtpreis";
+}
+
+.gbsrac-wartung-service-meta span:last-child::before {
+  content: "Dauer";
+}
+
+.gbsrac-wartung-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.1);
+  color: #111111;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+  z-index: 2;
+}
+
+.gbsrac-wartung-arrow:hover {
+  background: linear-gradient(135deg, #e30613 0%, #920b14 100%);
+  color: #ffffff;
+}
+
+.gbsrac-wartung-arrow span {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.gbsrac-wartung-arrow-left {
+  left: 0;
+}
+
+.gbsrac-wartung-arrow-right {
+  right: 0;
+}
+
+/* ================= WARTUNG BENEFITS ================= */
+
+.gbsrac-wartung-benefits {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-wartung-benefits-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.gbsrac-wartung-benefits-image {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.1);
+}
+
+.gbsrac-wartung-benefits-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gbsrac-wartung-benefits-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-wartung-benefits-content h2 {
+  margin: 0;
+  max-width: 760px;
+  font-size: 50px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #111111;
+}
+
+.gbsrac-wartung-benefits-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-wartung-benefits-content > p {
+  margin: 0;
+  max-width: 680px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #5c5c5c;
+}
+
+.gbsrac-wartung-benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.gbsrac-wartung-benefit {
+  padding: 24px 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gbsrac-wartung-benefit:hover {
+  transform: translateY(-5px);
+  border-color: rgba(227, 6, 19, 0.18);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.07);
+}
+
+.gbsrac-wartung-benefit h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111111;
+}
+
+.gbsrac-wartung-benefit p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #5b5b5b;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-wartung-hero,
+  .gbsrac-wartung-hero-container {
+    min-height: 680px;
+  }
+
+  .gbsrac-wartung-hero-panel {
+    max-width: 700px;
+    padding: 36px 34px;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 62px;
+    letter-spacing: -2.1px;
+  }
+
+  .gbsrac-wartung-hero p,
+  .gbsrac-wartung-services-intro p,
+  .gbsrac-wartung-benefits-content > p {
+    font-size: 17px;
+    line-height: 1.78;
+  }
+
+  .gbsrac-wartung-services,
+  .gbsrac-wartung-benefits {
+    padding: 108px 0;
+  }
+
+  .gbsrac-wartung-services-container,
+  .gbsrac-wartung-benefits-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-wartung-services-slider {
+    padding: 0 72px;
+  }
+
+  .gbsrac-wartung-benefits-image {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-wartung-hero,
+  .gbsrac-wartung-hero-container {
+    min-height: 660px;
+  }
+
+  .gbsrac-wartung-hero-container {
+    padding: 110px 24px 56px;
+  }
+
+  .gbsrac-wartung-hero-panel {
+    max-width: 680px;
+    padding: 34px 30px;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .gbsrac-wartung-services,
+  .gbsrac-wartung-benefits {
+    padding: 100px 0;
+  }
+
+  .gbsrac-wartung-services-container,
+  .gbsrac-wartung-benefits-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-wartung-services-slider {
+    padding: 0 66px;
+  }
+
+  .gbsrac-wartung-service-card {
+    flex: 0 0 calc((100% - 22px) / 2);
+  }
+
+  .gbsrac-wartung-benefits-container {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .gbsrac-wartung-benefits-image {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gbsrac-wartung-hero,
+  .gbsrac-wartung-hero-container {
+    min-height: 620px;
+  }
+
+  .gbsrac-wartung-hero-container {
+    padding: 104px 24px 46px;
+  }
+
+  .gbsrac-wartung-hero-panel {
+    max-width: 100%;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-wartung-services,
+  .gbsrac-wartung-benefits {
+    padding: 88px 0;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 36px;
+  }
+
+  .gbsrac-wartung-services-slider {
+    padding: 0 60px;
+  }
+
+  .gbsrac-wartung-service-card h3 {
+    font-size: 24px;
+  }
+
+  .gbsrac-wartung-benefits-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gbsrac-wartung-hero,
+  .gbsrac-wartung-hero-container {
+    min-height: 580px;
+  }
+
+  .gbsrac-wartung-hero-container {
+    padding: 100px 20px 40px;
+  }
+
+  .gbsrac-wartung-hero-panel {
+    padding: 28px 22px;
+  }
+
+  .gbsrac-wartung-hero-subtitle,
+  .gbsrac-wartung-services-subtitle,
+  .gbsrac-wartung-benefits-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-wartung-hero-line,
+  .gbsrac-wartung-services-line,
+  .gbsrac-wartung-benefits-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-wartung-hero p,
+  .gbsrac-wartung-services-intro p,
+  .gbsrac-wartung-benefits-content > p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-wartung-hero-points span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .gbsrac-wartung-services,
+  .gbsrac-wartung-benefits {
+    padding: 76px 0;
+  }
+
+  .gbsrac-wartung-services-container,
+  .gbsrac-wartung-benefits-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-wartung-services-slider {
+    padding: 0 54px;
+  }
+
+  .gbsrac-wartung-service-card {
+    flex: 0 0 100%;
+    padding: 24px 20px 20px;
+  }
+
+  .gbsrac-wartung-service-card h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-wartung-service-card p {
+    font-size: 15px;
+    line-height: 1.68;
+  }
+
+  .gbsrac-wartung-arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .gbsrac-wartung-arrow span {
+    font-size: 22px;
+  }
+
+  .gbsrac-wartung-benefits-image {
+    min-height: 360px;
+  }
+
+  .gbsrac-wartung-benefit {
+    padding: 20px 18px;
+  }
+
+  .gbsrac-wartung-benefit h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-wartung-hero,
+  .gbsrac-wartung-hero-container {
+    min-height: 540px;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 36px;
+  }
+
+  .gbsrac-wartung-services,
+  .gbsrac-wartung-benefits {
+    padding: 66px 0;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 28px;
+  }
+
+  .gbsrac-wartung-services-slider {
+    padding: 0 46px;
+  }
+
+  .gbsrac-wartung-service-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-wartung-benefits-image {
+    min-height: 300px;
+  }
+
+  .gbsrac-wartung-benefit h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-wartung-hero-container,
+  .gbsrac-wartung-services-container,
+  .gbsrac-wartung-benefits-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-wartung-hero-container {
+    padding: 92px 16px 34px;
+  }
+
+  .gbsrac-wartung-hero-panel {
+    padding: 24px 18px;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-wartung-hero p,
+  .gbsrac-wartung-services-intro p,
+  .gbsrac-wartung-benefits-content > p {
+    font-size: 15px;
+  }
+
+  .gbsrac-wartung-hero-points span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 26px;
+  }
+
+  .gbsrac-wartung-services-slider {
+    padding: 0 42px;
+  }
+
+  .gbsrac-wartung-service-card,
+  .gbsrac-wartung-benefit {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-wartung-benefits-image {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-wartung-hero,
+  .gbsrac-wartung-hero-container {
+    min-height: 500px;
+  }
+
+  .gbsrac-wartung-hero h1 {
+    font-size: 28px;
+  }
+
+  .gbsrac-wartung-hero-subtitle,
+  .gbsrac-wartung-services-subtitle,
+  .gbsrac-wartung-benefits-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-wartung-services-intro h2,
+  .gbsrac-wartung-benefits-content h2 {
+    font-size: 23px;
+  }
+
+  .gbsrac-wartung-service-card h3,
+  .gbsrac-wartung-benefit h3 {
+    font-size: 19px;
+  }
+}

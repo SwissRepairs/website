@@ -1,0 +1,1203 @@
+/* ================= KONTAKT HERO ================= */
+
+.gbsrac-contactpage-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-contactpage-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(227, 6, 19, 0.28), transparent 22%),
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.08), transparent 18%),
+    radial-gradient(circle at 74% 74%, rgba(227, 6, 19, 0.16), transparent 20%),
+    linear-gradient(130deg, #141414 0%, #1a1112 32%, #101010 62%, #190f11 100%);
+}
+
+.gbsrac-contactpage-hero-bg::before,
+.gbsrac-contactpage-hero-bg::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.gbsrac-contactpage-hero-bg::before {
+  inset: -14% 34% -10% -10%;
+  background:
+    linear-gradient(114deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 38%, transparent 39%),
+    linear-gradient(114deg, transparent 0%, transparent 42%, rgba(227, 6, 19, 0.09) 43%, rgba(227, 6, 19, 0.03) 66%, transparent 67%);
+  transform: skewX(-16deg);
+  opacity: 0.84;
+}
+
+.gbsrac-contactpage-hero-bg::after {
+  right: 6%;
+  top: 20%;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 30px rgba(255, 255, 255, 0.02),
+    0 0 0 68px rgba(255, 255, 255, 0.015);
+  opacity: 0.55;
+}
+
+.gbsrac-contactpage-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 7, 7, 0.72) 0%, rgba(7, 7, 7, 0.42) 45%, rgba(7, 7, 7, 0.8) 100%);
+}
+
+.gbsrac-contactpage-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 7% 70px;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-contactpage-hero-panel {
+  max-width: 780px;
+  padding: 42px 40px;
+  background: rgba(12, 12, 12, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-contactpage-hero-subtitle,
+.gbsrac-contactpage-info-subtitle,
+.gbsrac-contactpage-form-subtitle,
+.gbsrac-contactpage-location-subtitle,
+.gbsrac-contactpage-offer-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gbsrac-contactpage-hero-subtitle {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-contactpage-hero h1 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  color: #ffffff;
+}
+
+.gbsrac-contactpage-hero-line,
+.gbsrac-contactpage-info-line,
+.gbsrac-contactpage-form-line,
+.gbsrac-contactpage-location-line,
+.gbsrac-contactpage-offer-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-contactpage-hero p {
+  max-width: 650px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-contactpage-hero-points,
+.gbsrac-contactpage-form-benefits,
+.gbsrac-contactpage-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gbsrac-contactpage-hero-points span,
+.gbsrac-contactpage-form-benefits span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ================= INFO ================= */
+
+.gbsrac-contactpage-info,
+.gbsrac-contactpage-location,
+.gbsrac-contactpage-offer {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-contactpage-info-container,
+.gbsrac-contactpage-form-container,
+.gbsrac-contactpage-location-container,
+.gbsrac-contactpage-offer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-contactpage-info-subtitle,
+.gbsrac-contactpage-form-subtitle,
+.gbsrac-contactpage-location-subtitle,
+.gbsrac-contactpage-offer-subtitle {
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  background: rgba(227, 6, 19, 0.05);
+  color: #c30410;
+}
+
+.gbsrac-contactpage-info-intro,
+.gbsrac-contactpage-location-copy,
+.gbsrac-contactpage-offer-intro {
+  max-width: 820px;
+  margin-bottom: 52px;
+}
+
+.gbsrac-contactpage-info-intro h2,
+.gbsrac-contactpage-form-copy h2,
+.gbsrac-contactpage-location-copy h2,
+.gbsrac-contactpage-offer-intro h2 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-contactpage-info-card {
+  padding: 30px 26px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+}
+
+.gbsrac-contactpage-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.18);
+  font-size: 20px;
+  color: #c30410;
+}
+
+.gbsrac-contactpage-info-card h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-info-card p,
+.gbsrac-contactpage-info-card a {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #595959;
+  text-decoration: none;
+}
+
+/* ================= FORM ================= */
+
+.gbsrac-contactpage-form {
+  padding: 0 0 120px;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-contactpage-form-layout,
+.gbsrac-contactpage-location-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 26px;
+  align-items: stretch;
+}
+
+.gbsrac-contactpage-form-copy {
+  padding: 40px 36px 34px;
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.97) 0%, rgba(39, 16, 18, 0.97) 100%);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.14);
+}
+
+.gbsrac-contactpage-form-copy h2,
+.gbsrac-contactpage-form-copy p {
+  color: #ffffff;
+}
+
+.gbsrac-contactpage-form-copy p,
+.gbsrac-contactpage-location-details p {
+  margin: 0 0 22px;
+  font-size: 18px;
+  line-height: 1.88;
+}
+
+.gbsrac-contactpage-form-copy p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-contactpage-form-box {
+  padding: 34px 32px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.06);
+}
+
+.gbsrac-contactpage-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-contactpage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gbsrac-contactpage-field-full {
+  grid-column: 1 / -1;
+}
+
+.gbsrac-contactpage-field label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.gbsrac-contactpage-field-help {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6a6a6a;
+}
+
+.gbsrac-contactpage-field input,
+.gbsrac-contactpage-field select,
+.gbsrac-contactpage-field textarea {
+  width: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: #ffffff;
+  padding: 15px 16px;
+  font: inherit;
+  font-size: 15px;
+  color: #1f1f1f;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-contactpage-field input[type="file"] {
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.gbsrac-contactpage-field input:focus,
+.gbsrac-contactpage-field select:focus,
+.gbsrac-contactpage-field textarea:focus {
+  border-color: rgba(227, 6, 19, 0.36);
+  box-shadow: 0 0 0 4px rgba(227, 6, 19, 0.08);
+}
+
+.gbsrac-contactpage-submit {
+  margin-top: 22px;
+  min-height: 56px;
+  padding: 14px 28px;
+  border: none;
+  background: #e30613;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.gbsrac-contactpage-submit:hover {
+  background: #bf0712;
+  transform: translateY(-2px);
+}
+
+/* ================= LOCATION ================= */
+
+.gbsrac-contactpage-location-copy {
+  margin-bottom: 0;
+}
+
+.gbsrac-contactpage-location-details p strong {
+  color: #111111;
+}
+
+.gbsrac-contactpage-location-details a {
+  color: #595959;
+  text-decoration: none;
+}
+
+.gbsrac-contactpage-socials {
+  margin-top: 16px;
+}
+
+.gbsrac-contactpage-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 50px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  color: #111111;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.gbsrac-contactpage-socials a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(227, 6, 19, 0.18);
+  color: #c30410;
+}
+
+.gbsrac-contactpage-socials i {
+  font-size: 18px;
+}
+
+.gbsrac-contactpage-location-map {
+  min-height: 520px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.1);
+}
+
+.gbsrac-contactpage-location-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  flex: 1 1 auto;
+  border: 0;
+  display: block;
+}
+
+/* ================= OFFERTE ================= */
+
+.gbsrac-contactpage-offer {
+  padding-top: 0;
+}
+
+.gbsrac-contactpage-offer-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gbsrac-contactpage-offer-line {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gbsrac-contactpage-offer-intro p,
+.gbsrac-contactpage-offer-panel-head p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.82;
+  color: #595959;
+}
+
+.gbsrac-contactpage-offer-form {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.08);
+  padding: 34px 32px;
+}
+
+.gbsrac-contactpage-offer-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.gbsrac-contactpage-offer-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: #f4f4f4;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  color: #5a5a5a;
+  transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.gbsrac-contactpage-offer-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(227, 6, 19, 0.08);
+  color: #c30410;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.gbsrac-contactpage-offer-step strong {
+  font-size: 16px;
+  color: inherit;
+}
+
+.gbsrac-contactpage-offer-step.is-active,
+.gbsrac-contactpage-offer-step.is-complete {
+  background: rgba(227, 6, 19, 0.04);
+  border-color: rgba(227, 6, 19, 0.18);
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-panel {
+  display: none;
+}
+
+.gbsrac-contactpage-offer-panel.is-active {
+  display: block;
+}
+
+.gbsrac-contactpage-offer-panel-head {
+  margin-bottom: 24px;
+}
+
+.gbsrac-contactpage-offer-kicker {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-contactpage-offer-panel-head h3 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.08;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-categories,
+.gbsrac-contactpage-offer-options,
+.gbsrac-contactpage-offer-summary {
+  display: grid;
+  gap: 14px;
+}
+
+.gbsrac-contactpage-offer-categories {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gbsrac-contactpage-offer-category,
+.gbsrac-contactpage-offer-option,
+.gbsrac-contactpage-offer-summary-card {
+  padding: 18px 18px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #fbfbfb;
+}
+
+.gbsrac-contactpage-offer-category {
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gbsrac-contactpage-offer-category strong,
+.gbsrac-contactpage-offer-summary-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-category span,
+.gbsrac-contactpage-offer-summary-card span,
+.gbsrac-contactpage-offer-empty {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5d5d5d;
+}
+
+.gbsrac-contactpage-offer-category:hover,
+.gbsrac-contactpage-offer-category.is-selected {
+  transform: translateY(-2px);
+  border-color: rgba(227, 6, 19, 0.22);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.gbsrac-contactpage-offer-category.is-selected {
+  background: rgba(227, 6, 19, 0.04);
+}
+
+.gbsrac-contactpage-offer-options {
+  margin-bottom: 22px;
+}
+
+.gbsrac-contactpage-offer-option-group {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #ffffff;
+}
+
+.gbsrac-contactpage-offer-option-group-title {
+  padding: 14px 18px;
+  background: rgba(17, 17, 17, 0.04);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-option-group-list {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+}
+
+.gbsrac-contactpage-offer-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.gbsrac-contactpage-offer-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: #e30613;
+}
+
+.gbsrac-contactpage-offer-option span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-option small {
+  display: block;
+  margin-left: auto;
+  padding-left: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #c30410;
+  text-align: right;
+}
+
+.gbsrac-contactpage-offer-pricebox {
+  margin-bottom: 22px;
+  padding: 24px 22px;
+  background: linear-gradient(135deg, rgba(227, 6, 19, 0.08) 0%, rgba(127, 13, 20, 0.04) 100%);
+  border: 1px solid rgba(227, 6, 19, 0.14);
+}
+
+.gbsrac-contactpage-offer-price-label {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-contactpage-offer-pricebox strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-pricebox span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #575757;
+}
+
+.gbsrac-contactpage-offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-contactpage-offer-summary {
+  margin-bottom: 22px;
+}
+
+.gbsrac-contactpage-offer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.gbsrac-contactpage-offer-back,
+.gbsrac-contactpage-offer-next,
+.gbsrac-contactpage-offer-submit {
+  min-height: 56px;
+  padding: 14px 28px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.gbsrac-contactpage-offer-back {
+  background: #f1f1f1;
+  color: #111111;
+}
+
+.gbsrac-contactpage-offer-next,
+.gbsrac-contactpage-offer-submit {
+  background: #e30613;
+  color: #ffffff;
+}
+
+.gbsrac-contactpage-offer-back:hover,
+.gbsrac-contactpage-offer-next:hover,
+.gbsrac-contactpage-offer-submit:hover {
+  transform: translateY(-2px);
+}
+
+.gbsrac-contactpage-offer-next:hover,
+.gbsrac-contactpage-offer-submit:hover {
+  background: #bf0712;
+}
+
+.gbsrac-contactpage-offer-back:hover {
+  background: #e5e5e5;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-contactpage-hero-container,
+  .gbsrac-contactpage-info-container,
+  .gbsrac-contactpage-form-container,
+  .gbsrac-contactpage-location-container,
+  .gbsrac-contactpage-offer-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-contactpage-hero,
+  .gbsrac-contactpage-hero-container {
+    min-height: 680px;
+  }
+
+  .gbsrac-contactpage-hero-panel {
+    max-width: 720px;
+    padding: 36px 34px;
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 62px;
+    letter-spacing: -2.1px;
+  }
+
+  .gbsrac-contactpage-hero p,
+  .gbsrac-contactpage-form-copy p,
+  .gbsrac-contactpage-location-details p,
+  .gbsrac-contactpage-info-card p,
+  .gbsrac-contactpage-info-card a {
+    font-size: 17px;
+    line-height: 1.78;
+  }
+
+  .gbsrac-contactpage-info,
+  .gbsrac-contactpage-location,
+  .gbsrac-contactpage-offer {
+    padding: 108px 0;
+  }
+
+  .gbsrac-contactpage-form {
+    padding-bottom: 108px;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-contactpage-info-card h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-contactpage-hero,
+  .gbsrac-contactpage-hero-container {
+    min-height: 660px;
+  }
+
+  .gbsrac-contactpage-hero-container {
+    padding: 110px 24px 56px;
+  }
+
+  .gbsrac-contactpage-hero-panel {
+    max-width: 700px;
+    padding: 34px 30px;
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .gbsrac-contactpage-info,
+  .gbsrac-contactpage-location,
+  .gbsrac-contactpage-offer {
+    padding: 100px 0;
+  }
+
+  .gbsrac-contactpage-form {
+    padding-bottom: 100px;
+  }
+
+  .gbsrac-contactpage-info-container,
+  .gbsrac-contactpage-form-container,
+  .gbsrac-contactpage-location-container,
+  .gbsrac-contactpage-offer-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-contactpage-info-intro,
+  .gbsrac-contactpage-location-copy,
+  .gbsrac-contactpage-offer-intro {
+    margin-bottom: 40px;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-contactpage-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-contactpage-form-layout,
+  .gbsrac-contactpage-location-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-contactpage-location-map iframe {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gbsrac-contactpage-hero,
+  .gbsrac-contactpage-hero-container {
+    min-height: 620px;
+  }
+
+  .gbsrac-contactpage-hero-bg::before {
+    inset: -8% 12% -8% -10%;
+    transform: skewX(-10deg);
+  }
+
+  .gbsrac-contactpage-hero-bg::after {
+    width: 220px;
+    height: 220px;
+    right: 4%;
+    top: 18%;
+  }
+
+  .gbsrac-contactpage-hero-container {
+    padding: 104px 24px 46px;
+  }
+
+  .gbsrac-contactpage-hero-panel {
+    max-width: 100%;
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-contactpage-info,
+  .gbsrac-contactpage-location,
+  .gbsrac-contactpage-offer {
+    padding: 88px 0;
+  }
+
+  .gbsrac-contactpage-form {
+    padding-bottom: 88px;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 36px;
+  }
+
+  .gbsrac-contactpage-form-copy {
+    padding: 32px 26px 28px;
+  }
+
+  .gbsrac-contactpage-form-box {
+    padding: 28px 24px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .gbsrac-contactpage-hero,
+  .gbsrac-contactpage-hero-container {
+    min-height: 580px;
+  }
+
+  .gbsrac-contactpage-hero-container {
+    padding: 100px 20px 40px;
+  }
+
+  .gbsrac-contactpage-hero-panel {
+    padding: 28px 22px;
+  }
+
+  .gbsrac-contactpage-hero-subtitle,
+  .gbsrac-contactpage-info-subtitle,
+  .gbsrac-contactpage-form-subtitle,
+  .gbsrac-contactpage-location-subtitle,
+  .gbsrac-contactpage-offer-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-contactpage-hero-line,
+  .gbsrac-contactpage-info-line,
+  .gbsrac-contactpage-form-line,
+  .gbsrac-contactpage-location-line,
+  .gbsrac-contactpage-offer-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-contactpage-hero p,
+  .gbsrac-contactpage-form-copy p,
+  .gbsrac-contactpage-location-details p,
+  .gbsrac-contactpage-info-card p,
+  .gbsrac-contactpage-info-card a {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-contactpage-hero-points span,
+  .gbsrac-contactpage-form-benefits span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .gbsrac-contactpage-info,
+  .gbsrac-contactpage-location,
+  .gbsrac-contactpage-offer {
+    padding: 76px 0;
+  }
+
+  .gbsrac-contactpage-form {
+    padding-bottom: 76px;
+  }
+
+  .gbsrac-contactpage-info-container,
+  .gbsrac-contactpage-form-container,
+  .gbsrac-contactpage-location-container,
+  .gbsrac-contactpage-offer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-contactpage-info-card,
+  .gbsrac-contactpage-form-box {
+    padding: 22px 18px 18px;
+  }
+
+  .gbsrac-contactpage-form-copy {
+    padding: 26px 20px 22px;
+  }
+
+  .gbsrac-contactpage-info-card h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-contactpage-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-contactpage-location-map {
+    min-height: 0;
+  }
+
+  .gbsrac-contactpage-location-map iframe {
+    min-height: 340px;
+  }
+
+  .gbsrac-contactpage-offer-intro p,
+  .gbsrac-contactpage-offer-panel-head p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-contactpage-offer-form {
+    padding: 24px 20px;
+  }
+
+  .gbsrac-contactpage-offer-steps,
+  .gbsrac-contactpage-offer-categories,
+  .gbsrac-contactpage-offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-contactpage-offer-panel-head h3 {
+    font-size: 28px;
+  }
+
+  .gbsrac-contactpage-offer-pricebox strong {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-contactpage-hero,
+  .gbsrac-contactpage-hero-container {
+    min-height: 540px;
+  }
+
+  .gbsrac-contactpage-hero-bg::after {
+    width: 170px;
+    height: 170px;
+    box-shadow:
+      0 0 0 20px rgba(255, 255, 255, 0.02),
+      0 0 0 42px rgba(255, 255, 255, 0.015);
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 36px;
+  }
+
+  .gbsrac-contactpage-info,
+  .gbsrac-contactpage-location,
+  .gbsrac-contactpage-offer {
+    padding: 66px 0;
+  }
+
+  .gbsrac-contactpage-form {
+    padding-bottom: 66px;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 28px;
+  }
+
+  .gbsrac-contactpage-info-card h3 {
+    font-size: 20px;
+  }
+
+  .gbsrac-contactpage-socials {
+    gap: 10px;
+  }
+
+  .gbsrac-contactpage-socials a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-contactpage-location-map iframe {
+    min-height: 300px;
+  }
+
+  .gbsrac-contactpage-offer-step {
+    padding: 14px 14px;
+  }
+
+  .gbsrac-contactpage-offer-category strong,
+  .gbsrac-contactpage-offer-summary-card strong {
+    font-size: 18px;
+  }
+
+  .gbsrac-contactpage-offer-option {
+    flex-direction: column;
+  }
+
+  .gbsrac-contactpage-offer-option small {
+    margin-left: 30px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .gbsrac-contactpage-offer-pricebox {
+    padding: 20px 18px;
+  }
+
+  .gbsrac-contactpage-offer-pricebox strong {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-contactpage-hero-container,
+  .gbsrac-contactpage-info-container,
+  .gbsrac-contactpage-form-container,
+  .gbsrac-contactpage-location-container,
+  .gbsrac-contactpage-offer-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-contactpage-hero-container {
+    padding: 92px 16px 34px;
+  }
+
+  .gbsrac-contactpage-hero-panel {
+    padding: 24px 18px;
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-contactpage-hero p,
+  .gbsrac-contactpage-form-copy p,
+  .gbsrac-contactpage-location-details p,
+  .gbsrac-contactpage-info-card p,
+  .gbsrac-contactpage-info-card a {
+    font-size: 15px;
+  }
+
+  .gbsrac-contactpage-hero-points span,
+  .gbsrac-contactpage-form-benefits span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 26px;
+  }
+
+  .gbsrac-contactpage-info-card,
+  .gbsrac-contactpage-form-box,
+  .gbsrac-contactpage-form-copy {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-contactpage-location-map iframe {
+    min-height: 270px;
+  }
+
+  .gbsrac-contactpage-offer-navigation > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-contactpage-hero,
+  .gbsrac-contactpage-hero-container {
+    min-height: 500px;
+  }
+
+  .gbsrac-contactpage-hero h1 {
+    font-size: 28px;
+  }
+
+  .gbsrac-contactpage-hero-subtitle,
+  .gbsrac-contactpage-info-subtitle,
+  .gbsrac-contactpage-form-subtitle,
+  .gbsrac-contactpage-location-subtitle,
+  .gbsrac-contactpage-offer-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-contactpage-info-intro h2,
+  .gbsrac-contactpage-form-copy h2,
+  .gbsrac-contactpage-location-copy h2,
+  .gbsrac-contactpage-offer-intro h2 {
+    font-size: 23px;
+  }
+
+  .gbsrac-contactpage-submit {
+    width: 100%;
+    min-height: 52px;
+  }
+
+}

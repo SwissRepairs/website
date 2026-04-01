@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/webp" href="img/favicon-3/favicon.webp">
+  <link rel="icon" type="image/webp" sizes="96x96" href="img/favicon-3/favicon-96x96.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-3/apple-touch-icon.webp">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <title>Impressum Swiss Repairs | Schlieren</title>
+  <meta name="description" content="Impressum von Swiss Repairs in Schlieren mit Anbieterangaben, Kontaktinformationen und rechtlichen Hinweisen.">
+  <meta name="keywords" content="Impressum Swiss Repairs, Anbieterkennzeichnung Werkstatt, Swiss Repairs Schlieren, Kontakt Swiss Repairs, rechtliche Hinweise Werkstatt Schweiz">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Swiss Repairs">
+  <link rel="canonical" href="https://www.swissrepairs.ch/impressum.html">
+  <meta property="og:title" content="Impressum Swiss Repairs | Schlieren">
+  <meta property="og:description" content="Anbieterangaben und rechtliche Hinweise von Swiss Repairs in Schlieren.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.swissrepairs.ch/impressum.html">
+  <meta property="og:image" content="https://www.swissrepairs.ch/img/Swiss%20Repairs%20Logo.webp">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="Swiss Repairs">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Impressum Swiss Repairs | Schlieren">
+  <meta name="twitter:description" content="Impressum und rechtliche Hinweise von Swiss Repairs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="impressum.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Impressum | Swiss Repairs",
+      "url": "https://www.swissrepairs.ch/impressum.html"
+    }
+  </script>
+</head>
+<body>
+<header class="gbsrac-navbar" id="home">
+  <div class="gbsrac-navbar-container">
+    <a href="index.html" class="gbsrac-navbar-brand">
+      <img src="img/Swiss Repairs Logo.webp" alt="Swiss Repairs Logo">
+    </a>
+
+    <button class="gbsrac-navbar-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gbsrac-navbar-menu">
+      <a href="index.html" class="gbsrac-navbar-link">Home</a>
+
+      <div class="gbsrac-navbar-dropdown">
+        <a href="index.html#services" class="gbsrac-navbar-link">Services</a>
+        <div class="gbsrac-navbar-dropdown-menu">
+          <a href="wartung.html">Wartung &amp; Service</a>
+          <a href="saison.html">Saisonale Checks</a>
+          <a href="mfk.html">MFK</a>
+          <a href="reparaturen.html">Reparaturen</a>
+          <a href="karosserie.html">Karosserie &amp; Lack</a>
+          <a href="unfall.html">Unfallschäden</a>
+          <a href="reifen.html">Reifenservice</a>
+        </div>
+      </div>
+
+      <a href="ueberuns.html" class="gbsrac-navbar-link">Über Uns</a>
+      <a href="kontakt.html" class="gbsrac-navbar-link">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".gbsrac-navbar");
+  const navbarToggle = document.querySelector(".gbsrac-navbar-toggle");
+  const navbarLinks = document.querySelectorAll(".gbsrac-navbar-menu a");
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    navbar.classList.toggle("is-scrolled", window.scrollY > 30);
+  }
+
+  if (navbar && navbarToggle) {
+    navbarToggle.addEventListener("click", function () {
+      const isOpen = navbar.classList.toggle("is-open");
+      navbarToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbar.classList.remove("is-open");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+});
+</script>
+
+<main class="gbsrac-legal-page">
+  <div class="gbsrac-legal-container">
+    <div class="gbsrac-legal-header">
+      <span class="gbsrac-legal-subtitle">Rechtliches</span>
+      <h1>Impressum</h1>
+      <div class="gbsrac-legal-line"></div>
+    </div>
+
+    <div class="gbsrac-legal-card">
+      <section class="gbsrac-legal-block">
+        <h2>Angaben gemäss Anbieterkennzeichnung</h2>
+        <p>Swiss Rent a Car GmbH</p>
+        <p>Schaffhauserstrasse 137</p>
+        <p>8302 Kloten, Schweiz</p>
+        <p>Telefon: <a href="tel:+41767672220">+41 76 767 22 20</a></p>
+        <p>E-Mail: <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a></p>
+      </section>
+
+      <section class="gbsrac-legal-block">
+        <h2>Rechtliche Hinweise</h2>
+      </section>
+
+      <section class="gbsrac-legal-block">
+        <h3>Haftung für Inhalte</h3>
+        <p>Die Inhalte dieser Website wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir keine Gewähr.</p>
+      </section>
+
+      <section class="gbsrac-legal-block">
+        <h3>Haftung für Links</h3>
+        <p>Diese Website enthält Links zu externen Seiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir keine Verantwortung.</p>
+      </section>
+
+      <section class="gbsrac-legal-block">
+        <h3>Urheberrecht</h3>
+        <p>Alle Inhalte und Werke auf dieser Website unterliegen dem schweizerischen Urheberrecht. Jede Nutzung ausserhalb der gesetzlichen Grenzen bedarf der schriftlichen Zustimmung des Betreibers.</p>
+      </section>
+
+      <section class="gbsrac-legal-block">
+        <h3>Datenschutz</h3>
+        <p>Der Schutz Ihrer persönlichen Daten ist uns ein Anliegen. Informationen dazu finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      </section>
+
+      <section class="gbsrac-legal-block">
+        <h3>Gerichtsstand &amp; Recht</h3>
+        <p>Gerichtsstand ist Zürich, Schweiz.</p>
+        <p>Es gilt ausschliesslich schweizerisches Recht.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="gbsrac-footer">
+  <div class="gbsrac-footer-container">
+    <div class="gbsrac-footer-brand">
+      <h2>Über uns</h2>
+      <p>
+        Swiss Repairs steht für saubere Arbeit, faire Preise und ehrliche
+        Rückmeldungen rund ums Fahrzeug. Ob Service, Reparaturen, MFK oder
+        Reifenwechsel - wir arbeiten zuverlässig, persönlich und mit klarer
+        Terminplanung.
+      </p>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Quicklinks</span>
+      <a href="index.html">Home</a>
+      <a href="ueberuns.html">Über Uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="kontakt.html#location">Standort</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Unsere Services</span>
+      <a href="wartung.html">Wartung &amp; Service</a>
+      <a href="saison.html">Saisonale Checks</a>
+      <a href="karosserie.html">Karosserie &amp; Lack</a>
+      <a href="reparaturen.html">Reparaturen</a>
+      <a href="mfk.html">MFK</a>
+      <a href="reifen.html">Reifenservice</a>
+      <a href="unfall.html">Unfallschäden</a>
+    </div>
+
+    <div class="gbsrac-footer-column gbsrac-footer-partner">
+      <span class="gbsrac-footer-title">Unser Partner</span>
+      <p class="gbsrac-footer-partner-name">Swiss Rent a Car</p>
+      <p>
+        Swiss Rent a Car in Kloten steht für flexible Mobilität,
+        Fahrzeugvermietung, Transfers und Airport Services - zuverlässig,
+        professionell und schweizweit einsatzbereit.
+      </p>
+      <a href="https://swissrentacar.ch" class="gbsrac-footer-partner-btn" target="_blank" rel="noopener noreferrer">Erfahre mehr</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Kontakt</span>
+      <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+      <a href="tel:+41767672220">+41 76 767 22 20</a>
+      <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a>
+    </div>
+  </div>
+
+  <div class="gbsrac-footer-bottom">
+    <p>&copy; 2026 Swiss Repairs. Alle Rechte vorbehalten.</p>
+    <div class="gbsrac-footer-bottom-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

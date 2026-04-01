@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/webp" href="img/favicon-3/favicon.webp">
+  <link rel="icon" type="image/webp" sizes="96x96" href="img/favicon-3/favicon-96x96.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-3/apple-touch-icon.webp">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <title>Car Garage Schlieren | Swiss Repairs Tamil</title>
+  <meta name="description" content="Swiss Repairs in Schlieren: car service, repairs, MFK and tyre service with Tamil-friendly support. Contact us for a quick appointment.">
+  <meta name="keywords" content="Tamil car garage Schlieren, Tamil auto service Zurich, Swiss Repairs Tamil, car repair Schlieren, MFK Schlieren, tyre service Schlieren, Tamil mechanic Switzerland, garage Zurich Tamil">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Swiss Repairs">
+  <meta name="geo.region" content="CH-ZH">
+  <meta name="geo.placename" content="Schlieren">
+  <link rel="canonical" href="https://www.swissrepairs.ch/index_ta.html">
+  <meta property="og:title" content="Car Garage Schlieren | Swiss Repairs Tamil">
+  <meta property="og:description" content="Tamil-friendly car garage in Schlieren for service, repairs, MFK and tyre service.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.swissrepairs.ch/index_ta.html">
+  <meta property="og:image" content="https://www.swissrepairs.ch/img/heros/hero.webp">
+  <meta property="og:locale" content="ta_IN">
+  <meta property="og:site_name" content="Swiss Repairs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Car Garage Schlieren | Swiss Repairs Tamil">
+  <meta name="twitter:description" content="Tamil-friendly support for car service and repairs in Schlieren. Book with Swiss Repairs.">
+  <meta name="twitter:image" content="https://www.swissrepairs.ch/img/heros/hero.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Swiss Repairs Tamil",
+      "url": "https://www.swissrepairs.ch/index_ta.html",
+      "description": "Tamil-friendly version of Swiss Repairs in Schlieren.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Schlieren, Zurich, Switzerland"
+      }
+    }
+  </script>
+</head>
+<body>
+<!-- ================= NAVBAR SWISS REPAIRS ================= -->
+<header class="gbsrac-navbar" id="home">
+  <div class="gbsrac-navbar-container">
+    <a href="index_ta.html" class="gbsrac-navbar-brand">
+      <img src="img/Swiss Repairs Logo.webp" alt="Swiss Repairs Logo">
+    </a>
+
+    <button class="gbsrac-navbar-toggle" type="button" aria-label="மெனுவை திற" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gbsrac-navbar-menu">
+      <a href="index_ta.html" class="gbsrac-navbar-link">முகப்பு</a>
+
+      <div class="gbsrac-navbar-dropdown">
+        <a href="#services" class="gbsrac-navbar-link">சேவைகள்</a>
+        <div class="gbsrac-navbar-dropdown-menu">
+          <a href="wartung.html">பராமரிப்பு &amp; சேவை</a>
+          <a href="saison.html">காலநிலைச் சோதனைகள்</a>
+          <a href="mfk.html">MFK</a>
+          <a href="reparaturen.html">பழுதுபார்ப்புகள்</a>
+          <a href="karosserie.html">பாடிவொர்க் &amp; பெயிண்ட்</a>
+          <a href="unfall.html">விபத்து சேதங்கள்</a>
+          <a href="reifen.html">டயர் சேவை</a>
+        </div>
+      </div>
+
+      <a href="ueberuns.html" class="gbsrac-navbar-link">எங்களை பற்றி</a>
+      <a href="kontakt.html" class="gbsrac-navbar-link">தொடர்பு</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".gbsrac-navbar");
+  const navbarToggle = document.querySelector(".gbsrac-navbar-toggle");
+  const navbarLinks = document.querySelectorAll(".gbsrac-navbar-menu a");
+  const faqItems = document.querySelectorAll(".gbsrac-faq-item");
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    navbar.classList.toggle("is-scrolled", window.scrollY > 30);
+  }
+
+  if (navbar && navbarToggle) {
+    navbarToggle.addEventListener("click", function () {
+      const isOpen = navbar.classList.toggle("is-open");
+      navbarToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbar.classList.remove("is-open");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+
+  faqItems.forEach(function (item) {
+    const button = item.querySelector(".gbsrac-faq-question");
+
+    button.addEventListener("click", function () {
+      const isOpen = item.classList.contains("is-open");
+
+      faqItems.forEach(function (entry) {
+        entry.classList.remove("is-open");
+        entry.querySelector(".gbsrac-faq-question").setAttribute("aria-expanded", "false");
+      });
+
+      if (!isOpen) {
+        item.classList.add("is-open");
+        button.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+});
+</script>
+
+<!-- ================= HERO SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-hero">
+  <div class="gbsrac-hero-bg" data-aos="zoom-out" data-aos-duration="1400"></div>
+  <div class="gbsrac-hero-overlay"></div>
+
+  <div class="gbsrac-hero-content">
+    <div class="gbsrac-hero-shape"
+         data-aos="fade-left"
+         data-aos-duration="1200"
+         data-aos-delay="150"></div>
+
+    <div class="gbsrac-hero-text">
+      <span class="gbsrac-hero-subtitle"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="250">
+        வரவேற்கிறோம்
+      </span>
+
+      <h1 data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="400">
+        Swiss Repairs
+      </h1>
+
+      <div class="gbsrac-hero-line"
+           data-aos="zoom-in"
+           data-aos-duration="700"
+           data-aos-delay="550"></div>
+
+      <p data-aos="fade-up"
+         data-aos-duration="900"
+         data-aos-delay="700">
+சேவை, பழுதுபார்ப்பு மற்றும் வாகன பராமரிப்பிற்கான உங்கள் நம்பகமான தொழில்முறை கராஜ்.
+      </p>
+
+      <div class="gbsrac-hero-buttons"
+           data-aos="fade-up"
+           data-aos-duration="900"
+           data-aos-delay="850">
+        <a href="#services" class="gbsrac-btn gbsrac-btn-primary">எங்கள் சேவைகள்</a>
+        <a href="kontakt.html#booking" class="gbsrac-btn gbsrac-btn-secondary">இப்போது தொடர்புகொள்ளுங்கள்</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UEBER UNS SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-about" id="about">
+  <div class="gbsrac-about-container">
+    
+    <div class="gbsrac-about-image" data-aos="fade-right" data-aos-duration="1000">
+      <img src="img/heros/saison.webp" alt="Swiss Repairs கராஜ்">
+    </div>
+
+    <div class="gbsrac-about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+      <span class="gbsrac-about-subtitle">எங்களை பற்றி</span>
+      <h2>வாகனங்களுக்கான ஆர்வம். ஒவ்வொரு பணியிலும் தரம்.</h2>
+      <div class="gbsrac-about-line"></div>
+
+      <p>
+        Swiss Repairs என்பது நம்பகமான சேவை, நேர்மையான ஆலோசனை மற்றும்
+        வாகனத்தைச் சுற்றிய தொழில்முறை பணிக்காக அறியப்படுகிறது. பராமரிப்பு,
+        பழுதுபார்ப்பு, MFK தயாரிப்பு அல்லது வாகன பராமரிப்பு எதுவாக இருந்தாலும்,
+        ஒவ்வொரு விபரத்தையும் கவனத்துடனும் அனுபவத்துடனும் மேற்கொள்கிறோம்.
+      </p>
+
+      <p>
+        எங்கள் நோக்கம் வாடிக்கையாளர்களுக்கு ஒரு பழுதுபார்ப்பை மட்டும் வழங்குவது அல்ல,
+        பாதுகாப்பு, வெளிப்படைத் தன்மை மற்றும் நம்பிக்கை ஆகியவற்றை உணர்த்தும்
+        அனுபவத்தையும் வழங்குவதாகும். எங்களிடம் உங்கள் வாகனமும், நீங்களும்
+        சமமான முக்கியத்துவம் பெறுகிறீர்கள்.
+      </p>
+
+      <div class="gbsrac-about-features">
+        <div class="gbsrac-about-feature">
+          <div class="gbsrac-about-feature-icon" aria-hidden="true">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <p>எல்லா பிராண்டுகளுக்கும் சுயாதீன கராஜ்</p>
+        </div>
+
+        <div class="gbsrac-about-feature">
+          <div class="gbsrac-about-feature-icon" aria-hidden="true">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <p>நேர்மையாகவும் நியாயமான விலையிலும்</p>
+        </div>
+
+        <div class="gbsrac-about-feature">
+          <div class="gbsrac-about-feature-icon" aria-hidden="true">
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>அனுபவம், சுத்தமான வேலை, தெளிவான செயல்முறை</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= SERVICES SLIDER SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-services-slider" id="services">
+
+  <div class="gbsrac-services-slider-header"
+       data-aos="fade-up"
+       data-aos-duration="900">
+    <span class="gbsrac-services-slider-subtitle">எங்கள் சேவைகள்</span>
+    <h2>ஒவ்வொரு வாகனத்திற்கும் தொழில்முறை கராஜ் சேவைகள்</h2>
+    <p>
+      சேவை, பழுதுபார்ப்பு, பாடிவொர்க், MFK மற்றும் வாகன பராமரிப்பு தொடர்பான
+      எங்கள் சேவைகளை அறிந்து கொள்ளுங்கள் - நவீனமான, நம்பகமான, தனிப்பட்ட அணுகுமுறையுடன்.
+    </p>
+  </div>
+
+  <div class="gbsrac-services-slider-wrapper"
+       data-aos="fade-up"
+       data-aos-duration="1000"
+       data-aos-delay="150">
+
+    <button class="gbsrac-slider-arrow gbsrac-slider-arrow-left" aria-label="முந்தைய சேவைகள்">
+      <span>&#10094;</span>
+    </button>
+
+    <div class="gbsrac-services-viewport">
+      <div class="gbsrac-services-track">
+
+        <!-- 1 -->
+        <div class="gbsrac-service-slide" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/wartung.webp" alt="பராமரிப்பு மற்றும் சேவை">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>பராமரிப்பு &amp; சேவை</h3>
+            <p>
+              வழக்கமான பராமரிப்பு, எண்ணெய் மாற்றம், சோதனைகள் மற்றும்
+              பாதுகாப்பும் மதிப்பும் காக்கும் தொழில்முறை வாகன சேவை.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="wartung.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gbsrac-service-slide" data-aos="fade-up" data-aos-delay="180" data-aos-duration="900">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/saison.webp" alt="காலநிலைச் சோதனைகள்">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>காலநிலைச் சோதனைகள்</h3>
+            <p>
+              குளிர்காலமும் கோடைகாலமும் சிறந்த செயல்திறன்,
+              பாதுகாப்பு மற்றும் ஒவ்வொரு காலத்திலும் கவலையற்ற பயணத்திற்காக.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="saison.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gbsrac-service-slide" data-aos="fade-up" data-aos-delay="260" data-aos-duration="900">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/mfk.webp" alt="MFK">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>MFK</h3>
+            <p>
+              உங்கள் வாகனத்தை MFKக்காக தொழில்முறையாகத் தயாரித்து,
+              தேவையான அனைத்து முக்கிய நடவடிக்கைகளிலும் உங்களுக்கு உதவுகிறோம்.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="mfk.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/reparatur.webp" alt="பழுதுபார்ப்புகள்">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>பழுதுபார்ப்புகள்</h3>
+            <p>
+              பிரேக், சஸ்பென்ஷன், என்ஜின்,
+              எலக்ட்ரானிக்ஸ் மற்றும் பல்வேறு வாகன கூறுகளுக்கான நிபுணத்துவப் பழுதுபார்ப்பு.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="reparaturen.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/karosserie.webp" alt="பாடிவொர்க் மற்றும் பெயிண்ட்">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>பாடிவொர்க் &amp; பெயிண்ட்</h3>
+            <p>
+              சிறந்த தோற்றத்தையும் உங்கள் வாகனத்தின் மதிப்பையும்
+              காக்க உயர்தர பாடிவொர்க் மற்றும் பெயிண்ட் வேலை.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="karosserie.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/unfall.webp" alt="விபத்து சேதங்கள் மற்றும் காப்பீடு">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>விபத்து சேதங்கள் &amp; காப்பீடு</h3>
+            <p>
+              விபத்து சேதங்களை தொழில்முறையாகச் சரிசெய்து,
+              உங்கள் காப்பீட்டு நிறுவனம் தொடர்பான நடவடிக்கைகளையும் மேற்கொள்கிறோம்.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="unfall.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/reifen.webp" alt="டயர் சேவை">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>டயர் சேவை</h3>
+            <p>
+              டயர் மாற்றம், சோதனை, சமநிலை அமைத்தல் மற்றும்
+              ஒவ்வொரு பயணத்திலும் அதிகபட்ச பாதுகாப்புக்கான காலநிலைச் சேவை.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="reifen.html" class="gbsrac-service-btn">மேலும் அறிக</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">பதிவு செய்யவும்</a>
+            </div>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </div>
+
+    <button class="gbsrac-slider-arrow gbsrac-slider-arrow-right" aria-label="அடுத்த சேவைகள்">
+      <span>&#10095;</span>
+    </button>
+
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".gbsrac-services-track");
+  const slides = Array.from(document.querySelectorAll(".gbsrac-service-slide"));
+  const prevBtn = document.querySelector(".gbsrac-slider-arrow-left");
+  const nextBtn = document.querySelector(".gbsrac-slider-arrow-right");
+
+  const visibleSlides = 3;
+  let currentIndex = 0;
+
+  function getSlideStep() {
+    const slideWidth = slides[0].offsetWidth;
+    const trackStyles = window.getComputedStyle(track);
+    const gap = parseInt(trackStyles.gap) || 0;
+    return slideWidth + gap;
+  }
+
+  function updateSlider() {
+    const step = getSlideStep();
+    track.style.transform = `translateX(-${currentIndex * step}px)`;
+
+    prevBtn.style.opacity = currentIndex === 0 ? "0.5" : "1";
+    prevBtn.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+
+    const maxIndex = slides.length - visibleSlides;
+    nextBtn.style.opacity = currentIndex >= maxIndex ? "0.5" : "1";
+    nextBtn.style.pointerEvents = currentIndex >= maxIndex ? "none" : "auto";
+  }
+
+  nextBtn.addEventListener("click", function () {
+    const maxIndex = slides.length - visibleSlides;
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  prevBtn.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  window.addEventListener("resize", updateSlider);
+
+  updateSlider();
+});
+</script>
+
+<!-- ================= WARUM WIR SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-why" id="why-us">
+  <div class="gbsrac-why-container">
+    <div class="gbsrac-why-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-why-subtitle">ஏன் நாங்கள்</span>
+      <h2>ஏனெனில் ஒரு நல்ல கராஜ் என்பது பழுதுபார்ப்பை விட அதிகம்.</h2>
+      <div class="gbsrac-why-line"></div>
+      <p>
+        பல வாடிக்கையாளர்கள் இந்த பிரச்சினையை அறிவார்கள்: கார் ஒப்படைக்கப்படுகிறது,
+        நேரங்கள் தெளிவான தகவல் இல்லாமல் மாறுகின்றன, இறுதியில் வேலை உண்மையில்
+        எப்போது முடியும் என்பது தெரியாமல் போகிறது. இதையே நாங்கள் தவிர்க்க விரும்புகிறோம்.
+      </p>
+    </div>
+
+    <div class="gbsrac-why-grid">
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="80">
+        <span class="gbsrac-why-card-number">01</span>
+        <h3>வெற்று வாக்குறுதிகள் அல்ல, உறுதியான நேரங்கள்</h3>
+        <p>
+          உங்கள் வாகனம் எப்போது எங்கள் பணிச்சூழலில் சேர்க்கப்படுகிறது,
+          எப்போது தயார் ஆகும் என்று முன்கூட்டியே தெரியும் வகையில் நாங்கள் திட்டமிடுகிறோம்.
+        </p>
+      </article>
+
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="160">
+        <span class="gbsrac-why-card-number">02</span>
+        <h3>தாமதம் ஏற்பட்டால் நேர்மையான தகவல்</h3>
+        <p>
+          ஏதேனும் வேலை திட்டத்தை விட அதிக நேரம் எடுத்துக்கொண்டால், அதைப் பற்றி
+          முன்கூட்டியே திறந்த மனதுடன் தெரிவிப்போம். காரணங்கள் இல்லை, மௌனம் இல்லை,
+          வேலை முடியும் நேரம் பற்றிய தெளிவான தகவல் மட்டுமே.
+        </p>
+      </article>
+
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="240">
+        <span class="gbsrac-why-card-number">03</span>
+        <h3>நேர அட்டவணையுடன் வேலை</h3>
+        <p>
+          ஒழுங்கான நேர அட்டவணையால், வேலை தொடங்காத நிலையிலும் வாகனங்கள்
+          தேவையற்ற நேரம் எங்களிடம் நிற்கும் நிலையை தவிர்க்கிறோம்.
+          இது உங்கள் நேரத்தைச் சேமித்து தெளிவான செயல்முறையை வழங்குகிறது.
+        </p>
+      </article>
+
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="320">
+        <span class="gbsrac-why-card-number">04</span>
+        <h3>நியாயமான விலை மற்றும் சுத்தமான வேலை</h3>
+        <p>
+          நாங்கள் நியாயமான விலை, புரிந்துகொள்ளக்கூடிய சேவை மற்றும் வாகனத்தில்
+          சுத்தமான வேலைக்காக நிற்கிறோம். தேவையற்ற செலவுகள் இல்லை, நம்பக்கூடிய
+          நேர்மையான தரமே உண்டு.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-cta" id="contact">
+  <div class="gbsrac-cta-container" data-aos="fade-up" data-aos-duration="950">
+    <div class="gbsrac-cta-content">
+      <span class="gbsrac-cta-subtitle">உங்களுக்கு கேள்விகள் உள்ளதா?</span>
+      <h2>நாங்கள் மகிழ்ச்சியுடன் ஆலோசனை தருகிறோம்.</h2>
+      <div class="gbsrac-cta-line"></div>
+      <p>
+        சேவை, பழுதுபார்ப்பு அல்லது MFK குறித்து நேரம் பதிவு செய்யவோ
+        நேர்மையான மதிப்பீடு பெறவோ விரும்புகிறீர்களா? எங்களை தொடர்பு கொள்ளுங்கள்,
+        நாங்கள் விரைவாகவும் தெளிவாகவும் உங்களைத் தொடர்புகொள்வோம்.
+      </p>
+    </div>
+
+    <div class="gbsrac-cta-actions">
+      <a href="mailto:info@swissrepairs.ch" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">info@swissrepairs.ch</span>
+      </a>
+
+      <a href="tel:+41767672220" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">+41 76 767 22 20</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT FORM SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-contact-form" id="booking">
+  <div class="gbsrac-contact-form-container">
+    <div class="gbsrac-contact-form-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-contact-form-subtitle">தொடர்பு & நேர பதிவு</span>
+      <h2>நேரம் கோருங்கள், விரைவில் நேர்மையான பதிலைப் பெறுங்கள்.</h2>
+      <div class="gbsrac-contact-form-line"></div>
+      <p>
+        உங்கள் தேவையை எங்களிடம் தெரிவியுங்கள். பின்னர் மதிப்பீடு, நேரம் தொடர்பான
+        பரிந்துரை அல்லது அடுத்த படிகள் குறித்து எங்களால் முடிந்த விரைவில் பதிலளிக்கப்படும்.
+      </p>
+    </div>
+
+    <div class="gbsrac-contact-form-layout">
+      <div class="gbsrac-contact-form-info" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-contact-form-info-card">
+          <span class="gbsrac-contact-form-info-label">நீங்கள் எதிர்பார்க்கக்கூடியவை</span>
+          <ul class="gbsrac-contact-form-info-list">
+            <li>தேவையற்ற காத்திருப்பு இல்லாத தெளிவான நேர திட்டமிடல்</li>
+            <li>வேலை அளவும் காலமும் பற்றிய நேர்மையான தகவல்</li>
+            <li>நியாயமான விலை மற்றும் வாகனத்தில் சுத்தமான வேலை</li>
+          </ul>
+        </div>
+      </div>
+
+      <form
+        class="gbsrac-contact-form-box"
+        action="https://formsubmit.co/info@swissrepairs.ch"
+        method="POST"
+        data-aos="fade-left"
+        data-aos-duration="950"
+      >
+        <input type="hidden" name="_subject" value="புதிய நேர கோரிக்கை - Swiss Repairs">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="gbsrac-contact-form-grid">
+          <div class="gbsrac-contact-field">
+            <label for="name">பெயர்</label>
+            <input id="name" name="name" type="text" placeholder="உங்கள் பெயர்" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="phone">தொலைபேசி</label>
+            <input id="phone" name="phone" type="tel" placeholder="+41 ..." required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="email">மின்னஞ்சல்</label>
+            <input id="email" name="email" type="email" placeholder="ungal@email.ch" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="service">சேவை</label>
+            <select id="service" name="service" required>
+              <option value="">தயவுசெய்து தேர்வு செய்யவும்</option>
+              <option value="பராமரிப்பு & சேவை">பராமரிப்பு & சேவை</option>
+              <option value="காலநிலைச் சோதனைகள்">காலநிலைச் சோதனைகள்</option>
+              <option value="MFK">MFK</option>
+              <option value="பழுதுபார்ப்புகள்">பழுதுபார்ப்புகள்</option>
+              <option value="டயர் சேவை">டயர் சேவை</option>
+              <option value="பாடிவொர்க் & பெயிண்ட்">பாடிவொர்க் & பெயிண்ட்</option>
+              <option value="மற்ற கோரிக்கை">மற்ற கோரிக்கை</option>
+            </select>
+          </div>
+
+          <div class="gbsrac-contact-field gbsrac-contact-field-full">
+            <label for="message">செய்தி</label>
+            <textarea id="message" name="message" rows="6" placeholder="உங்கள் தேவையை, வாகனத்தை அல்லது விரும்பும் தேதியைச் சுருக்கமாக எழுதுங்கள்." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="gbsrac-contact-submit">நேர கோரிக்கையை அனுப்பவும்</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STANDORT SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-location" id="location">
+  <div class="gbsrac-location-container">
+    <div class="gbsrac-location-content" data-aos="fade-up" data-aos-duration="900">
+      <h2>எங்கள் இருப்பிடம்</h2>
+      <div class="gbsrac-location-line"></div>
+
+      <div class="gbsrac-location-details">
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">முகவரி</span>
+          <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">தொலைபேசி</span>
+          <p><a href="tel:+41767672220">+41 76 767 22 20</a></p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">மின்னஞ்சல்</span>
+          <p><a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a></p>
+        </div>
+      </div>
+
+      <div class="gbsrac-location-payments">
+        <span class="gbsrac-location-label">ஏற்றுக்கொள்ளப்படும் கட்டண முறைகள்</span>
+        <ul class="gbsrac-location-payment-list">
+          <li>டெபிட் கார்டுகள் (Maestro, Debit Master, Debit Visa, V-Pay)</li>
+          <li>கிரெடிட் கார்டுகள் (Mastercard, VISA, American Express)</li>
+          <li>PostCard</li>
+          <li>பணம் (CHF, EURO)</li>
+          <li>Twint</li>
+        </ul>
+
+        <div class="gbsrac-location-payment-icons">
+          <span class="gbsrac-location-payment-brand"><img src="img/visa.webp" alt="Visa"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/mastercard.webp" alt="Mastercard"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/apple-pay.webp" alt="Apple Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/google-pay.webp" alt="Google Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/twint.webp" alt="Twint"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gbsrac-location-map" data-aos="fade-up" data-aos-duration="950" data-aos-delay="120">
+      <iframe
+        src="https://www.google.com/maps?q=Gaswerkstrasse+8,+8952+Schlieren&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Swiss Repairs Google Maps இருப்பிடம்"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-faq" id="faq">
+  <div class="gbsrac-faq-container">
+    <div class="gbsrac-faq-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-faq-subtitle">FAQ</span>
+      <h2>அடிக்கடி கேட்கப்படும் கேள்விகள்</h2>
+      <div class="gbsrac-faq-line"></div>
+    </div>
+
+    <div class="gbsrac-faq-list" data-aos="fade-up" data-aos-duration="950" data-aos-delay="100">
+      <article class="gbsrac-faq-item is-open">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="true">
+          <span>எவ்வளவு விரைவில் எனக்கு நேரம் கிடைக்கும்?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>வேலை அளவு மற்றும் பிஸியான நிலைக்கு ஏற்ப, பல நேரங்களில் குறுகிய காலத்திலேயே நேரம் கிடைக்கும். அடுத்த காலியிட நேரத்தைப் பற்றி விரைவில் நேர்மையான தகவல் தருகிறோம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>MFK தயாரிப்பும் செய்கிறீர்களா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>ஆம். உங்கள் வாகனத்தை MFKக்காக தயார் செய்து, எந்த வேலைகள் தேவையோ பயனுள்ளவையோ என்பதை முன்கூட்டியே சரிபார்க்கிறோம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>என் கார் வெறுமனே நிறுத்தப்படுமா அல்லது நேராக வேலைக்குள் சேர்க்கப்படுமா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>நாங்கள் நேர திட்டமிடலுடன் வேலை செய்கிறோம்; அதனால் வாகனங்கள் தேவையற்ற நேரம் எங்களிடம் நிற்காது. எங்கள் நோக்கம் தெளிவான செயல்முறை மற்றும் குறைந்த காத்திருப்பு நேரம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>ஒரு வேலை திட்டத்தை விட அதிக நேரம் எடுத்துக்கொண்டால் என்ன ஆகும்?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>அப்படி நடந்தால், முன்கூட்டியே திறந்த மனதுடன் உங்களுக்கு தெரிவிப்போம். தாமதம் மற்றும் புதிய முடிவு நேரம் பற்றிய நேர்மையான தகவலைப் பெறுவீர்கள்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>டயர் மாற்றமும் காலநிலைச் சோதனைகளும் வழங்குகிறீர்களா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>ஆம். டயர் மாற்றம், காலநிலைச் சோதனை, மேலும் வேண்டுமென்றால் பிரேக், பேட்டரி, திரவங்கள் மற்றும் பொதுப் பாதுகாப்பு அம்சங்களையும் சரிபார்க்கிறோம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>பழுதுபார்ப்பிற்கு முன் செலவு பற்றிய தகவல் கிடைக்குமா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>ஆம். நாங்கள் நியாயமான விலைக்கும் வெளிப்படைத்தன்மைக்கும் முக்கியத்துவம் தருகிறோம். பெரிய வேலைகள் தொடங்கும் முன் வேலை அளவும் கணிக்கப்பட்ட செலவும் பற்றி தெரிவிக்கிறோம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>எல்லா பிராண்டு வாகனங்களிலும் வேலை செய்கிறீர்களா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>ஆம். பல்வேறு பிராண்டுகளின் வாகனங்களை கவனிக்கிறோம். தேவையற்ற கூடுதல் வேலைகளுக்கு பதிலாக, உங்கள் வாகனத்தின் உண்மையான தேவையைப் பொருத்தே செயல்படுகிறோம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>சிறிய பிரச்சினைகளுக்காகவும் என் வாகனத்தை கொண்டு வரலாமா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>ஆம். எச்சரிக்கை விளக்குகள், சத்தம், பேட்டரி பிரச்சினை அல்லது சிறிய சோதனைகள் போன்ற விஷயங்களுக்காகவும் எங்களை தொடர்பு கொண்டு நேரம் பெறலாம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>நீங்கள் எந்த கட்டண முறைகளை ஏற்கிறீர்கள்?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>நாங்கள் டெபிட் கார்டுகள், கிரெடிட் கார்டுகள், PostCard, CHF அல்லது Euro பணம் மற்றும் Twint ஆகியவற்றை ஏற்கிறோம். விரிவான கட்டண முறைகள் இருப்பிடம் பகுதியில் காணலாம்.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>தொலைபேசி அல்லது மின்னஞ்சல் மூலம் நேரம் கேட்கலாமா?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>ஆம். தொலைபேசி, மின்னஞ்சல் அல்லது இணையதளப் படிவம் மூலம் எங்களை தொடர்பு கொள்ளலாம். எங்களால் முடிந்த விரைவில் பதில் தரப்படும்.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER SWISS REPAIRS ================= -->
+<footer class="gbsrac-footer">
+  <div class="gbsrac-footer-container">
+    <div class="gbsrac-footer-brand">
+      <h2>எங்களை பற்றி</h2>
+      <p>
+        Swiss Repairs என்பது சுத்தமான வேலை, நியாயமான விலை மற்றும் வாகனத்தை
+        சுற்றிய நேர்மையான தகவலுக்காக அறியப்படுகிறது. சேவை, பழுதுபார்ப்பு, MFK
+        அல்லது டயர் மாற்றம் எதுவாக இருந்தாலும், நாங்கள் நம்பகமாகவும் தனிப்பட்ட
+        அணுகுமுறையுடனும் தெளிவான நேர திட்டத்துடனும் செயல்படுகிறோம்.
+      </p>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">விரைவு இணைப்புகள்</span>
+      <a href="#home">முகப்பு</a>
+      <a href="ueberuns.html">எங்களை பற்றி</a>
+      <a href="kontakt.html">தொடர்பு</a>
+      <a href="#location">இருப்பிடம்</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">எங்கள் சேவைகள்</span>
+      <a href="wartung.html">பராமரிப்பு &amp; Service</a>
+      <a href="saison.html">காலநிலைச் சோதனைகள்</a>
+      <a href="karosserie.html">பாடிவொர்க் &amp; பெயிண்ட்</a>
+      <a href="reparaturen.html">பழுதுபார்ப்புகள்</a>
+      <a href="mfk.html">MFK</a>
+      <a href="reifen.html">டயர் சேவை</a>
+      <a href="unfall.html">விபத்து சேதங்கள்</a>
+    </div>
+
+    <div class="gbsrac-footer-column gbsrac-footer-partner">
+      <span class="gbsrac-footer-title">எங்கள் கூட்டாளர்</span>
+      <p class="gbsrac-footer-partner-name">Swiss Rent a Car</p>
+      <p>
+        Kloten-இல் உள்ள Swiss Rent a Car என்பது நெகிழ்வான போக்குவரத்து,
+        வாகன வாடகை, டிரான்ஸ்ஃபர் மற்றும் விமான நிலைய சேவைகளுக்காக அறியப்படுகிறது -
+        நம்பகமானது, தொழில்முறையானது, சுவிட்சர்லாந்து முழுவதும் பயன்பாட்டிற்கு தயாரானது.
+      </p>
+      <a href="https://swissrentacar.ch" class="gbsrac-footer-partner-btn" target="_blank" rel="noopener noreferrer">மேலும் அறிக</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">தொடர்பு</span>
+      <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+      <a href="tel:+41767672220">+41 76 767 22 20</a>
+      <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a>
+    </div>
+  </div>
+
+  <div class="gbsrac-footer-bottom">
+    <p>&copy; 2026 Swiss Repairs. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+    <div class="gbsrac-footer-bottom-links">
+      <a href="impressum.html">இம்பிரெஸ்ஸும்</a>
+      <a href="datenschutz.html">தரவு பாதுகாப்பு</a>
+    </div>
+  </div>
+</footer>
+
+<script src="form-redirect.js"></script>
+
+
+<!-- ================= AOS INIT ================= -->
+<script>
+  window.addEventListener('load', function () {
+    if (!window.AOS) return;
+
+    AOS.init({
+      once: true,
+      offset: 120,
+      easing: 'ease-out-cubic'
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,960 @@
+/* ================= UNFALL HERO ================= */
+
+.gbsrac-accident-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-accident-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/heros/unfall.webp");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.03);
+  filter: saturate(0.95);
+}
+
+.gbsrac-accident-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.18), transparent 26%),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.78) 0%, rgba(7, 7, 7, 0.48) 45%, rgba(7, 7, 7, 0.82) 100%);
+}
+
+.gbsrac-accident-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 7% 70px;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-accident-hero-panel {
+  max-width: 760px;
+  padding: 42px 40px;
+  background: rgba(12, 12, 12, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-accident-hero-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-accident-hero h1 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  color: #ffffff;
+}
+
+.gbsrac-accident-hero-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+  border-radius: 999px;
+}
+
+.gbsrac-accident-hero p {
+  max-width: 620px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-accident-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.gbsrac-accident-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gbsrac-accident-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* ================= UNFALL SERVICES ================= */
+
+.gbsrac-accident-services {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-accident-services-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-accident-services-intro {
+  max-width: 860px;
+  margin-bottom: 56px;
+}
+
+.gbsrac-accident-services-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-accident-services-intro h2 {
+  margin: 0;
+  max-width: 860px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-accident-services-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-accident-services-intro p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-accident-services-stage {
+  display: grid;
+  gap: 26px;
+}
+
+.gbsrac-accident-services-core {
+  max-width: 760px;
+  padding: 34px 32px 28px;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.08), transparent 26%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.98) 0%, rgba(244, 244, 244, 0.98) 100%);
+  border-top: 4px solid #e30613;
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.08);
+}
+
+.gbsrac-accident-services-core-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  background: rgba(17, 17, 17, 0.92);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gbsrac-accident-services-core h3 {
+  margin: 0 0 16px;
+  max-width: 580px;
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -1.3px;
+  color: #111111;
+}
+
+.gbsrac-accident-services-core p {
+  margin: 0;
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.88;
+  color: #5a5a5a;
+}
+
+.gbsrac-accident-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-accident-service-card {
+  padding: 24px 22px 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.gbsrac-accident-service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(227, 6, 19, 0.16);
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.08);
+}
+
+.gbsrac-accident-service-card-feature {
+  grid-column: span 1;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(247, 241, 241, 0.98) 100%);
+}
+
+.gbsrac-accident-service-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.18);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c30410;
+}
+
+.gbsrac-accident-service-card h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #111111;
+}
+
+.gbsrac-accident-service-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.78;
+  color: #595959;
+}
+
+/* ================= UNFALL VERSICHERUNG ================= */
+
+.gbsrac-accident-insurance {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.06), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.gbsrac-accident-insurance-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-accident-insurance-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 36px;
+}
+
+.gbsrac-accident-insurance-panel {
+  padding: 42px 38px;
+  background:
+    linear-gradient(135deg, rgba(17, 17, 17, 0.96) 0%, rgba(32, 19, 19, 0.96) 100%);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.14);
+}
+
+.gbsrac-accident-insurance-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-accident-insurance-panel h2 {
+  margin: 0;
+  max-width: 720px;
+  font-size: 50px;
+  line-height: 1.06;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  color: #ffffff;
+}
+
+.gbsrac-accident-insurance-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-accident-insurance-panel p {
+  max-width: 620px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.88;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.gbsrac-accident-insurance-points {
+  display: grid;
+  gap: 16px;
+}
+
+.gbsrac-accident-insurance-card {
+  position: relative;
+  padding: 24px 24px 22px 82px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.06);
+}
+
+.gbsrac-accident-insurance-card span {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.16);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c30410;
+}
+
+.gbsrac-accident-insurance-card h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  color: #111111;
+}
+
+.gbsrac-accident-insurance-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #5d5d5d;
+}
+
+.gbsrac-accident-insurance-card-accent {
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8f3f3 100%);
+}
+
+.gbsrac-accident-cashback {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.gbsrac-accident-cashback-panel {
+  width: 100%;
+  max-width: 980px;
+  padding: 40px 36px 36px;
+  background:
+    linear-gradient(140deg, rgba(17, 17, 17, 0.97) 0%, rgba(41, 17, 19, 0.97) 100%);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.14);
+  text-align: center;
+}
+
+.gbsrac-accident-cashback-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-accident-cashback-panel h3 {
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
+.gbsrac-accident-cashback-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px auto 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-accident-cashback-panel p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.86;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.gbsrac-accident-insurance-logos {
+  padding: 34px 34px 30px;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 248, 248, 0.96) 100%);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.05);
+}
+
+.gbsrac-accident-insurance-logos-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-bottom: 22px;
+}
+
+.gbsrac-accident-insurance-logos-head h3 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #111111;
+}
+
+.gbsrac-accident-insurance-logos-head p {
+  margin: 0;
+  max-width: 640px;
+  padding: 10px 16px;
+  background: rgba(227, 6, 19, 0.05);
+  border: 1px solid rgba(227, 6, 19, 0.12);
+  border-radius: 999px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b5757;
+}
+
+.gbsrac-accident-insurance-marquee {
+  position: relative;
+  overflow: hidden;
+  padding: 8px 0 2px;
+}
+
+.gbsrac-accident-insurance-marquee::before,
+.gbsrac-accident-insurance-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gbsrac-accident-insurance-marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.gbsrac-accident-insurance-marquee::after {
+  right: 0;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.gbsrac-accident-insurance-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: max-content;
+  animation: gbsracInsuranceMarquee 30s linear infinite;
+}
+
+.gbsrac-accident-insurance-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 104px;
+  padding: 20px 26px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.04);
+}
+
+.gbsrac-accident-insurance-logo img {
+  max-width: 132px;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(0.06);
+}
+
+@keyframes gbsracInsuranceMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 9px));
+  }
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-accident-hero,
+  .gbsrac-accident-hero-container {
+    min-height: 680px;
+  }
+
+  .gbsrac-accident-hero-panel {
+    max-width: 700px;
+    padding: 36px 34px;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 62px;
+    letter-spacing: -2.1px;
+  }
+
+  .gbsrac-accident-hero p,
+  .gbsrac-accident-services-intro p,
+  .gbsrac-accident-services-core p,
+  .gbsrac-accident-insurance-panel p,
+  .gbsrac-accident-cashback-panel p {
+    font-size: 17px;
+    line-height: 1.78;
+  }
+
+  .gbsrac-accident-services,
+  .gbsrac-accident-insurance {
+    padding: 108px 0;
+  }
+
+  .gbsrac-accident-services-container,
+  .gbsrac-accident-insurance-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-accident-services-core h3,
+  .gbsrac-accident-cashback-panel h3 {
+    font-size: 36px;
+    letter-spacing: -1.1px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-accident-hero,
+  .gbsrac-accident-hero-container {
+    min-height: 660px;
+  }
+
+  .gbsrac-accident-hero-container {
+    padding: 110px 24px 56px;
+  }
+
+  .gbsrac-accident-hero-panel {
+    max-width: 680px;
+    padding: 34px 30px;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .gbsrac-accident-services,
+  .gbsrac-accident-insurance {
+    padding: 100px 0;
+  }
+
+  .gbsrac-accident-services-container,
+  .gbsrac-accident-insurance-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-accident-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 900px) {
+  .gbsrac-accident-hero,
+  .gbsrac-accident-hero-container {
+    min-height: 620px;
+  }
+
+  .gbsrac-accident-hero-container {
+    padding: 104px 24px 46px;
+  }
+
+  .gbsrac-accident-hero-panel {
+    max-width: 100%;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-accident-services,
+  .gbsrac-accident-insurance {
+    padding: 88px 0;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2 {
+    font-size: 36px;
+  }
+
+  .gbsrac-accident-services-core {
+    max-width: none;
+  }
+
+  .gbsrac-accident-services-core h3,
+  .gbsrac-accident-cashback-panel h3 {
+    font-size: 34px;
+  }
+
+  .gbsrac-accident-insurance-panel,
+  .gbsrac-accident-cashback-panel {
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gbsrac-accident-hero,
+  .gbsrac-accident-hero-container {
+    min-height: 580px;
+  }
+
+  .gbsrac-accident-hero-container {
+    padding: 100px 20px 40px;
+  }
+
+  .gbsrac-accident-hero-panel {
+    padding: 28px 22px;
+  }
+
+  .gbsrac-accident-hero-subtitle,
+  .gbsrac-accident-services-subtitle,
+  .gbsrac-accident-insurance-subtitle,
+  .gbsrac-accident-cashback-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-accident-hero-line,
+  .gbsrac-accident-services-line,
+  .gbsrac-accident-insurance-line,
+  .gbsrac-accident-cashback-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-accident-hero p,
+  .gbsrac-accident-services-intro p,
+  .gbsrac-accident-services-core p,
+  .gbsrac-accident-insurance-panel p,
+  .gbsrac-accident-cashback-panel p,
+  .gbsrac-accident-service-card p,
+  .gbsrac-accident-insurance-card p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-accident-hero-points span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .gbsrac-accident-services,
+  .gbsrac-accident-insurance {
+    padding: 76px 0;
+  }
+
+  .gbsrac-accident-services-container,
+  .gbsrac-accident-insurance-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-accident-services-intro,
+  .gbsrac-accident-insurance-layout {
+    margin-bottom: 0;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2,
+  .gbsrac-accident-services-core h3,
+  .gbsrac-accident-cashback-panel h3 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-accident-services-core {
+    padding: 24px 20px 20px;
+  }
+
+  .gbsrac-accident-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gbsrac-accident-service-card {
+    padding: 22px 18px 18px;
+  }
+
+  .gbsrac-accident-service-card h3,
+  .gbsrac-accident-insurance-card h3,
+  .gbsrac-accident-insurance-logos-head h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-accident-insurance-panel,
+  .gbsrac-accident-cashback-panel {
+    padding: 26px 20px;
+  }
+
+  .gbsrac-accident-insurance-card {
+    padding: 18px 16px 16px 70px;
+  }
+
+  .gbsrac-accident-insurance-card span {
+    top: 18px;
+    left: 16px;
+  }
+
+  .gbsrac-accident-insurance-logos {
+    padding: 24px 20px 20px;
+  }
+
+  .gbsrac-accident-insurance-logos-head {
+    margin-bottom: 18px;
+  }
+
+  .gbsrac-accident-insurance-logos-head p {
+    border-radius: 18px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .gbsrac-accident-insurance-logo {
+    min-width: 160px;
+    height: 88px;
+    padding: 18px 20px;
+  }
+
+  .gbsrac-accident-insurance-logo img {
+    max-width: 110px;
+    max-height: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-accident-hero,
+  .gbsrac-accident-hero-container {
+    min-height: 540px;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 36px;
+  }
+
+  .gbsrac-accident-services,
+  .gbsrac-accident-insurance {
+    padding: 66px 0;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2,
+  .gbsrac-accident-services-core h3,
+  .gbsrac-accident-cashback-panel h3 {
+    font-size: 28px;
+  }
+
+  .gbsrac-accident-insurance-card {
+    padding-left: 16px;
+  }
+
+  .gbsrac-accident-insurance-card span {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .gbsrac-accident-insurance-logo {
+    min-width: 142px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-accident-hero-container,
+  .gbsrac-accident-services-container,
+  .gbsrac-accident-insurance-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-accident-hero-container {
+    padding: 92px 16px 34px;
+  }
+
+  .gbsrac-accident-hero-panel {
+    padding: 24px 18px;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-accident-hero p,
+  .gbsrac-accident-services-intro p,
+  .gbsrac-accident-services-core p,
+  .gbsrac-accident-insurance-panel p,
+  .gbsrac-accident-cashback-panel p,
+  .gbsrac-accident-service-card p,
+  .gbsrac-accident-insurance-card p {
+    font-size: 15px;
+  }
+
+  .gbsrac-accident-hero-points span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2,
+  .gbsrac-accident-services-core h3,
+  .gbsrac-accident-cashback-panel h3 {
+    font-size: 26px;
+  }
+
+  .gbsrac-accident-services-core,
+  .gbsrac-accident-service-card,
+  .gbsrac-accident-insurance-panel,
+  .gbsrac-accident-insurance-card,
+  .gbsrac-accident-cashback-panel,
+  .gbsrac-accident-insurance-logos {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-accident-insurance-logo {
+    min-width: 132px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-accident-hero,
+  .gbsrac-accident-hero-container {
+    min-height: 500px;
+  }
+
+  .gbsrac-accident-hero h1 {
+    font-size: 28px;
+  }
+
+  .gbsrac-accident-hero-subtitle,
+  .gbsrac-accident-services-subtitle,
+  .gbsrac-accident-insurance-subtitle,
+  .gbsrac-accident-cashback-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-accident-services-intro h2,
+  .gbsrac-accident-insurance-panel h2,
+  .gbsrac-accident-services-core h3,
+  .gbsrac-accident-cashback-panel h3 {
+    font-size: 23px;
+  }
+
+  .gbsrac-accident-service-card h3,
+  .gbsrac-accident-insurance-card h3,
+  .gbsrac-accident-insurance-logos-head h3 {
+    font-size: 20px;
+  }
+}

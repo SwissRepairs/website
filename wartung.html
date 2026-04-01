@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/webp" href="img/favicon-3/favicon.webp">
+  <link rel="icon" type="image/webp" sizes="96x96" href="img/favicon-3/favicon-96x96.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-3/apple-touch-icon.webp">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <title>Wartung & Service Schlieren | Swiss Repairs</title>
+  <meta name="description" content="Wartung und Autoservice in Schlieren mit klaren Leistungen, fairen Preisen und ehrlicher Beratung. Jetzt Termin bei Swiss Repairs anfragen.">
+  <meta name="keywords" content="Wartung Schlieren, Autoservice Schlieren, Fahrzeugservice Schlieren, Ölwechsel Schlieren, Intervallservice Schlieren, Werkstattservice Zürich, Swiss Repairs Wartung, Auto Service Schweiz">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Swiss Repairs">
+  <meta name="geo.region" content="CH-ZH">
+  <meta name="geo.placename" content="Schlieren">
+  <link rel="canonical" href="https://www.swissrepairs.ch/wartung.html">
+  <meta property="og:title" content="Wartung & Service Schlieren | Swiss Repairs">
+  <meta property="og:description" content="Professionelle Wartung und Servicearbeiten in Schlieren. Jetzt Termin für Ölwechsel, Inspektion und Fahrzeugservice anfragen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.swissrepairs.ch/wartung.html">
+  <meta property="og:image" content="https://www.swissrepairs.ch/img/heros/wartung.webp">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="Swiss Repairs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wartung & Service Schlieren | Swiss Repairs">
+  <meta name="twitter:description" content="Autoservice in Schlieren mit klaren Leistungen und fairen Preisen. Jetzt Termin bei Swiss Repairs sichern.">
+  <meta name="twitter:image" content="https://www.swissrepairs.ch/img/heros/wartung.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="wartung.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Wartung & Service | Swiss Repairs",
+      "url": "https://www.swissrepairs.ch/wartung.html",
+      "description": "Wartung und Servicearbeiten für Fahrzeuge in Schlieren.",
+      "about": {
+        "@type": "Service",
+        "name": "Wartung und Service"
+      }
+    }
+  </script>
+</head>
+<body>
+<!-- ================= NAVBAR SWISS REPAIRS ================= -->
+<header class="gbsrac-navbar" id="home">
+  <div class="gbsrac-navbar-container">
+    <a href="index.html" class="gbsrac-navbar-brand">
+      <img src="img/Swiss Repairs Logo.webp" alt="Swiss Repairs Logo">
+    </a>
+
+    <button class="gbsrac-navbar-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gbsrac-navbar-menu">
+      <a href="index.html" class="gbsrac-navbar-link">Home</a>
+
+      <div class="gbsrac-navbar-dropdown">
+        <a href="index.html#services" class="gbsrac-navbar-link">Services</a>
+        <div class="gbsrac-navbar-dropdown-menu">
+          <a href="wartung.html">Wartung &amp; Service</a>
+          <a href="saison.html">Saisonale Checks</a>
+          <a href="mfk.html">MFK</a>
+          <a href="reparaturen.html">Reparaturen</a>
+          <a href="karosserie.html">Karosserie &amp; Lack</a>
+          <a href="unfall.html">Unfallschäden</a>
+          <a href="reifen.html">Reifenservice</a>
+        </div>
+      </div>
+
+      <a href="ueberuns.html" class="gbsrac-navbar-link">Über Uns</a>
+      <a href="kontakt.html" class="gbsrac-navbar-link">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".gbsrac-navbar");
+  const navbarToggle = document.querySelector(".gbsrac-navbar-toggle");
+  const navbarLinks = document.querySelectorAll(".gbsrac-navbar-menu a");
+  const faqItems = document.querySelectorAll(".gbsrac-faq-item");
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    navbar.classList.toggle("is-scrolled", window.scrollY > 30);
+  }
+
+  if (navbar && navbarToggle) {
+    navbarToggle.addEventListener("click", function () {
+      const isOpen = navbar.classList.toggle("is-open");
+      navbarToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbar.classList.remove("is-open");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+
+  faqItems.forEach(function (item) {
+    const button = item.querySelector(".gbsrac-faq-question");
+
+    button.addEventListener("click", function () {
+      const isOpen = item.classList.contains("is-open");
+
+      faqItems.forEach(function (entry) {
+        entry.classList.remove("is-open");
+        entry.querySelector(".gbsrac-faq-question").setAttribute("aria-expanded", "false");
+      });
+
+      if (!isOpen) {
+        item.classList.add("is-open");
+        button.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+});
+</script>
+
+<!-- ================= HERO SECTION WARTUNG & SERVICE ================= -->
+<section class="gbsrac-wartung-hero">
+  <div class="gbsrac-wartung-hero-bg"></div>
+  <div class="gbsrac-wartung-hero-overlay"></div>
+
+  <div class="gbsrac-wartung-hero-container">
+    <div class="gbsrac-wartung-hero-panel" data-aos="fade-up" data-aos-duration="950">
+      <span class="gbsrac-wartung-hero-subtitle">Dienstleistung</span>
+      <h1>Wartung &amp; Service</h1>
+      <div class="gbsrac-wartung-hero-line"></div>
+      <p>
+        Regelmässige Wartung ist die Grundlage für Sicherheit, Werterhalt und
+        zuverlässige Performance. Bei Swiss Repairs kümmern wir uns sauber,
+        ehrlich und termingerecht um Ihr Fahrzeug. Wenn Sie eine Garage für
+        Wartung und Autoservice in Schlieren oder im Raum Zürich suchen, sind
+        Sie bei uns richtig.
+      </p>
+
+      <div class="gbsrac-wartung-hero-points">
+        <span>Ölwechsel &amp; Filterservice</span>
+        <span>Kontrollen &amp; Inspektionen</span>
+        <span>Persönliche Beratung</span>
+      </div>
+
+      <div class="gbsrac-wartung-hero-actions">
+        <a href="kontakt.html#booking" class="gbsrac-btn gbsrac-btn-primary">Termin anfragen</a>
+        <a href="index.html#services" class="gbsrac-btn gbsrac-btn-secondary">Alle Dienstleistungen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WARTUNG LEISTUNGEN SECTION ================= -->
+<section class="gbsrac-wartung-services">
+  <div class="gbsrac-wartung-services-container">
+    <div class="gbsrac-wartung-services-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-wartung-services-subtitle">Was beinhaltet unser Wartungsservice</span>
+      <h2>Klare Leistungen, transparente Richtpreise und ehrliche Zeitangaben.</h2>
+      <div class="gbsrac-wartung-services-line"></div>
+      <p>
+        Je nach Fahrzeug, Motorisierung und Hersteller können Aufwand und Preis
+        variieren. Die folgenden Angaben dienen als ungefähre Orientierung für
+        einen typischen Wartungs- und Serviceumfang.
+      </p>
+    </div>
+
+    <div class="gbsrac-wartung-services-slider" data-aos="fade-up" data-aos-duration="950" data-aos-delay="80">
+      <button class="gbsrac-wartung-arrow gbsrac-wartung-arrow-left" type="button" aria-label="Vorherige Wartungsleistungen">
+        <span>&#10094;</span>
+      </button>
+
+      <div class="gbsrac-wartung-services-viewport">
+        <div class="gbsrac-wartung-services-grid">
+      <article class="gbsrac-wartung-service-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="60">
+        <h3>Ölwechsel</h3>
+        <p>Motoröl fachgerecht wechseln und auf Wunsch inklusive passendem Ölfilter-Service.</p>
+        <div class="gbsrac-wartung-service-meta">
+          <span>ca. CHF 140 - 260</span>
+          <span>ca. 45 - 75 Min.</span>
+        </div>
+      </article>
+
+      <article class="gbsrac-wartung-service-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="120">
+        <h3>Filterservice</h3>
+        <p>Kontrolle und Wechsel von Luftfilter, Innenraumfilter oder weiteren Servicefiltern je nach Fahrzeug.</p>
+        <div class="gbsrac-wartung-service-meta">
+          <span>ca. CHF 40 - 140</span>
+          <span>ca. 20 - 45 Min.</span>
+        </div>
+      </article>
+
+      <article class="gbsrac-wartung-service-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="180">
+        <h3>Bremsenkontrolle</h3>
+        <p>Prüfung von Bremsbelägen, Bremsscheiben und allgemeinem Bremszustand für mehr Sicherheit.</p>
+        <div class="gbsrac-wartung-service-meta">
+          <span>ca. CHF 40 - 90</span>
+          <span>ca. 20 - 35 Min.</span>
+        </div>
+      </article>
+
+      <article class="gbsrac-wartung-service-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="240">
+        <h3>Flüssigkeiten prüfen</h3>
+        <p>Kühlmittel, Bremsflüssigkeit, Scheibenwaschanlage und weitere Betriebsflüssigkeiten kontrollieren und ergänzen.</p>
+        <div class="gbsrac-wartung-service-meta">
+          <span>ca. CHF 25 - 80</span>
+          <span>ca. 15 - 30 Min.</span>
+        </div>
+      </article>
+
+      <article class="gbsrac-wartung-service-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+        <h3>Batterie-Check</h3>
+        <p>Batteriezustand testen, Ladeleistung prüfen und frühzeitig mögliche Schwächen erkennen.</p>
+        <div class="gbsrac-wartung-service-meta">
+          <span>ca. CHF 20 - 50</span>
+          <span>ca. 10 - 20 Min.</span>
+        </div>
+      </article>
+
+      <article class="gbsrac-wartung-service-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="360">
+        <h3>Sichtprüfung</h3>
+        <p>Allgemeine Kontrolle von Reifen, Beleuchtung, Fahrwerk und sichtbaren Verschleissteilen.</p>
+        <div class="gbsrac-wartung-service-meta">
+          <span>ca. CHF 30 - 70</span>
+          <span>ca. 20 - 30 Min.</span>
+        </div>
+      </article>
+        </div>
+      </div>
+
+      <button class="gbsrac-wartung-arrow gbsrac-wartung-arrow-right" type="button" aria-label="Nächste Wartungsleistungen">
+        <span>&#10095;</span>
+      </button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const wartungTrack = document.querySelector(".gbsrac-wartung-services-grid");
+  const wartungViewport = document.querySelector(".gbsrac-wartung-services-viewport");
+  const wartungSlides = Array.from(document.querySelectorAll(".gbsrac-wartung-service-card"));
+  const wartungPrev = document.querySelector(".gbsrac-wartung-arrow-left");
+  const wartungNext = document.querySelector(".gbsrac-wartung-arrow-right");
+
+  if (!wartungTrack || !wartungViewport || !wartungSlides.length || !wartungPrev || !wartungNext) return;
+
+  let currentIndex = 0;
+
+  function getVisibleSlides() {
+    if (window.innerWidth <= 768) return 1;
+    if (window.innerWidth <= 1150) return 2;
+    return 3;
+  }
+
+  function getStep() {
+    const slideWidth = wartungSlides[0].offsetWidth;
+    const trackStyles = window.getComputedStyle(wartungTrack);
+    const gap = parseInt(trackStyles.gap) || 0;
+    return slideWidth + gap;
+  }
+
+  function updateWartungSlider() {
+    const visibleSlides = getVisibleSlides();
+
+    if (window.innerWidth <= 768) {
+      wartungTrack.style.transform = "none";
+      wartungPrev.style.display = "none";
+      wartungNext.style.display = "none";
+      return;
+    }
+
+    wartungPrev.style.display = "";
+    wartungNext.style.display = "";
+
+    const maxIndex = Math.max(0, wartungSlides.length - visibleSlides);
+    currentIndex = Math.min(currentIndex, maxIndex);
+
+    wartungTrack.style.transform = `translateX(-${currentIndex * getStep()}px)`;
+    wartungPrev.style.opacity = currentIndex === 0 ? "0.5" : "1";
+    wartungPrev.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+    wartungNext.style.opacity = currentIndex >= maxIndex ? "0.5" : "1";
+    wartungNext.style.pointerEvents = currentIndex >= maxIndex ? "none" : "auto";
+  }
+
+  wartungNext.addEventListener("click", function () {
+    const maxIndex = Math.max(0, wartungSlides.length - getVisibleSlides());
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateWartungSlider();
+    }
+  });
+
+  wartungPrev.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateWartungSlider();
+    }
+  });
+
+  window.addEventListener("resize", updateWartungSlider);
+  updateWartungSlider();
+});
+</script>
+
+<!-- ================= WARTUNG BENEFITS SECTION ================= -->
+<section class="gbsrac-wartung-benefits">
+  <div class="gbsrac-wartung-benefits-container">
+    <div class="gbsrac-wartung-benefits-image" data-aos="fade-right" data-aos-duration="950">
+      <img src="img/wartungbild.webp" alt="Wartung und Service bei Swiss Repairs">
+    </div>
+
+    <div class="gbsrac-wartung-benefits-content" data-aos="fade-left" data-aos-duration="950" data-aos-delay="100">
+      <span class="gbsrac-wartung-benefits-subtitle">Ihre Vorteile</span>
+      <h2>Warum sich regelmässige Wartung langfristig auszahlt.</h2>
+      <div class="gbsrac-wartung-benefits-line"></div>
+      <p>
+        Eine sauber durchgeführte Wartung schützt nicht nur den Motor und
+        wichtige Fahrzeugkomponenten, sondern hilft auch dabei, spätere
+        Folgekosten und unerwartete Ausfälle zu vermeiden.
+      </p>
+
+      <div class="gbsrac-wartung-benefits-list">
+        <article class="gbsrac-wartung-benefit">
+          <h3>Mehr Sicherheit</h3>
+          <p>Bremsen, Flüssigkeiten und wichtige Verschleissteile werden frühzeitig kontrolliert.</p>
+        </article>
+
+        <article class="gbsrac-wartung-benefit">
+          <h3>Weniger Folgeschäden</h3>
+          <p>Kleine Probleme werden erkannt, bevor daraus grössere und teurere Reparaturen entstehen.</p>
+        </article>
+
+        <article class="gbsrac-wartung-benefit">
+          <h3>Besserer Werterhalt</h3>
+          <p>Ein regelmässig gewartetes Fahrzeug bleibt zuverlässiger und wirkt sich positiv auf den Fahrzeugwert aus.</p>
+        </article>
+
+        <article class="gbsrac-wartung-benefit">
+          <h3>Klare Planung</h3>
+          <p>Mit einem sauberen Serviceplan wissen Sie besser, wann welche Arbeiten anstehen.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-cta" id="contact">
+  <div class="gbsrac-cta-container" data-aos="fade-up" data-aos-duration="950">
+    <div class="gbsrac-cta-content">
+      <span class="gbsrac-cta-subtitle">Sie haben Fragen?</span>
+      <h2>Wir beraten Sie gerne.</h2>
+      <div class="gbsrac-cta-line"></div>
+      <p>
+        Sie möchten einen Termin vereinbaren oder eine ehrliche Einschätzung zu
+        Service, Reparatur oder MFK? Dann kontaktieren Sie uns und wir melden
+        uns schnell, klar und unkompliziert zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-cta-actions">
+      <a href="mailto:info@swissrepairs.ch" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">info@swissrepairs.ch</span>
+      </a>
+
+      <a href="tel:+41767672220" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">+41 76 767 22 20</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT FORM SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-contact-form" id="booking">
+  <div class="gbsrac-contact-form-container">
+    <div class="gbsrac-contact-form-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-contact-form-subtitle">Kontakt & Termin buchen</span>
+      <h2>Termin anfragen und schnell eine ehrliche Rückmeldung erhalten.</h2>
+      <div class="gbsrac-contact-form-line"></div>
+      <p>
+        Teilen Sie uns Ihr Anliegen mit und wir melden uns so schnell wie
+        möglich mit einer Einschätzung, einem Terminvorschlag oder den nächsten
+        Schritten zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-contact-form-layout">
+      <div class="gbsrac-contact-form-info" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-contact-form-info-card">
+          <span class="gbsrac-contact-form-info-label">Was Sie erwarten können</span>
+          <ul class="gbsrac-contact-form-info-list">
+            <li>klare Terminplanung statt unnötiger Standzeiten</li>
+            <li>ehrliche Rückmeldung zum Aufwand und zur Dauer</li>
+            <li>faire Preise und saubere Arbeit am Fahrzeug</li>
+          </ul>
+        </div>
+      </div>
+
+      <form
+        class="gbsrac-contact-form-box"
+        action="https://formsubmit.co/info@swissrepairs.ch"
+        method="POST"
+        data-aos="fade-left"
+        data-aos-duration="950"
+      >
+        <input type="hidden" name="_subject" value="Neue Terminanfrage - Swiss Repairs">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="gbsrac-contact-form-grid">
+          <div class="gbsrac-contact-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="+41 ..." required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" placeholder="ihre@email.ch" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="service">Dienstleistung</label>
+            <select id="service" name="service" required>
+              <option value="">Bitte auswählen</option>
+              <option value="Wartung & Service">Wartung & Service</option>
+              <option value="Saisonale Checks">Saisonale Checks</option>
+              <option value="MFK">MFK</option>
+              <option value="Reparaturen">Reparaturen</option>
+              <option value="Reifenservice">Reifenservice</option>
+              <option value="Karosserie & Lack">Karosserie & Lack</option>
+              <option value="Andere Anfrage">Andere Anfrage</option>
+            </select>
+          </div>
+
+          <div class="gbsrac-contact-field gbsrac-contact-field-full">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Beschreiben Sie kurz Ihr Anliegen, Fahrzeug oder Wunschdatum." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="gbsrac-contact-submit">Terminanfrage senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STANDORT SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-location" id="location">
+  <div class="gbsrac-location-container">
+    <div class="gbsrac-location-content" data-aos="fade-up" data-aos-duration="900">
+      <h2>Unser Standort</h2>
+      <div class="gbsrac-location-line"></div>
+
+      <div class="gbsrac-location-details">
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Adresse</span>
+          <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Telefon</span>
+          <p><a href="tel:+41767672220">+41 76 767 22 20</a></p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">E-Mail</span>
+          <p><a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a></p>
+        </div>
+      </div>
+
+      <div class="gbsrac-location-payments">
+        <span class="gbsrac-location-label">Akzeptierte Zahlungsmethoden</span>
+        <ul class="gbsrac-location-payment-list">
+          <li>Debitkarten (Maestro, Debit Master, Debit Visa, V-Pay)</li>
+          <li>Kreditkarten (Mastercard, VISA, American Express)</li>
+          <li>PostCard</li>
+          <li>Bargeld (CHF, EURO)</li>
+          <li>Twint</li>
+        </ul>
+
+        <div class="gbsrac-location-payment-icons">
+          <span class="gbsrac-location-payment-brand"><img src="img/visa.webp" alt="Visa"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/mastercard.webp" alt="Mastercard"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/apple-pay.webp" alt="Apple Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/google-pay.webp" alt="Google Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/twint.webp" alt="Twint"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gbsrac-location-map" data-aos="fade-up" data-aos-duration="950" data-aos-delay="120">
+      <iframe
+        src="https://www.google.com/maps?q=Gaswerkstrasse+8,+8952+Schlieren&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Maps Standort Swiss Repairs"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= FOOTER SWISS REPAIRS ================= -->
+<footer class="gbsrac-footer">
+  <div class="gbsrac-footer-container">
+    <div class="gbsrac-footer-brand">
+      <h2>Über uns</h2>
+      <p>
+        Swiss Repairs steht für saubere Arbeit, faire Preise und ehrliche
+        Rückmeldungen rund ums Fahrzeug. Ob Service, Reparaturen, MFK oder
+        Reifenwechsel - wir arbeiten zuverlässig, persönlich und mit klarer
+        Terminplanung.
+      </p>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Quicklinks</span>
+      <a href="#home">Home</a>
+      <a href="ueberuns.html">Über Uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="#location">Standort</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Unsere Services</span>
+      <a href="wartung.html">Wartung &amp; Service</a>
+      <a href="saison.html">Saisonale Checks</a>
+      <a href="karosserie.html">Karosserie &amp; Lack</a>
+      <a href="reparaturen.html">Reparaturen</a>
+      <a href="mfk.html">MFK</a>
+      <a href="reifen.html">Reifenservice</a>
+      <a href="unfall.html">Unfallschäden</a>
+    </div>
+
+    <div class="gbsrac-footer-column gbsrac-footer-partner">
+      <span class="gbsrac-footer-title">Unser Partner</span>
+      <p class="gbsrac-footer-partner-name">Swiss Rent a Car</p>
+      <p>
+        Swiss Rent a Car in Kloten steht für flexible Mobilität,
+        Fahrzeugvermietung, Transfers und Airport Services - zuverlässig,
+        professionell und schweizweit einsatzbereit.
+      </p>
+      <a href="https://swissrentacar.ch" class="gbsrac-footer-partner-btn" target="_blank" rel="noopener noreferrer">Erfahre mehr</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Kontakt</span>
+      <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+      <a href="tel:+41767672220">+41 76 767 22 20</a>
+      <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a>
+    </div>
+  </div>
+
+  <div class="gbsrac-footer-bottom">
+    <p>&copy; 2026 Swiss Repairs. Alle Rechte vorbehalten.</p>
+    <div class="gbsrac-footer-bottom-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="form-redirect.js"></script>
+
+
+<!-- ================= AOS INIT ================= -->
+<script>
+  window.addEventListener('load', function () {
+    if (!window.AOS) return;
+
+    AOS.init({
+      once: true,
+      offset: 120,
+      easing: 'ease-out-cubic'
+    });
+  });
+</script>
+
+</body>
+</html>

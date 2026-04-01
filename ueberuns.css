@@ -1,0 +1,882 @@
+/* ================= UEBER UNS HERO ================= */
+
+.gbsrac-aboutpage-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-aboutpage-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(227, 6, 19, 0.28), transparent 22%),
+    radial-gradient(circle at 82% 20%, rgba(255, 255, 255, 0.08), transparent 18%),
+    radial-gradient(circle at 78% 72%, rgba(227, 6, 19, 0.18), transparent 20%),
+    linear-gradient(130deg, #141414 0%, #1b1111 34%, #0f0f0f 64%, #1a0f10 100%);
+}
+
+.gbsrac-aboutpage-hero-bg::before,
+.gbsrac-aboutpage-hero-bg::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.gbsrac-aboutpage-hero-bg::before {
+  inset: -12% 38% -10% -8%;
+  background:
+    linear-gradient(112deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 38%, transparent 39%),
+    linear-gradient(112deg, transparent 0%, transparent 42%, rgba(227, 6, 19, 0.1) 43%, rgba(227, 6, 19, 0.03) 64%, transparent 65%);
+  transform: skewX(-14deg);
+  opacity: 0.85;
+}
+
+.gbsrac-aboutpage-hero-bg::after {
+  right: 7%;
+  bottom: 10%;
+  width: 320px;
+  height: 320px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 34px rgba(255, 255, 255, 0.02),
+    0 0 0 78px rgba(255, 255, 255, 0.015);
+  opacity: 0.55;
+}
+
+.gbsrac-aboutpage-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 7, 7, 0.72) 0%, rgba(7, 7, 7, 0.42) 45%, rgba(7, 7, 7, 0.8) 100%);
+}
+
+.gbsrac-aboutpage-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 7% 70px;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-aboutpage-hero-panel {
+  max-width: 820px;
+  padding: 42px 40px;
+  background: rgba(12, 12, 12, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-aboutpage-hero-subtitle,
+.gbsrac-aboutpage-story-subtitle,
+.gbsrac-aboutpage-values-subtitle,
+.gbsrac-aboutpage-flow-subtitle,
+.gbsrac-aboutpage-partner-subtitle,
+.gbsrac-aboutpage-cta-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.gbsrac-aboutpage-hero-subtitle {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-aboutpage-hero h1 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  color: #ffffff;
+}
+
+.gbsrac-aboutpage-hero-line,
+.gbsrac-aboutpage-story-line,
+.gbsrac-aboutpage-values-line,
+.gbsrac-aboutpage-flow-line,
+.gbsrac-aboutpage-partner-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-aboutpage-hero p {
+  max-width: 660px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-aboutpage-hero-points,
+.gbsrac-aboutpage-hero-actions,
+.gbsrac-aboutpage-cta-actions,
+.gbsrac-aboutpage-story-facts,
+.gbsrac-aboutpage-flow-steps,
+.gbsrac-aboutpage-values-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gbsrac-aboutpage-hero-points {
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.gbsrac-aboutpage-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gbsrac-aboutpage-hero-actions,
+.gbsrac-aboutpage-cta-actions {
+  gap: 14px;
+}
+
+/* ================= STORY ================= */
+
+.gbsrac-aboutpage-story {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-aboutpage-story-container,
+.gbsrac-aboutpage-partner-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.gbsrac-aboutpage-story-media {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.12);
+}
+
+.gbsrac-aboutpage-story-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gbsrac-aboutpage-story-subtitle,
+.gbsrac-aboutpage-values-subtitle,
+.gbsrac-aboutpage-flow-subtitle,
+.gbsrac-aboutpage-partner-subtitle,
+.gbsrac-aboutpage-cta-subtitle {
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  background: rgba(227, 6, 19, 0.05);
+  color: #c30410;
+}
+
+.gbsrac-aboutpage-story-content h2,
+.gbsrac-aboutpage-values-intro h2,
+.gbsrac-aboutpage-flow-panel h2,
+.gbsrac-aboutpage-partner-copy h2,
+.gbsrac-aboutpage-cta-copy h2 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-aboutpage-story-content p,
+.gbsrac-aboutpage-values-intro p,
+.gbsrac-aboutpage-partner-copy p,
+.gbsrac-aboutpage-partner-card p {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.88;
+  color: #5c5c5c;
+}
+
+.gbsrac-aboutpage-story-facts {
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.gbsrac-aboutpage-story-fact {
+  flex: 1 1 240px;
+  padding: 24px 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+}
+
+.gbsrac-aboutpage-story-fact strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.12;
+  color: #111111;
+}
+
+.gbsrac-aboutpage-story-fact span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #636363;
+}
+
+/* ================= VALUES ================= */
+
+.gbsrac-aboutpage-values,
+.gbsrac-aboutpage-flow {
+  padding: 120px 0;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-aboutpage-values-container,
+.gbsrac-aboutpage-flow-container,
+.gbsrac-aboutpage-cta-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-aboutpage-values-intro {
+  max-width: 900px;
+  margin-bottom: 52px;
+}
+
+.gbsrac-aboutpage-values-grid {
+  gap: 18px;
+}
+
+.gbsrac-aboutpage-value-card {
+  flex: 1 1 calc(50% - 9px);
+  padding: 28px 26px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+}
+
+.gbsrac-aboutpage-value-card-accent {
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8f3f3 100%);
+}
+
+.gbsrac-aboutpage-value-card span,
+.gbsrac-aboutpage-flow-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.18);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c30410;
+}
+
+.gbsrac-aboutpage-value-card h3,
+.gbsrac-aboutpage-flow-step h3,
+.gbsrac-aboutpage-partner-card h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #111111;
+}
+
+.gbsrac-aboutpage-value-card p,
+.gbsrac-aboutpage-flow-step p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.78;
+  color: #595959;
+}
+
+/* ================= FLOW ================= */
+
+.gbsrac-aboutpage-flow {
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.gbsrac-aboutpage-flow-panel {
+  max-width: 780px;
+  margin-bottom: 46px;
+}
+
+.gbsrac-aboutpage-flow-steps {
+  gap: 18px;
+}
+
+.gbsrac-aboutpage-flow-step {
+  flex: 1 1 calc(25% - 14px);
+  min-width: 240px;
+  padding: 26px 24px 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+}
+
+/* ================= PARTNER ================= */
+
+.gbsrac-aboutpage-partner {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.06), transparent 24%),
+    linear-gradient(180deg, #111111 0%, #1a1212 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-aboutpage-partner-copy h2,
+.gbsrac-aboutpage-partner-copy p,
+.gbsrac-aboutpage-partner-card-label {
+  color: #ffffff;
+}
+
+.gbsrac-aboutpage-partner-copy p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.gbsrac-aboutpage-partner-card {
+  padding: 38px 34px 34px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.16);
+}
+
+.gbsrac-aboutpage-partner-card-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  background: rgba(17, 17, 17, 0.92);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+/* ================= CTA HANDOFF ================= */
+
+.gbsrac-cta {
+  padding-bottom: 0;
+}
+
+.gbsrac-location {
+  padding-top: 52px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-aboutpage-hero-container,
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container,
+  .gbsrac-aboutpage-values-container,
+  .gbsrac-aboutpage-flow-container,
+  .gbsrac-aboutpage-cta-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-aboutpage-hero,
+  .gbsrac-aboutpage-hero-container {
+    min-height: 680px;
+  }
+
+  .gbsrac-aboutpage-hero-panel {
+    max-width: 740px;
+    padding: 36px 34px;
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 62px;
+    letter-spacing: -2.1px;
+  }
+
+  .gbsrac-aboutpage-hero p,
+  .gbsrac-aboutpage-story-content p,
+  .gbsrac-aboutpage-values-intro p,
+  .gbsrac-aboutpage-partner-copy p,
+  .gbsrac-aboutpage-partner-card p {
+    font-size: 17px;
+    line-height: 1.78;
+  }
+
+  .gbsrac-aboutpage-story,
+  .gbsrac-aboutpage-values,
+  .gbsrac-aboutpage-flow,
+  .gbsrac-aboutpage-partner {
+    padding: 108px 0;
+  }
+
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container {
+    gap: 46px;
+  }
+
+  .gbsrac-aboutpage-story-media {
+    min-height: 560px;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-aboutpage-flow-step {
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-aboutpage-hero,
+  .gbsrac-aboutpage-hero-container {
+    min-height: 660px;
+  }
+
+  .gbsrac-aboutpage-hero-container {
+    padding: 110px 24px 56px;
+  }
+
+  .gbsrac-aboutpage-hero-panel {
+    max-width: 700px;
+    padding: 34px 30px;
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .gbsrac-aboutpage-story,
+  .gbsrac-aboutpage-values,
+  .gbsrac-aboutpage-flow,
+  .gbsrac-aboutpage-partner {
+    padding: 100px 0;
+  }
+
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container,
+  .gbsrac-aboutpage-values-container,
+  .gbsrac-aboutpage-flow-container,
+  .gbsrac-aboutpage-cta-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container {
+    gap: 42px;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-aboutpage-story-media {
+    min-height: 500px;
+  }
+
+  .gbsrac-aboutpage-values-intro {
+    margin-bottom: 40px;
+  }
+
+  .gbsrac-aboutpage-value-card {
+    flex-basis: calc(50% - 9px);
+  }
+
+  .gbsrac-aboutpage-flow-step {
+    flex-basis: calc(50% - 9px);
+    min-width: 0;
+  }
+
+  .gbsrac-location {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gbsrac-aboutpage-hero,
+  .gbsrac-aboutpage-hero-container {
+    min-height: 620px;
+  }
+
+  .gbsrac-aboutpage-hero-bg::before {
+    inset: -8% 12% -8% -10%;
+    transform: skewX(-10deg);
+  }
+
+  .gbsrac-aboutpage-hero-bg::after {
+    width: 240px;
+    height: 240px;
+    right: 4%;
+    bottom: 8%;
+  }
+
+  .gbsrac-aboutpage-hero-container {
+    padding: 104px 24px 46px;
+  }
+
+  .gbsrac-aboutpage-hero-panel {
+    max-width: 100%;
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-aboutpage-story,
+  .gbsrac-aboutpage-values,
+  .gbsrac-aboutpage-flow,
+  .gbsrac-aboutpage-partner {
+    padding: 88px 0;
+  }
+
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .gbsrac-aboutpage-story-media {
+    min-height: 440px;
+    order: -1;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 36px;
+  }
+
+  .gbsrac-aboutpage-story-fact,
+  .gbsrac-aboutpage-value-card,
+  .gbsrac-aboutpage-flow-step {
+    flex-basis: 100%;
+  }
+
+  .gbsrac-aboutpage-partner-card {
+    padding: 30px 26px 26px;
+  }
+
+  .gbsrac-location {
+    padding-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gbsrac-aboutpage-hero,
+  .gbsrac-aboutpage-hero-container {
+    min-height: 580px;
+  }
+
+  .gbsrac-aboutpage-hero-container {
+    padding: 100px 20px 40px;
+  }
+
+  .gbsrac-aboutpage-hero-panel {
+    padding: 28px 22px;
+  }
+
+  .gbsrac-aboutpage-hero-subtitle,
+  .gbsrac-aboutpage-story-subtitle,
+  .gbsrac-aboutpage-values-subtitle,
+  .gbsrac-aboutpage-flow-subtitle,
+  .gbsrac-aboutpage-partner-subtitle,
+  .gbsrac-aboutpage-cta-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-aboutpage-hero-line,
+  .gbsrac-aboutpage-story-line,
+  .gbsrac-aboutpage-values-line,
+  .gbsrac-aboutpage-flow-line,
+  .gbsrac-aboutpage-partner-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-aboutpage-hero p,
+  .gbsrac-aboutpage-story-content p,
+  .gbsrac-aboutpage-values-intro p,
+  .gbsrac-aboutpage-partner-copy p,
+  .gbsrac-aboutpage-partner-card p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-aboutpage-hero-points span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .gbsrac-aboutpage-hero-actions {
+    gap: 10px;
+  }
+
+  .gbsrac-aboutpage-story,
+  .gbsrac-aboutpage-values,
+  .gbsrac-aboutpage-flow,
+  .gbsrac-aboutpage-partner {
+    padding: 76px 0;
+  }
+
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container,
+  .gbsrac-aboutpage-values-container,
+  .gbsrac-aboutpage-flow-container,
+  .gbsrac-aboutpage-cta-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-aboutpage-story-media {
+    min-height: 360px;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-aboutpage-story-facts {
+    margin-top: 26px;
+  }
+
+  .gbsrac-aboutpage-story-fact,
+  .gbsrac-aboutpage-value-card,
+  .gbsrac-aboutpage-flow-step {
+    padding: 22px 18px 18px;
+  }
+
+  .gbsrac-aboutpage-value-card h3,
+  .gbsrac-aboutpage-flow-step h3,
+  .gbsrac-aboutpage-partner-card h3 {
+    font-size: 24px;
+  }
+
+  .gbsrac-aboutpage-partner-card {
+    padding: 24px 20px 20px;
+  }
+
+  .gbsrac-location {
+    padding-top: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-aboutpage-hero,
+  .gbsrac-aboutpage-hero-container {
+    min-height: 540px;
+  }
+
+  .gbsrac-aboutpage-hero-bg::after {
+    width: 180px;
+    height: 180px;
+    box-shadow:
+      0 0 0 22px rgba(255, 255, 255, 0.02),
+      0 0 0 48px rgba(255, 255, 255, 0.015);
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 36px;
+  }
+
+  .gbsrac-aboutpage-story,
+  .gbsrac-aboutpage-values,
+  .gbsrac-aboutpage-flow,
+  .gbsrac-aboutpage-partner {
+    padding: 66px 0;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 28px;
+  }
+
+  .gbsrac-aboutpage-story-media {
+    min-height: 300px;
+  }
+
+  .gbsrac-aboutpage-story-fact strong {
+    font-size: 20px;
+  }
+
+  .gbsrac-aboutpage-value-card h3,
+  .gbsrac-aboutpage-flow-step h3,
+  .gbsrac-aboutpage-partner-card h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-location {
+    padding-top: 22px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-aboutpage-hero-container,
+  .gbsrac-aboutpage-story-container,
+  .gbsrac-aboutpage-partner-container,
+  .gbsrac-aboutpage-values-container,
+  .gbsrac-aboutpage-flow-container,
+  .gbsrac-aboutpage-cta-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-aboutpage-hero-container {
+    padding: 92px 16px 34px;
+  }
+
+  .gbsrac-aboutpage-hero-panel {
+    padding: 24px 18px;
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-aboutpage-hero p,
+  .gbsrac-aboutpage-story-content p,
+  .gbsrac-aboutpage-values-intro p,
+  .gbsrac-aboutpage-partner-copy p,
+  .gbsrac-aboutpage-partner-card p {
+    font-size: 15px;
+  }
+
+  .gbsrac-aboutpage-hero-points {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .gbsrac-aboutpage-hero-points span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 26px;
+  }
+
+  .gbsrac-aboutpage-story-media {
+    min-height: 260px;
+  }
+
+  .gbsrac-aboutpage-story-fact,
+  .gbsrac-aboutpage-value-card,
+  .gbsrac-aboutpage-flow-step,
+  .gbsrac-aboutpage-partner-card {
+    padding: 18px 16px;
+  }
+
+  .gbsrac-aboutpage-value-card span,
+  .gbsrac-aboutpage-flow-step span {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+  }
+
+  .gbsrac-location {
+    padding-top: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-aboutpage-hero,
+  .gbsrac-aboutpage-hero-container {
+    min-height: 500px;
+  }
+
+  .gbsrac-aboutpage-hero h1 {
+    font-size: 28px;
+  }
+
+  .gbsrac-aboutpage-hero-subtitle,
+  .gbsrac-aboutpage-story-subtitle,
+  .gbsrac-aboutpage-values-subtitle,
+  .gbsrac-aboutpage-flow-subtitle,
+  .gbsrac-aboutpage-partner-subtitle,
+  .gbsrac-aboutpage-cta-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-aboutpage-story-content h2,
+  .gbsrac-aboutpage-values-intro h2,
+  .gbsrac-aboutpage-flow-panel h2,
+  .gbsrac-aboutpage-partner-copy h2 {
+    font-size: 23px;
+  }
+
+  .gbsrac-aboutpage-value-card h3,
+  .gbsrac-aboutpage-flow-step h3,
+  .gbsrac-aboutpage-partner-card h3 {
+    font-size: 20px;
+  }
+}

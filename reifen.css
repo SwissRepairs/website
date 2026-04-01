@@ -1,0 +1,956 @@
+/* ================= REIFEN HERO ================= */
+
+.gbsrac-reifen-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+}
+
+.gbsrac-reifen-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/heros/reifen.webp");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.03);
+  filter: saturate(0.95);
+}
+
+.gbsrac-reifen-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.18), transparent 26%),
+    linear-gradient(90deg, rgba(7, 7, 7, 0.78) 0%, rgba(7, 7, 7, 0.48) 45%, rgba(7, 7, 7, 0.82) 100%);
+}
+
+.gbsrac-reifen-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 100px 7% 70px;
+  display: flex;
+  align-items: center;
+}
+
+.gbsrac-reifen-hero-panel {
+  max-width: 760px;
+  padding: 42px 40px;
+  background: rgba(12, 12, 12, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.18);
+}
+
+.gbsrac-reifen-hero-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-reifen-hero h1 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2.8px;
+  color: #ffffff;
+}
+
+.gbsrac-reifen-hero-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+  border-radius: 999px;
+}
+
+.gbsrac-reifen-hero p {
+  max-width: 620px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gbsrac-reifen-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+.gbsrac-reifen-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gbsrac-reifen-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* ================= REIFEN SERVICES ================= */
+
+.gbsrac-reifen-services {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top left, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-reifen-services-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-reifen-services-intro {
+  max-width: 860px;
+  margin-bottom: 56px;
+}
+
+.gbsrac-reifen-services-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-reifen-services-intro h2 {
+  margin: 0;
+  max-width: 860px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-reifen-services-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-reifen-services-intro p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-reifen-services-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.gbsrac-reifen-services-feature {
+  position: sticky;
+  top: 120px;
+  padding: 38px 34px 34px;
+  background:
+    linear-gradient(145deg, rgba(17, 17, 17, 0.96) 0%, rgba(33, 18, 18, 0.96) 100%);
+  box-shadow: 0 28px 58px rgba(0, 0, 0, 0.14);
+}
+
+.gbsrac-reifen-services-feature-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gbsrac-reifen-services-feature h3 {
+  margin: 0 0 18px;
+  max-width: 480px;
+  font-size: 42px;
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -1.3px;
+  color: #ffffff;
+}
+
+.gbsrac-reifen-services-feature p {
+  margin: 0;
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.gbsrac-reifen-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gbsrac-reifen-service-card {
+  padding: 26px 24px 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.gbsrac-reifen-service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(227, 6, 19, 0.16);
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.08);
+}
+
+.gbsrac-reifen-service-card-accent {
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8f3f3 100%);
+}
+
+.gbsrac-reifen-service-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.18);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c30410;
+}
+
+.gbsrac-reifen-service-card h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #111111;
+}
+
+.gbsrac-reifen-service-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.78;
+  color: #595959;
+}
+
+/* ================= REIFEN PREISE ================= */
+
+.gbsrac-reifen-prices {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.05), transparent 24%),
+    linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-reifen-prices-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-reifen-prices-intro {
+  max-width: 860px;
+  margin-bottom: 56px;
+}
+
+.gbsrac-reifen-prices-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(227, 6, 19, 0.15);
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.05);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-reifen-prices-intro h2 {
+  margin: 0;
+  max-width: 860px;
+  font-size: 52px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  color: #111111;
+}
+
+.gbsrac-reifen-prices-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-reifen-prices-intro p {
+  margin: 0;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #5c5c5c;
+}
+
+.gbsrac-reifen-prices-board {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.gbsrac-reifen-prices-column {
+  padding: 34px 32px 30px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.06);
+}
+
+.gbsrac-reifen-prices-column-accent {
+  background:
+    radial-gradient(circle at top right, rgba(227, 6, 19, 0.09), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8f3f3 100%);
+}
+
+.gbsrac-reifen-prices-column-head {
+  padding-bottom: 22px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.gbsrac-reifen-prices-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 16px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(227, 6, 19, 0.08);
+  border: 1px solid rgba(227, 6, 19, 0.14);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #c30410;
+}
+
+.gbsrac-reifen-prices-column h3 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #111111;
+}
+
+.gbsrac-reifen-prices-column p {
+  margin: 0;
+  max-width: 440px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5f5f5f;
+}
+
+.gbsrac-reifen-prices-list {
+  display: grid;
+  gap: 14px;
+}
+
+.gbsrac-reifen-prices-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  background: rgba(247, 247, 247, 0.95);
+  border-left: 4px solid #c30410;
+}
+
+.gbsrac-reifen-prices-size {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: #151515;
+}
+
+.gbsrac-reifen-prices-value {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: #c30410;
+  white-space: nowrap;
+}
+
+/* ================= ERSATZFAHRZEUG ================= */
+
+.gbsrac-reifen-loaner {
+  padding: 0 0 110px;
+  background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.gbsrac-reifen-loaner-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.gbsrac-reifen-loaner-card {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: stretch;
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.97) 0%, rgba(39, 16, 18, 0.97) 100%);
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+}
+
+.gbsrac-reifen-loaner-media {
+  position: relative;
+  min-height: 420px;
+}
+
+.gbsrac-reifen-loaner-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9, 9, 9, 0.08) 0%, rgba(9, 9, 9, 0.36) 100%);
+}
+
+.gbsrac-reifen-loaner-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gbsrac-reifen-loaner-content {
+  padding: 48px 46px 44px;
+}
+
+.gbsrac-reifen-loaner-subtitle {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.gbsrac-reifen-loaner-content h2 {
+  margin: 0;
+  font-size: 58px;
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #ffffff;
+}
+
+.gbsrac-reifen-loaner-line {
+  width: 120px;
+  height: 4px;
+  margin: 26px 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e30613 0%, #7f0d14 100%);
+}
+
+.gbsrac-reifen-loaner-content p {
+  max-width: 620px;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.gbsrac-reifen-loaner-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gbsrac-reifen-loaner-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .gbsrac-reifen-hero,
+  .gbsrac-reifen-hero-container {
+    min-height: 680px;
+  }
+
+  .gbsrac-reifen-hero-panel {
+    max-width: 700px;
+    padding: 36px 34px;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 62px;
+    letter-spacing: -2.1px;
+  }
+
+  .gbsrac-reifen-hero p,
+  .gbsrac-reifen-services-intro p,
+  .gbsrac-reifen-services-feature p,
+  .gbsrac-reifen-prices-intro p,
+  .gbsrac-reifen-prices-column p,
+  .gbsrac-reifen-loaner-content p {
+    font-size: 17px;
+    line-height: 1.78;
+  }
+
+  .gbsrac-reifen-services {
+    padding: 108px 0;
+  }
+
+  .gbsrac-reifen-prices {
+    padding: 108px 0;
+  }
+
+  .gbsrac-reifen-services-container,
+  .gbsrac-reifen-prices-container,
+  .gbsrac-reifen-loaner-container {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2 {
+    font-size: 44px;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-reifen-prices-column h3 {
+    font-size: 30px;
+  }
+
+  .gbsrac-reifen-prices-value {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .gbsrac-reifen-hero,
+  .gbsrac-reifen-hero-container {
+    min-height: 660px;
+  }
+
+  .gbsrac-reifen-hero-container {
+    padding: 110px 24px 56px;
+  }
+
+  .gbsrac-reifen-hero-panel {
+    max-width: 680px;
+    padding: 34px 30px;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 58px;
+    letter-spacing: -2px;
+  }
+
+  .gbsrac-reifen-services {
+    padding: 100px 0;
+  }
+
+  .gbsrac-reifen-prices {
+    padding: 100px 0;
+  }
+
+  .gbsrac-reifen-loaner {
+    padding-bottom: 96px;
+  }
+
+  .gbsrac-reifen-services-container,
+  .gbsrac-reifen-prices-container,
+  .gbsrac-reifen-loaner-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .gbsrac-reifen-services-layout,
+  .gbsrac-reifen-prices-board,
+  .gbsrac-reifen-loaner-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .gbsrac-reifen-hero,
+  .gbsrac-reifen-hero-container {
+    min-height: 620px;
+  }
+
+  .gbsrac-reifen-hero-container {
+    padding: 104px 24px 46px;
+  }
+
+  .gbsrac-reifen-hero-panel {
+    max-width: 100%;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 50px;
+    letter-spacing: -1.6px;
+  }
+
+  .gbsrac-reifen-services {
+    padding: 88px 0;
+  }
+
+  .gbsrac-reifen-prices {
+    padding: 88px 0;
+  }
+
+  .gbsrac-reifen-loaner {
+    padding-bottom: 84px;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2,
+  .gbsrac-reifen-services-feature h3,
+  .gbsrac-reifen-prices-column h3 {
+    font-size: 36px;
+  }
+
+  .gbsrac-reifen-loaner-media {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gbsrac-reifen-hero,
+  .gbsrac-reifen-hero-container {
+    min-height: 580px;
+  }
+
+  .gbsrac-reifen-hero-container {
+    padding: 100px 20px 40px;
+  }
+
+  .gbsrac-reifen-hero-panel {
+    padding: 28px 22px;
+  }
+
+  .gbsrac-reifen-hero-subtitle,
+  .gbsrac-reifen-services-subtitle,
+  .gbsrac-reifen-prices-subtitle,
+  .gbsrac-reifen-loaner-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.6px;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1.3px;
+  }
+
+  .gbsrac-reifen-hero-line,
+  .gbsrac-reifen-services-line,
+  .gbsrac-reifen-loaner-line {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .gbsrac-reifen-hero p,
+  .gbsrac-reifen-services-intro p,
+  .gbsrac-reifen-services-feature p,
+  .gbsrac-reifen-prices-intro p,
+  .gbsrac-reifen-prices-column p,
+  .gbsrac-reifen-service-card p,
+  .gbsrac-reifen-loaner-content p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .gbsrac-reifen-hero-points span,
+  .gbsrac-reifen-loaner-points span {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .gbsrac-reifen-services {
+    padding: 76px 0;
+  }
+
+  .gbsrac-reifen-prices {
+    padding: 76px 0;
+  }
+
+  .gbsrac-reifen-loaner {
+    padding-bottom: 74px;
+  }
+
+  .gbsrac-reifen-services-container,
+  .gbsrac-reifen-prices-container,
+  .gbsrac-reifen-loaner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gbsrac-reifen-services-intro,
+  .gbsrac-reifen-prices-intro {
+    margin-bottom: 40px;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2,
+  .gbsrac-reifen-services-feature h3,
+  .gbsrac-reifen-prices-column h3 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-reifen-services-feature {
+    padding: 26px 20px 22px;
+  }
+
+  .gbsrac-reifen-prices-column {
+    padding: 26px 20px 22px;
+  }
+
+  .gbsrac-reifen-service-card {
+    padding: 22px 18px 18px;
+  }
+
+  .gbsrac-reifen-service-card h3 {
+    font-size: 22px;
+  }
+
+  .gbsrac-reifen-prices-row {
+    padding: 16px 16px;
+  }
+
+  .gbsrac-reifen-prices-size {
+    font-size: 17px;
+  }
+
+  .gbsrac-reifen-prices-value {
+    font-size: 22px;
+  }
+
+  .gbsrac-reifen-loaner-media {
+    min-height: 280px;
+  }
+
+  .gbsrac-reifen-loaner-content {
+    padding: 28px 22px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gbsrac-reifen-hero,
+  .gbsrac-reifen-hero-container {
+    min-height: 540px;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 36px;
+  }
+
+  .gbsrac-reifen-services {
+    padding: 66px 0;
+  }
+
+  .gbsrac-reifen-prices {
+    padding: 66px 0;
+  }
+
+  .gbsrac-reifen-loaner {
+    padding-bottom: 64px;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2,
+  .gbsrac-reifen-services-feature h3,
+  .gbsrac-reifen-prices-column h3 {
+    font-size: 28px;
+  }
+
+  .gbsrac-reifen-prices-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .gbsrac-reifen-loaner-media {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gbsrac-reifen-hero-container,
+  .gbsrac-reifen-services-container,
+  .gbsrac-reifen-prices-container,
+  .gbsrac-reifen-loaner-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-reifen-hero-container {
+    padding: 92px 16px 34px;
+  }
+
+  .gbsrac-reifen-hero-panel {
+    padding: 24px 18px;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .gbsrac-reifen-hero p,
+  .gbsrac-reifen-services-intro p,
+  .gbsrac-reifen-services-feature p,
+  .gbsrac-reifen-prices-intro p,
+  .gbsrac-reifen-prices-column p,
+  .gbsrac-reifen-service-card p,
+  .gbsrac-reifen-loaner-content p {
+    font-size: 15px;
+  }
+
+  .gbsrac-reifen-hero-points span,
+  .gbsrac-reifen-loaner-points span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2,
+  .gbsrac-reifen-services-feature h3,
+  .gbsrac-reifen-prices-column h3 {
+    font-size: 26px;
+  }
+
+  .gbsrac-reifen-services-feature,
+  .gbsrac-reifen-service-card,
+  .gbsrac-reifen-loaner-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-reifen-prices-column {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gbsrac-reifen-prices-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gbsrac-reifen-hero,
+  .gbsrac-reifen-hero-container {
+    min-height: 500px;
+  }
+
+  .gbsrac-reifen-hero h1 {
+    font-size: 28px;
+  }
+
+  .gbsrac-reifen-hero-subtitle,
+  .gbsrac-reifen-services-subtitle,
+  .gbsrac-reifen-prices-subtitle,
+  .gbsrac-reifen-loaner-subtitle {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .gbsrac-reifen-services-intro h2,
+  .gbsrac-reifen-prices-intro h2,
+  .gbsrac-reifen-loaner-content h2,
+  .gbsrac-reifen-services-feature h3,
+  .gbsrac-reifen-prices-column h3 {
+    font-size: 23px;
+  }
+
+  .gbsrac-reifen-service-card h3 {
+    font-size: 20px;
+  }
+
+  .gbsrac-reifen-prices-size {
+    font-size: 16px;
+  }
+
+  .gbsrac-reifen-prices-value {
+    font-size: 18px;
+  }
+}

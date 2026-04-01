@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/webp" href="img/favicon-3/favicon.webp">
+  <link rel="icon" type="image/webp" sizes="96x96" href="img/favicon-3/favicon-96x96.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-3/apple-touch-icon.webp">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <title>Autowerkstatt Schlieren | Swiss Repairs</title>
+  <meta name="description" content="Autowerkstatt in Schlieren für Service, Reparaturen, MFK und Reifenservice. Jetzt Termin anfragen und ehrliche Beratung sichern.">
+  <meta name="keywords" content="Autowerkstatt Schlieren, Garage Schlieren, Auto Service Schlieren, Autoreparatur Schlieren, MFK Vorbereitung Schlieren, Reifenservice Schlieren, Fahrzeugpflege Schweiz, Karosserie und Lack, Swiss Repairs, Garage Zürich">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Swiss Repairs">
+  <meta name="geo.region" content="CH-ZH">
+  <meta name="geo.placename" content="Schlieren">
+  <meta name="geo.position" content="47.3967;8.4473">
+  <meta name="ICBM" content="47.3967, 8.4473">
+  <link rel="canonical" href="https://www.swissrepairs.ch/">
+  <meta property="og:title" content="Autowerkstatt Schlieren | Swiss Repairs 2026">
+  <meta property="og:description" content="Service, Reparaturen, MFK und Reifenservice in Schlieren. Swiss Repairs bietet ehrliche Beratung, faire Preise und schnelle Termine.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.swissrepairs.ch/">
+  <meta property="og:image" content="https://www.swissrepairs.ch/img/heros/hero.webp">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="Swiss Repairs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Autowerkstatt Schlieren | Swiss Repairs 2026">
+  <meta name="twitter:description" content="Service, Reparaturen, MFK und Reifenservice in Schlieren. Jetzt Termin bei Swiss Repairs anfragen.">
+  <meta name="twitter:image" content="https://www.swissrepairs.ch/img/heros/hero.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Swiss Repairs",
+      "image": "https://www.swissrepairs.ch/img/heros/hero.webp",
+      "url": "https://www.swissrepairs.ch/",
+      "telephone": "+41 76 767 22 20",
+      "email": "info@swissrepairs.ch",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gaswerkstrasse 8",
+        "postalCode": "8952",
+        "addressLocality": "Schlieren",
+        "addressCountry": "CH"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Schlieren, Zürich, Schweiz"
+      },
+      "priceRange": "$$",
+      "sameAs": []
+    }
+  </script>
+</head>
+<body>
+<!-- ================= NAVBAR SWISS REPAIRS ================= -->
+<header class="gbsrac-navbar" id="home">
+  <div class="gbsrac-navbar-container">
+    <a href="index.html" class="gbsrac-navbar-brand">
+      <img src="img/Swiss Repairs Logo.webp" alt="Swiss Repairs Logo">
+    </a>
+
+    <button class="gbsrac-navbar-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gbsrac-navbar-menu">
+      <a href="index.html" class="gbsrac-navbar-link">Home</a>
+
+      <div class="gbsrac-navbar-dropdown">
+        <a href="#services" class="gbsrac-navbar-link">Services</a>
+        <div class="gbsrac-navbar-dropdown-menu">
+          <a href="wartung.html">Wartung &amp; Service</a>
+          <a href="saison.html">Saisonale Checks</a>
+          <a href="mfk.html">MFK</a>
+          <a href="reparaturen.html">Reparaturen</a>
+          <a href="karosserie.html">Karosserie &amp; Lack</a>
+          <a href="unfall.html">Unfallschäden</a>
+          <a href="reifen.html">Reifenservice</a>
+        </div>
+      </div>
+
+      <a href="ueberuns.html" class="gbsrac-navbar-link">Über Uns</a>
+      <a href="kontakt.html" class="gbsrac-navbar-link">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".gbsrac-navbar");
+  const navbarToggle = document.querySelector(".gbsrac-navbar-toggle");
+  const navbarLinks = document.querySelectorAll(".gbsrac-navbar-menu a");
+  const faqItems = document.querySelectorAll(".gbsrac-faq-item");
+  const offerForm = document.querySelector(".gbsrac-contactpage-offer-form");
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    navbar.classList.toggle("is-scrolled", window.scrollY > 30);
+  }
+
+  if (navbar && navbarToggle) {
+    navbarToggle.addEventListener("click", function () {
+      const isOpen = navbar.classList.toggle("is-open");
+      navbarToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navbar.classList.remove("is-open");
+        navbarToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+
+  faqItems.forEach(function (item) {
+    const button = item.querySelector(".gbsrac-faq-question");
+
+    button.addEventListener("click", function () {
+      const isOpen = item.classList.contains("is-open");
+
+      faqItems.forEach(function (entry) {
+        entry.classList.remove("is-open");
+        entry.querySelector(".gbsrac-faq-question").setAttribute("aria-expanded", "false");
+      });
+
+      if (!isOpen) {
+        item.classList.add("is-open");
+        button.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
+  if (offerForm) {
+    const offerConfig = {
+      Service: {
+        description: "Wählen Sie die Service-Leistungen aus, die wir für Ihre Offerte prüfen sollen.",
+        options: [
+          { label: "Kleiner Service", min: 229, max: 319 },
+          { label: "Grosser Service", min: 420, max: 620 },
+          { label: "Hersteller-Service nach Intervall", min: 360, max: 540 },
+          { label: "Service inklusive Filterwechsel", min: 310, max: 470 }
+        ]
+      },
+      Bremsen: {
+        description: "Wählen Sie die Bremsarbeiten aus, die offeriert werden sollen.",
+        options: [
+          { label: "Bremsscheiben vorne wechseln", min: 340, max: 520 },
+          { label: "Bremsscheiben hinten wechseln", min: 320, max: 490 },
+          { label: "Bremsbeläge vorne wechseln", min: 180, max: 290 },
+          { label: "Bremsbeläge hinten wechseln", min: 170, max: 270 }
+        ]
+      },
+      Zahnriemen: {
+        description: "Wählen Sie die passende Zahnriemen-Arbeit für Ihr Fahrzeug.",
+        options: [
+          { label: "Zahnriemen inkl. Spann- und Umlenkrollen", min: 790, max: 1090 },
+          { label: "Zahnriemen inkl. Wasserpumpe", min: 940, max: 1290 },
+          { label: "Komplettsatz mit Wasserpumpe und Nebenarbeiten", min: 1090, max: 1490 }
+        ]
+      },
+      Olwechsel: {
+        description: "Wählen Sie den gewünschten Ölservice für Ihre Anfrage aus.",
+        options: [
+          { label: "Ölwechsel inkl. Ölfilter", min: 149, max: 229 },
+          { label: "Ölwechsel inkl. Luft- und Pollenfilter", min: 210, max: 320 },
+          { label: "Ölservice nach Herstellervorgabe", min: 240, max: 390 }
+        ]
+      },
+      "Saisonale Checks": {
+        description: "Wählen Sie den passenden saisonalen Check für Ihr Fahrzeug.",
+        options: [
+          { label: "Sommercheck", min: 69, max: 109 },
+          { label: "Wintercheck", min: 79, max: 129 },
+          { label: "Batterie- und Flüssigkeitscheck", min: 49, max: 89 },
+          { label: "Saisoncheck inkl. Reifenkontrolle", min: 95, max: 149 }
+        ]
+      },
+      MFK: {
+        description: "Wählen Sie die gewünschte MFK-Leistung aus.",
+        options: [
+          { label: "MFK-Vorbereitung", min: 149, max: 249 },
+          { label: "MFK-Vorkontrolle mit Prüfbericht", min: 120, max: 190 },
+          { label: "MFK-Bereitstellung", min: 180, max: 280 },
+          { label: "Nachkontroll-Check", min: 90, max: 150 }
+        ]
+      },
+      Reparaturen: {
+        description: "Wählen Sie die Reparaturbereiche aus, die wir offerieren sollen.",
+        options: [
+          { label: "Fahrwerksreparatur", min: 290, max: 590 },
+          { label: "Allgemeine mechanische Reparatur", min: 220, max: 520 },
+          { label: "Motornahe Reparatur", min: 420, max: 980 },
+          { label: "Diagnose und Fehlersuche", min: 110, max: 190 }
+        ]
+      },
+      "Karosserie & Lack": {
+        description: "Wählen Sie die gewünschte Karosserie- oder Lackarbeit aus.",
+        options: [
+          { label: "Kratzer aufbereiten", min: 180, max: 420 },
+          { label: "Dellen instand setzen", min: 220, max: 520 },
+          { label: "Kleinere Karosseriearbeit", min: 290, max: 690 },
+          { label: "Lackkorrektur oder Spot-Repair", min: 240, max: 640 }
+        ]
+      },
+      Unfallschäden: {
+        description: "Wählen Sie die passende Leistung nach einem Schadenfall aus.",
+        options: [
+          { label: "Schadensaufnahme", min: 90, max: 160 },
+          { label: "Karosserie-Instandsetzung nach Unfall", min: 690, max: 1890 },
+          { label: "Teilersatz und Anpassungsarbeiten", min: 520, max: 1490 },
+          { label: "Abklärung für Versicherung / Kostenvoranschlag", min: 120, max: 240 }
+        ]
+      },
+      Reifenservice: {
+        description: "Wählen Sie den gewünschten Reifenservice für Ihre Offerte.",
+        options: [
+          { label: "Reifenwechsel", min: 60, max: 110 },
+          { label: "Reifenwechsel inkl. Wuchten", min: 110, max: 180 },
+          { label: "Profil- und Druckkontrolle", min: 35, max: 65 },
+          { label: "Kompletter Saison-Reifenservice", min: 140, max: 240 }
+        ]
+      }
+    };
+
+    const categoryButtons = Array.from(document.querySelectorAll(".gbsrac-contactpage-offer-category"));
+    const panels = Array.from(document.querySelectorAll(".gbsrac-contactpage-offer-panel"));
+    const indicators = Array.from(document.querySelectorAll(".gbsrac-contactpage-offer-step"));
+    const nextButtons = Array.from(document.querySelectorAll("[data-next-step]"));
+    const prevButtons = Array.from(document.querySelectorAll("[data-prev-step]"));
+    const categoryInput = document.getElementById("offerCategoryInput");
+    const selectionsInput = document.getElementById("offerSelectionsInput");
+    const estimateInput = document.getElementById("offerEstimateInput");
+    const optionsContainer = document.getElementById("offerOptions");
+    const description = document.getElementById("offerPanelDescription");
+    const summary = document.getElementById("offerSummary");
+    const priceValue = document.getElementById("offerPriceValue");
+    const priceHint = document.getElementById("offerPriceHint");
+    let currentStep = 1;
+    let selectedCategories = [];
+
+    function formatCurrency(value) {
+      return new Intl.NumberFormat("de-CH", {
+        style: "currency",
+        currency: "CHF",
+        maximumFractionDigits: 0
+      }).format(value);
+    }
+
+    function renderOptions() {
+      if (selectedCategories.length === 0) {
+        optionsContainer.innerHTML = '<p class="gbsrac-contactpage-offer-empty">Bitte wählen Sie zuerst mindestens eine Kategorie aus.</p>';
+        description.textContent = "Sie können mehrere Bereiche gleichzeitig auswählen.";
+        return;
+      }
+
+      const previouslySelected = new Set(
+        Array.from(optionsContainer.querySelectorAll('input[type="checkbox"]:checked')).map(function (input) {
+          return input.value;
+        })
+      );
+
+      description.textContent = "Wählen Sie alle Arbeiten aus, die wir für die Offerte berücksichtigen sollen.";
+      optionsContainer.innerHTML = selectedCategories.map(function (category) {
+        const config = offerConfig[category];
+
+        return `
+          <div class="gbsrac-contactpage-offer-option-group">
+            <div class="gbsrac-contactpage-offer-option-group-title">${category}</div>
+            <div class="gbsrac-contactpage-offer-option-group-list">
+              ${config.options.map(function (option, index) {
+                const checked = previouslySelected.has(option.label) ? "checked" : "";
+
+                return `
+                  <label class="gbsrac-contactpage-offer-option">
+                    <input type="checkbox" name="offerte_${category.replace(/[^a-zA-Z0-9]+/g, "_").toLowerCase()}_${index + 1}" value="${option.label}" data-category="${category}" data-min="${option.min}" data-max="${option.max}" ${checked}>
+                    <span>${option.label}</span>
+                    <small>${formatCurrency(option.min)} bis ${formatCurrency(option.max)}</small>
+                  </label>
+                `;
+              }).join("")}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function getSelectedOptions() {
+      return Array.from(optionsContainer.querySelectorAll('input[type="checkbox"]:checked')).map(function (input) {
+        return {
+          category: input.dataset.category || "",
+          label: input.value,
+          min: Number(input.dataset.min || 0),
+          max: Number(input.dataset.max || 0)
+        };
+      });
+    }
+
+    function getEstimate() {
+      return getSelectedOptions().reduce(function (totals, option) {
+        totals.min += option.min;
+        totals.max += option.max;
+        return totals;
+      }, { min: 0, max: 0 });
+    }
+
+    function updatePriceBox() {
+      const selectedOptions = getSelectedOptions();
+      const estimate = getEstimate();
+
+      if (selectedCategories.length === 0 || selectedOptions.length === 0) {
+        estimateInput.value = "";
+        priceValue.textContent = "Bitte wählen Sie zuerst eine Arbeit aus.";
+        priceHint.textContent = "Der genaue Endpreis kann je nach Fahrzeug, Motorisierung und Teilequalität abweichen.";
+        return;
+      }
+
+      const formattedEstimate = `${formatCurrency(estimate.min)} bis ${formatCurrency(estimate.max)}`;
+      estimateInput.value = formattedEstimate;
+      priceValue.textContent = formattedEstimate;
+      priceHint.textContent = "Unverbindliche Schätzung inklusive Arbeit und typischer Teilebasis. Der genaue Endpreis folgt nach Fahrzeugprüfung.";
+    }
+
+    function updateSummary() {
+      const selectedOptions = getSelectedOptions();
+      const estimate = getEstimate();
+      categoryInput.value = selectedCategories.join(", ");
+      selectionsInput.value = selectedOptions.map(function (option) {
+        return `${option.category}: ${option.label}`;
+      }).join(", ");
+
+      if (selectedCategories.length === 0 || selectedOptions.length === 0) {
+        summary.innerHTML = "<p>Bitte wählen Sie zuerst eine Kategorie und mindestens eine Arbeit aus.</p>";
+        return;
+      }
+
+      summary.innerHTML = `
+        <div class="gbsrac-contactpage-offer-summary-card">
+          <strong>Kategorien</strong>
+          <span>${selectedCategories.join(", ")}</span>
+        </div>
+        <div class="gbsrac-contactpage-offer-summary-card">
+          <strong>Gewählte Arbeiten</strong>
+          <span>${selectedOptions.map(function (option) { return `${option.category}: ${option.label}`; }).join(", ")}</span>
+        </div>
+        <div class="gbsrac-contactpage-offer-summary-card">
+          <strong>Richtofferte</strong>
+          <span>${formatCurrency(estimate.min)} bis ${formatCurrency(estimate.max)}</span>
+        </div>
+      `;
+    }
+
+    function showStep(step) {
+      currentStep = step;
+
+      panels.forEach(function (panel) {
+        panel.classList.toggle("is-active", Number(panel.dataset.stepPanel) === step);
+      });
+
+      indicators.forEach(function (indicator) {
+        const indicatorStep = Number(indicator.dataset.stepIndicator);
+        indicator.classList.toggle("is-active", indicatorStep === step);
+        indicator.classList.toggle("is-complete", indicatorStep < step);
+      });
+    }
+
+    function validateStep(step) {
+      if (step === 1) return selectedCategories.length > 0;
+      if (step === 2) return selectedCategories.length > 0 && getSelectedOptions().length > 0;
+      return true;
+    }
+
+    categoryButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const category = button.dataset.category || "";
+
+        if (selectedCategories.includes(category)) {
+          selectedCategories = selectedCategories.filter(function (entry) {
+            return entry !== category;
+          });
+        } else {
+          selectedCategories = selectedCategories.concat(category);
+        }
+
+        categoryButtons.forEach(function (entry) {
+          entry.classList.toggle("is-selected", selectedCategories.includes(entry.dataset.category || ""));
+        });
+
+        renderOptions();
+        updatePriceBox();
+        updateSummary();
+      });
+    });
+
+    nextButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const targetStep = Number(button.dataset.nextStep);
+
+        if (!validateStep(currentStep)) {
+          if (currentStep === 1) {
+            alert("Bitte wählen Sie zuerst mindestens eine Kategorie aus.");
+          } else if (currentStep === 2) {
+            alert("Bitte wählen Sie mindestens eine Arbeit aus.");
+          }
+          return;
+        }
+
+        updateSummary();
+        showStep(targetStep);
+      });
+    });
+
+    prevButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        showStep(Number(button.dataset.prevStep));
+      });
+    });
+
+    optionsContainer.addEventListener("change", updateSummary);
+    optionsContainer.addEventListener("change", updatePriceBox);
+
+    offerForm.addEventListener("submit", function (event) {
+      if (selectedCategories.length === 0 || getSelectedOptions().length === 0) {
+        event.preventDefault();
+        alert("Bitte wählen Sie vor dem Senden eine Kategorie und mindestens eine Arbeit aus.");
+        showStep(selectedCategories.length === 0 ? 1 : 2);
+      } else {
+        updateSummary();
+      }
+    });
+
+    renderOptions();
+    updatePriceBox();
+  }
+});
+</script>
+
+<!-- ================= HERO SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-hero">
+  <div class="gbsrac-hero-bg" data-aos="zoom-out" data-aos-duration="1400"></div>
+  <div class="gbsrac-hero-overlay"></div>
+
+  <div class="gbsrac-hero-content">
+    <div class="gbsrac-hero-shape"
+         data-aos="fade-left"
+         data-aos-duration="1200"
+         data-aos-delay="150"></div>
+
+    <div class="gbsrac-hero-text">
+      <span class="gbsrac-hero-subtitle"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="250">
+        Willkommen bei
+      </span>
+
+      <h1 data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="400">
+        Swiss Repairs
+      </h1>
+
+      <div class="gbsrac-hero-line"
+           data-aos="zoom-in"
+           data-aos-duration="700"
+           data-aos-delay="550"></div>
+
+      <p data-aos="fade-up"
+         data-aos-duration="900"
+         data-aos-delay="700">
+Ihre Werkstatt für Service, Reparaturen und Fahrzeugpflege – kompetent und zuverlässig.
+      </p>
+
+      <div class="gbsrac-hero-buttons"
+           data-aos="fade-up"
+           data-aos-duration="900"
+           data-aos-delay="850">
+        <a href="#services" class="gbsrac-btn gbsrac-btn-primary">Unsere Dienstleistungen</a>
+        <a href="kontakt.html#booking" class="gbsrac-btn gbsrac-btn-secondary">Jetzt Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UEBER UNS SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-about" id="about">
+  <div class="gbsrac-about-container">
+    
+    <div class="gbsrac-about-image" data-aos="fade-right" data-aos-duration="1000">
+      <img src="img/heros/saison.webp" alt="Swiss Repairs Werkstatt">
+    </div>
+
+    <div class="gbsrac-about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+      <span class="gbsrac-about-subtitle">Über Uns</span>
+      <h2>Leidenschaft für Fahrzeuge. Qualität in jeder Arbeit.</h2>
+      <div class="gbsrac-about-line"></div>
+
+      <p>
+        Swiss Repairs steht für zuverlässigen Service, ehrliche Beratung und
+        professionelle Arbeit rund ums Fahrzeug. Ob Wartung, Reparaturen,
+        MFK-Vorbereitung oder Fahrzeugpflege - wir kümmern uns mit Sorgfalt
+        und Erfahrung um jedes Detail.
+      </p>
+
+      <p>
+        Unser Ziel ist es, unseren Kundinnen und Kunden nicht nur eine
+        Reparatur zu bieten, sondern ein gutes Gefühl von Sicherheit,
+        Transparenz und Vertrauen. Bei uns steht Ihr Fahrzeug im Mittelpunkt -
+        und Sie genauso.
+      </p>
+
+      <div class="gbsrac-about-features">
+        <div class="gbsrac-about-feature">
+          <div class="gbsrac-about-feature-icon" aria-hidden="true">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <p>Markenunabhängige Werkstatt</p>
+        </div>
+
+        <div class="gbsrac-about-feature">
+          <div class="gbsrac-about-feature-icon" aria-hidden="true">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <p>Ehrlich &amp; fair kalkuliert</p>
+        </div>
+
+        <div class="gbsrac-about-feature">
+          <div class="gbsrac-about-feature-icon" aria-hidden="true">
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>Erfahrung, saubere Arbeit, klare Abläufe</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= SERVICES SLIDER SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-services-slider" id="services">
+
+  <div class="gbsrac-services-slider-header"
+       data-aos="fade-up"
+       data-aos-duration="900">
+    <span class="gbsrac-services-slider-subtitle">Unsere Dienstleistungen</span>
+    <h2>Professionelle Werkstattservices für jedes Fahrzeug</h2>
+    <p>
+      Entdecken Sie unsere Leistungen rund um Service, Reparaturen, Karosserie,
+      MFK und Fahrzeugpflege – modern, zuverlässig und persönlich.
+    </p>
+  </div>
+
+  <div class="gbsrac-services-slider-wrapper"
+       data-aos="fade-up"
+       data-aos-duration="1000"
+       data-aos-delay="150">
+
+    <button class="gbsrac-slider-arrow gbsrac-slider-arrow-left" aria-label="Vorherige Dienstleistungen">
+      <span>&#10094;</span>
+    </button>
+
+    <div class="gbsrac-services-viewport">
+      <div class="gbsrac-services-track">
+
+        <!-- 1 -->
+        <div class="gbsrac-service-slide" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/wartung.webp" alt="Wartung und Service">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>Wartung &amp; Service</h3>
+            <p>
+              Regelmässige Wartungen, Ölwechsel, Kontrollen und professioneller
+              Fahrzeugservice für Sicherheit und Werterhalt.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="wartung.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gbsrac-service-slide" data-aos="fade-up" data-aos-delay="180" data-aos-duration="900">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/saison.webp" alt="Saisonale Checks">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>Saisonale Checks</h3>
+            <p>
+              Wintercheck und Sommercheck für optimale Performance,
+              Sicherheit und eine sorgenfreie Fahrt in jeder Jahreszeit.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="saison.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gbsrac-service-slide" data-aos="fade-up" data-aos-delay="260" data-aos-duration="900">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/mfk.webp" alt="MFK">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>MFK</h3>
+            <p>
+              Wir bereiten Ihr Fahrzeug professionell auf die MFK vor
+              und unterstützen Sie bei allen wichtigen Abklärungen.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="mfk.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/reparatur.webp" alt="Reparaturen">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>Reparaturen</h3>
+            <p>
+              Fachgerechte Reparaturen für Bremsen, Fahrwerk, Motor,
+              Elektronik und viele weitere Fahrzeugkomponenten.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="reparaturen.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/karosserie.webp" alt="Karosserie und Lack">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>Karosserie &amp; Lack</h3>
+            <p>
+              Hochwertige Karosseriearbeiten und Lackierungen für
+              eine perfekte Optik und den Erhalt Ihres Fahrzeugs.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="karosserie.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/unfall.webp" alt="Unfallschäden und Versicherung">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>Unfallschäden &amp; Versicherung</h3>
+            <p>
+              Wir reparieren Unfallschäden professionell und übernehmen
+              die Abklärungen mit Ihrer Versicherung.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="unfall.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="gbsrac-service-slide">
+          <div class="gbsrac-service-slide-image">
+            <img src="img/heros/reifen.webp" alt="Reifenservice">
+          </div>
+          <div class="gbsrac-service-slide-overlay"></div>
+          <div class="gbsrac-service-slide-hover"></div>
+          <div class="gbsrac-service-slide-content">
+            <h3>Reifenservice</h3>
+            <p>
+              Reifenwechsel, Kontrolle, Auswuchten und saisonaler Service
+              für maximale Sicherheit auf jeder Strecke.
+            </p>
+            <div class="gbsrac-service-slide-buttons">
+              <a href="reifen.html" class="gbsrac-service-btn">Erfahre mehr</a>
+              <a href="#booking" class="gbsrac-service-btn gbsrac-service-btn-primary">Buchen</a>
+            </div>
+          </div>
+        </div>
+
+      
+
+      </div>
+    </div>
+
+    <button class="gbsrac-slider-arrow gbsrac-slider-arrow-right" aria-label="Nächste Dienstleistungen">
+      <span>&#10095;</span>
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= OFFERTEN SECTION ================= -->
+<section class="gbsrac-contactpage-offer" id="booking">
+  <div class="gbsrac-contactpage-offer-container">
+    <div class="gbsrac-contactpage-offer-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-contactpage-offer-subtitle">Fixpreis-Offerte</span>
+      <h2>Jetzt direkt online eine Offerte anfragen.</h2>
+      <div class="gbsrac-contactpage-offer-line"></div>
+      <p>
+        Wählen Sie Ihre gewünschten Arbeiten, ergänzen Sie die Fahrzeugdaten
+        und senden Sie uns auf Wunsch gleich Fotos mit. So erhalten Sie schnell
+        eine unverbindliche Richtofferte und den passenden nächsten Schritt.
+      </p>
+    </div>
+
+    <form
+      class="gbsrac-contactpage-offer-form"
+      action="https://formsubmit.co/info@swissrepairs.ch"
+      method="POST"
+      enctype="multipart/form-data"
+      data-aos="fade-up"
+      data-aos-duration="950"
+      data-aos-delay="100"
+    >
+      <input type="hidden" name="_subject" value="Neue Fixpreis-Offerte - Swiss Repairs">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="offerte_kategorie" id="offerCategoryInput">
+      <input type="hidden" name="offerte_arbeiten" id="offerSelectionsInput">
+      <input type="hidden" name="richtofferte" id="offerEstimateInput">
+
+      <div class="gbsrac-contactpage-offer-steps" aria-label="Offerten-Schritte">
+        <div class="gbsrac-contactpage-offer-step is-active" data-step-indicator="1">
+          <span>1</span>
+          <strong>Bereiche wählen</strong>
+        </div>
+        <div class="gbsrac-contactpage-offer-step" data-step-indicator="2">
+          <span>2</span>
+          <strong>Details ergänzen</strong>
+        </div>
+        <div class="gbsrac-contactpage-offer-step" data-step-indicator="3">
+          <span>3</span>
+          <strong>Anfrage senden</strong>
+        </div>
+      </div>
+
+      <div class="gbsrac-contactpage-offer-panel is-active" data-step-panel="1">
+        <div class="gbsrac-contactpage-offer-panel-head">
+          <p class="gbsrac-contactpage-offer-kicker">Schritt 1 / 3</p>
+          <h3>Welche Arbeiten möchten Sie offerieren lassen?</h3>
+          <p>Sie können mehrere Kategorien gleichzeitig auswählen.</p>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-categories" id="offerCategories">
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Service"><strong>Service</strong><span>Inspektion, Intervallservice oder kleiner/grosser Service</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Bremsen"><strong>Bremsen</strong><span>Bremsscheiben, Bremsbeläge oder kompletter Bremsenservice</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Zahnriemen"><strong>Zahnriemen</strong><span>Mit oder ohne Wasserpumpe und Zusatzrollen</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Olwechsel"><strong>Ölwechsel</strong><span>Ölservice inklusive Filter und passender Freigabe</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Saisonale Checks"><strong>Saisonale Checks</strong><span>Sommercheck, Wintercheck, Batterie- und Sicherheitskontrolle</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="MFK"><strong>MFK</strong><span>Vorbereitung, Vorkontrolle und Bereitstellung für den Termin</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Reparaturen"><strong>Reparaturen</strong><span>Fahrwerk, Motor, Diagnose und allgemeine Instandsetzung</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Karosserie & Lack"><strong>Karosserie &amp; Lack</strong><span>Kratzer, Dellen, kleinere Karosseriearbeiten und Lackkorrektur</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Unfallschäden"><strong>Unfallschäden</strong><span>Schadensaufnahme, Instandsetzung und Abklärung</span></button>
+          <button type="button" class="gbsrac-contactpage-offer-category" data-category="Reifenservice"><strong>Reifenservice</strong><span>Reifenwechsel, Wuchten und saisonale Reifenchecks</span></button>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-navigation">
+          <button type="button" class="gbsrac-contactpage-offer-next" data-next-step="2">Weiter</button>
+        </div>
+      </div>
+
+      <div class="gbsrac-contactpage-offer-panel" data-step-panel="2">
+        <div class="gbsrac-contactpage-offer-panel-head">
+          <p class="gbsrac-contactpage-offer-kicker">Schritt 2 / 3</p>
+          <h3>Welche Arbeiten sollen wir berücksichtigen?</h3>
+          <p id="offerPanelDescription">Wählen Sie zuerst oben mindestens eine Kategorie aus.</p>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-options" id="offerOptions"></div>
+
+        <div class="gbsrac-contactpage-offer-pricebox" id="offerPriceBox">
+          <p class="gbsrac-contactpage-offer-price-label">Unverbindliche Richtofferte</p>
+          <strong id="offerPriceValue">Bitte wählen Sie zuerst eine Arbeit aus.</strong>
+          <span id="offerPriceHint">Der genaue Endpreis kann je nach Fahrzeug, Motorisierung und Teilequalität abweichen.</span>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-grid">
+          <div class="gbsrac-contactpage-field">
+            <label for="offerBrand">Marke</label>
+            <input id="offerBrand" name="fahrzeug_marke" type="text" placeholder="z. B. BMW" required>
+          </div>
+          <div class="gbsrac-contactpage-field">
+            <label for="offerModel">Modell</label>
+            <input id="offerModel" name="fahrzeug_modell" type="text" placeholder="z. B. 320d" required>
+          </div>
+          <div class="gbsrac-contactpage-field">
+            <label for="offerYear">Baujahr</label>
+            <input id="offerYear" name="fahrzeug_baujahr" type="text" placeholder="z. B. 2019" required>
+          </div>
+          <div class="gbsrac-contactpage-field">
+            <label for="offerPlate">Kontrollschild oder VIN</label>
+            <input id="offerPlate" name="fahrzeug_identifikation" type="text" placeholder="ZH 123456 oder Fahrgestellnummer">
+          </div>
+          <div class="gbsrac-contactpage-field gbsrac-contactpage-field-full">
+            <label for="offerNotes">Zusätzliche Angaben</label>
+            <textarea id="offerNotes" name="offerte_notizen" rows="5" placeholder="Beschreiben Sie kurz das Fahrzeug oder besondere Wünsche."></textarea>
+          </div>
+          <div class="gbsrac-contactpage-field gbsrac-contactpage-field-full">
+            <label for="offerPhotos">Fotos hochladen</label>
+            <input id="offerPhotos" name="offerte_fotos" type="file" accept="image/png,image/jpeg,image/webp" multiple>
+            <small class="gbsrac-contactpage-field-help">Sie können mehrere Fotos vom Schaden, Fahrzeug oder betroffenen Bereich auswählen.</small>
+          </div>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-navigation">
+          <button type="button" class="gbsrac-contactpage-offer-back" data-prev-step="1">Zurück</button>
+          <button type="button" class="gbsrac-contactpage-offer-next" data-next-step="3">Weiter</button>
+        </div>
+      </div>
+
+      <div class="gbsrac-contactpage-offer-panel" data-step-panel="3">
+        <div class="gbsrac-contactpage-offer-panel-head">
+          <p class="gbsrac-contactpage-offer-kicker">Schritt 3 / 3</p>
+          <h3>Wie dürfen wir Sie kontaktieren?</h3>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-summary" id="offerSummary">
+          <p>Bitte wählen Sie zuerst eine Kategorie und mindestens eine Arbeit aus.</p>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-grid">
+          <div class="gbsrac-contactpage-field">
+            <label for="offerName">Name</label>
+            <input id="offerName" name="name" type="text" placeholder="Ihr Name" required>
+          </div>
+          <div class="gbsrac-contactpage-field">
+            <label for="offerEmail">E-Mail</label>
+            <input id="offerEmail" name="email" type="email" placeholder="ihre@email.ch" required>
+          </div>
+          <div class="gbsrac-contactpage-field">
+            <label for="offerPhone">Telefon</label>
+            <input id="offerPhone" name="phone" type="tel" placeholder="+41 ..." required>
+          </div>
+          <div class="gbsrac-contactpage-field">
+            <label for="offerPreferredDate">Wunschtermin</label>
+            <input id="offerPreferredDate" name="wunschtermin" type="text" placeholder="z. B. nächste Woche">
+          </div>
+        </div>
+
+        <div class="gbsrac-contactpage-offer-navigation">
+          <button type="button" class="gbsrac-contactpage-offer-back" data-prev-step="2">Zurück</button>
+          <button type="submit" class="gbsrac-contactpage-offer-submit">Offerte anfragen</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".gbsrac-services-track");
+  const slides = Array.from(document.querySelectorAll(".gbsrac-service-slide"));
+  const prevBtn = document.querySelector(".gbsrac-slider-arrow-left");
+  const nextBtn = document.querySelector(".gbsrac-slider-arrow-right");
+
+  const visibleSlides = 3;
+  let currentIndex = 0;
+
+  function getSlideStep() {
+    const slideWidth = slides[0].offsetWidth;
+    const trackStyles = window.getComputedStyle(track);
+    const gap = parseInt(trackStyles.gap) || 0;
+    return slideWidth + gap;
+  }
+
+  function updateSlider() {
+    const step = getSlideStep();
+    track.style.transform = `translateX(-${currentIndex * step}px)`;
+
+    prevBtn.style.opacity = currentIndex === 0 ? "0.5" : "1";
+    prevBtn.style.pointerEvents = currentIndex === 0 ? "none" : "auto";
+
+    const maxIndex = slides.length - visibleSlides;
+    nextBtn.style.opacity = currentIndex >= maxIndex ? "0.5" : "1";
+    nextBtn.style.pointerEvents = currentIndex >= maxIndex ? "none" : "auto";
+  }
+
+  nextBtn.addEventListener("click", function () {
+    const maxIndex = slides.length - visibleSlides;
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  prevBtn.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  window.addEventListener("resize", updateSlider);
+
+  updateSlider();
+});
+</script>
+
+<!-- ================= WARUM WIR SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-why" id="why-us">
+  <div class="gbsrac-why-container">
+    <div class="gbsrac-why-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-why-subtitle">Warum wir</span>
+      <h2>Weil gute Werkstattarbeit nicht nur aus Reparaturen besteht.</h2>
+      <div class="gbsrac-why-line"></div>
+      <p>
+        Viele Kundinnen und Kunden kennen das Problem: Das Auto wird abgegeben,
+        Termine verschieben sich ohne klare Rückmeldung, und am Ende weiss man
+        oft nicht, wann die Arbeit wirklich fertig ist. Genau das möchten wir
+        vermeiden.
+      </p>
+    </div>
+
+    <div class="gbsrac-why-grid">
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="80">
+        <span class="gbsrac-why-card-number">01</span>
+        <h3>Fixe Termine statt leere Versprechen</h3>
+        <p>
+          Wir planen sauber und geben fixe Daten durch, damit Sie wissen,
+          wann Ihr Fahrzeug bei uns eingeplant ist und wann Sie damit rechnen können.
+        </p>
+      </article>
+
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="160">
+        <span class="gbsrac-why-card-number">02</span>
+        <h3>Ehrliche Rückmeldung bei Verzögerungen</h3>
+        <p>
+          Falls etwas länger dauert als geplant, kommunizieren wir das offen
+          und frühzeitig. Keine Ausreden, keine Funkstille, sondern klare Infos
+          zur Fertigstellung der Arbeit.
+        </p>
+      </article>
+
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="240">
+        <span class="gbsrac-why-card-number">03</span>
+        <h3>Arbeiten mit Terminkalender</h3>
+        <p>
+          Durch unsere strukturierte Terminplanung vermeiden wir, dass Fahrzeuge
+          unnötig bei uns stehen, obwohl noch gar nicht daran gearbeitet wird.
+          Das spart Ihnen Zeit und sorgt für transparente Abläufe.
+        </p>
+      </article>
+
+      <article class="gbsrac-why-card" data-aos="fade-up" data-aos-duration="900" data-aos-delay="320">
+        <span class="gbsrac-why-card-number">04</span>
+        <h3>Faire Preise und saubere Arbeit</h3>
+        <p>
+          Wir stehen für faire Preise, nachvollziehbare Leistungen und saubere
+          Arbeit am Fahrzeug. Keine unnötigen Positionen, sondern ehrliche
+          Qualität, auf die Sie sich verlassen können.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-cta" id="contact">
+  <div class="gbsrac-cta-container" data-aos="fade-up" data-aos-duration="950">
+    <div class="gbsrac-cta-content">
+      <span class="gbsrac-cta-subtitle">Sie haben Fragen?</span>
+      <h2>Wir beraten Sie gerne.</h2>
+      <div class="gbsrac-cta-line"></div>
+      <p>
+        Sie möchten einen Termin vereinbaren oder eine ehrliche Einschätzung zu
+        Service, Reparatur oder MFK? Dann kontaktieren Sie uns und wir melden
+        uns schnell, klar und unkompliziert zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-cta-actions">
+      <a href="mailto:info@swissrepairs.ch" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">info@swissrepairs.ch</span>
+      </a>
+
+      <a href="tel:+41767672220" class="gbsrac-cta-contact">
+        <span class="gbsrac-cta-contact-icon" aria-hidden="true">
+          <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="gbsrac-cta-contact-value">+41 76 767 22 20</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KONTAKT FORM SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-contact-form" id="booking">
+  <div class="gbsrac-contact-form-container">
+    <div class="gbsrac-contact-form-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-contact-form-subtitle">Kontakt & Termin buchen</span>
+      <h2>Termin anfragen und schnell eine ehrliche Rückmeldung erhalten.</h2>
+      <div class="gbsrac-contact-form-line"></div>
+      <p>
+        Teilen Sie uns Ihr Anliegen mit und wir melden uns so schnell wie
+        möglich mit einer Einschätzung, einem Terminvorschlag oder den nächsten
+        Schritten zurück.
+      </p>
+    </div>
+
+    <div class="gbsrac-contact-form-layout">
+      <div class="gbsrac-contact-form-info" data-aos="fade-right" data-aos-duration="950">
+        <div class="gbsrac-contact-form-info-card">
+          <span class="gbsrac-contact-form-info-label">Was Sie erwarten können</span>
+          <ul class="gbsrac-contact-form-info-list">
+            <li>klare Terminplanung statt unnötiger Standzeiten</li>
+            <li>ehrliche Rückmeldung zum Aufwand und zur Dauer</li>
+            <li>faire Preise und saubere Arbeit am Fahrzeug</li>
+          </ul>
+        </div>
+      </div>
+
+      <form
+        class="gbsrac-contact-form-box"
+        action="https://formsubmit.co/info@swissrepairs.ch"
+        method="POST"
+        data-aos="fade-left"
+        data-aos-duration="950"
+      >
+        <input type="hidden" name="_subject" value="Neue Terminanfrage - Swiss Repairs">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="gbsrac-contact-form-grid">
+          <div class="gbsrac-contact-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="+41 ..." required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" placeholder="ihre@email.ch" required>
+          </div>
+
+          <div class="gbsrac-contact-field">
+            <label for="service">Dienstleistung</label>
+            <select id="service" name="service" required>
+              <option value="">Bitte auswählen</option>
+              <option value="Wartung & Service">Wartung & Service</option>
+              <option value="Saisonale Checks">Saisonale Checks</option>
+              <option value="MFK">MFK</option>
+              <option value="Reparaturen">Reparaturen</option>
+              <option value="Reifenservice">Reifenservice</option>
+              <option value="Karosserie & Lack">Karosserie & Lack</option>
+              <option value="Andere Anfrage">Andere Anfrage</option>
+            </select>
+          </div>
+
+          <div class="gbsrac-contact-field gbsrac-contact-field-full">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" placeholder="Beschreiben Sie kurz Ihr Anliegen, Fahrzeug oder Wunschdatum." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="gbsrac-contact-submit">Terminanfrage senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STANDORT SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-location" id="location">
+  <div class="gbsrac-location-container">
+    <div class="gbsrac-location-content" data-aos="fade-up" data-aos-duration="900">
+      <h2>Unser Standort</h2>
+      <div class="gbsrac-location-line"></div>
+
+      <div class="gbsrac-location-details">
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Adresse</span>
+          <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">Telefon</span>
+          <p><a href="tel:+41767672220">+41 76 767 22 20</a></p>
+        </div>
+
+        <div class="gbsrac-location-detail">
+          <span class="gbsrac-location-label">E-Mail</span>
+          <p><a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a></p>
+        </div>
+      </div>
+
+      <div class="gbsrac-location-payments">
+        <span class="gbsrac-location-label">Akzeptierte Zahlungsmethoden</span>
+        <ul class="gbsrac-location-payment-list">
+          <li>Debitkarten (Maestro, Debit Master, Debit Visa, V-Pay)</li>
+          <li>Kreditkarten (Mastercard, VISA, American Express)</li>
+          <li>PostCard</li>
+          <li>Bargeld (CHF, EURO)</li>
+          <li>Twint</li>
+        </ul>
+
+        <div class="gbsrac-location-payment-icons">
+          <span class="gbsrac-location-payment-brand"><img src="img/visa.webp" alt="Visa"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/mastercard.webp" alt="Mastercard"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/apple-pay.webp" alt="Apple Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/google-pay.webp" alt="Google Pay"></span>
+          <span class="gbsrac-location-payment-brand"><img src="img/twint.webp" alt="Twint"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gbsrac-location-map" data-aos="fade-up" data-aos-duration="950" data-aos-delay="120">
+      <iframe
+        src="https://www.google.com/maps?q=Gaswerkstrasse+8,+8952+Schlieren&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Maps Standort Swiss Repairs"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ SECTION SWISS REPAIRS ================= -->
+<section class="gbsrac-faq" id="faq">
+  <div class="gbsrac-faq-container">
+    <div class="gbsrac-faq-intro" data-aos="fade-up" data-aos-duration="900">
+      <span class="gbsrac-faq-subtitle">FAQ</span>
+      <h2>Häufige Fragen</h2>
+      <div class="gbsrac-faq-line"></div>
+    </div>
+
+    <div class="gbsrac-faq-list" data-aos="fade-up" data-aos-duration="950" data-aos-delay="100">
+      <article class="gbsrac-faq-item is-open">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="true">
+          <span>Wie schnell bekomme ich einen Termin?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Je nach Aufwand und Auslastung oft kurzfristig. Wir geben Ihnen so schnell wie möglich eine ehrliche Rückmeldung zum nächsten freien Termin.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Machen Sie auch MFK-Vorbereitungen?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir bereiten Ihr Fahrzeug für die MFK vor und prüfen im Voraus, welche Arbeiten sinnvoll oder notwendig sind.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Wird mein Auto einfach abgestellt oder direkt eingeplant?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Wir arbeiten mit Terminplanung, damit Fahrzeuge nicht unnötig bei uns stehen. Unser Ziel sind klare Abläufe und möglichst kurze Standzeiten.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Was passiert, wenn eine Arbeit länger dauert als geplant?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Dann informieren wir Sie offen und frühzeitig. Sie erhalten von uns eine ehrliche Einschätzung zur Verzögerung und zum neuen Fertigstellungstermin.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Bieten Sie auch Reifenwechsel und saisonale Checks an?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir übernehmen Reifenwechsel, saisonale Kontrollen und prüfen auf Wunsch auch Bremsen, Batterie, Flüssigkeiten und allgemeine Sicherheitspunkte.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Erhalte ich vor der Reparatur eine Rückmeldung zu den Kosten?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir legen Wert auf faire Preise und Transparenz. Bevor grössere Arbeiten ausgeführt werden, informieren wir Sie über den Aufwand und die voraussichtlichen Kosten.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Arbeiten Sie markenunabhängig?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Wir betreuen Fahrzeuge verschiedener Marken und richten uns nach dem tatsächlichen Bedarf Ihres Fahrzeugs, nicht nach unnötigen Zusatzarbeiten.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Kann ich mein Fahrzeug auch für kleinere Probleme vorbeibringen?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Auch bei kleineren Anliegen wie Warnlampen, Geräuschen, Batterieproblemen oder kurzen Kontrollen können Sie sich bei uns melden und einen Termin vereinbaren.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Welche Zahlungsmethoden akzeptieren Sie?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Wir akzeptieren Debitkarten, Kreditkarten, PostCard, Bargeld in CHF oder Euro sowie Twint. Die genauen Zahlungsarten finden Sie auch im Standortbereich.</p>
+        </div>
+      </article>
+
+      <article class="gbsrac-faq-item">
+        <button class="gbsrac-faq-question" type="button" aria-expanded="false">
+          <span>Kann ich einen Termin auch per Telefon oder E-Mail anfragen?</span>
+          <span class="gbsrac-faq-icon">+</span>
+        </button>
+        <div class="gbsrac-faq-answer">
+          <p>Ja. Sie können uns telefonisch, per E-Mail oder über das Formular auf der Website kontaktieren. Wir melden uns so schnell wie möglich zurück.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER SWISS REPAIRS ================= -->
+<footer class="gbsrac-footer">
+  <div class="gbsrac-footer-container">
+    <div class="gbsrac-footer-brand">
+      <h2>Über uns</h2>
+      <p>
+        Swiss Repairs steht für saubere Arbeit, faire Preise und ehrliche
+        Rückmeldungen rund ums Fahrzeug. Ob Service, Reparaturen, MFK oder
+        Reifenwechsel - wir arbeiten zuverlässig, persönlich und mit klarer
+        Terminplanung.
+      </p>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Quicklinks</span>
+      <a href="#home">Home</a>
+      <a href="ueberuns.html">Über Uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="#location">Standort</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Unsere Services</span>
+      <a href="wartung.html">Wartung &amp; Service</a>
+      <a href="saison.html">Saisonale Checks</a>
+      <a href="karosserie.html">Karosserie &amp; Lack</a>
+      <a href="reparaturen.html">Reparaturen</a>
+      <a href="mfk.html">MFK</a>
+      <a href="reifen.html">Reifenservice</a>
+      <a href="unfall.html">Unfallschäden</a>
+    </div>
+
+    <div class="gbsrac-footer-column gbsrac-footer-partner">
+      <span class="gbsrac-footer-title">Unser Partner</span>
+      <p class="gbsrac-footer-partner-name">Swiss Rent a Car</p>
+      <p>
+        Swiss Rent a Car in Kloten steht für flexible Mobilität,
+        Fahrzeugvermietung, Transfers und Airport Services - zuverlässig,
+        professionell und schweizweit einsatzbereit.
+      </p>
+      <a href="https://swissrentacar.ch" class="gbsrac-footer-partner-btn" target="_blank" rel="noopener noreferrer">Erfahre mehr</a>
+    </div>
+
+    <div class="gbsrac-footer-column">
+      <span class="gbsrac-footer-title">Kontakt</span>
+      <p>Gaswerkstrasse 8, 8952 Schlieren</p>
+      <a href="tel:+41767672220">+41 76 767 22 20</a>
+      <a href="mailto:info@swissrepairs.ch">info@swissrepairs.ch</a>
+    </div>
+  </div>
+
+  <div class="gbsrac-footer-bottom">
+    <p>&copy; 2026 Swiss Repairs. Alle Rechte vorbehalten.</p>
+    <div class="gbsrac-footer-bottom-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+<script src="form-redirect.js"></script>
+
+
+<!-- ================= AOS INIT ================= -->
+<script>
+  window.addEventListener('load', function () {
+    if (!window.AOS) return;
+
+    AOS.init({
+      once: true,
+      offset: 120,
+      easing: 'ease-out-cubic'
+    });
+  });
+</script>
+
+</body>
+</html>
